@@ -12,8 +12,8 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 4
-    }
-  ],
+    },
+    {
       "question": "This is a test question - whatever.",
       "imageLink": "",
       "options": [
@@ -25,10 +25,7 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 8
-    }
-  ],
-
-  "questions": [
+    },
     {
       "question": "This is a test question - a third thing.",
       "imageLink": "",
@@ -41,10 +38,7 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 16
-    }
-  ],
-
-  "questions": [
+    },
     {
       "question": "This is a test question - final.",
       "imageLink": "",
