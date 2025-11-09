@@ -13,6 +13,7 @@
       "difficulty": 1,
       "locations": 4
     },
+
     {
       "question": "This is a test question - whatever.",
       "imageLink": "",
@@ -26,6 +27,7 @@
       "difficulty": 1,
       "locations": 8
     },
+
     {
       "question": "This is a test question - a third thing.",
       "imageLink": "",
@@ -39,6 +41,7 @@
       "difficulty": 1,
       "locations": 16
     },
+
     {
       "question": "This is a test question - final.",
       "imageLink": "",
