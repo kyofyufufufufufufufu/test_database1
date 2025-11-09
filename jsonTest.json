@@ -13,13 +13,7 @@
       "difficulty": 1,
       "locations": 4
     }
-  ]
-}
-
-
-{
-  "questions": [
-    {
+  ],
       "question": "This is a test question - whatever.",
       "imageLink": "",
       "options": [
@@ -32,11 +26,8 @@
       "difficulty": 1,
       "locations": 8
     }
-  ]
-}
+  ],
 
-
-{
   "questions": [
     {
       "question": "This is a test question - a third thing.",
@@ -51,11 +42,8 @@
       "difficulty": 1,
       "locations": 16
     }
-  ]
-}
+  ],
 
-
-{
   "questions": [
     {
       "question": "This is a test question - final.",
