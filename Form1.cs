@@ -26,7 +26,8 @@ namespace WinFormsApp1
             database = new QuestionSet();
 
             button3.Click += CreateQuestion_Click;
-            listView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
+            // The subscription to ListView1_SelectedIndexChanged is REMOVED to prevent 
+            // the list view selection from updating the input fields on any tab.
             this.Load += Form1_Load;
         }
 
@@ -163,72 +164,8 @@ namespace WinFormsApp1
             }
         }
 
-        // Handles displaying question data when an item is selected from the list
-        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listView1.SelectedIndices.Count == 0)
-            {
-                ClearInputFields();
-                return;
-            }
-            int index = listView1.SelectedIndices[0];
-
-            if (index < 0 || database.questions.Count <= index) return;
-
-            var q = database.questions[index];
-
-            textBox1.Text = q.question;
-            if (q.options.Count >= 4)
-            {
-                textBox2.Text = q.options[0].text;
-                textBox4.Text = q.options[1].text;
-                textBox3.Text = q.options[2].text;
-                textBox5.Text = q.options[3].text;
-            }
-
-            comboBox1.SelectedItem = q.difficulty.ToString();
-
-            // Decodes Locations for UI
-            // Bit Unpacking Logic
-            string bin = Convert.ToString(q.locations, 2).PadLeft(13, '0');
-            string binModule = bin.Substring(0, 5);
-            string binLocations = bin.Substring(5);
-
-            // Decodes Module
-            char[] charArray = binModule.ToCharArray();
-            Array.Reverse(charArray);
-            string reversedBinModule = new string(charArray);
-
-            int module = 0;
-            for (int i = 0; i < reversedBinModule.Length; i++)
-            {
-                if (reversedBinModule[i] == '1')
-                {
-                    module = i;
-                    break;
-                }
-            }
-            comboBox2.SelectedItem = module.ToString();
-
-            // Decodes Body Parts
-            int locationVal = Convert.ToInt32(binLocations, 2);
-            var locationMap = new Dictionary<string, int>
-            {
-                { "Bladder", 1 }, { "Brain", 2 }, { "Eyes", 4 }, { "GI Tract", 8 },
-                { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
-            };
-
-            for (int i = 0; i < checkedListBox1.Items.Count; i++)
-            {
-                string name = checkedListBox1.Items[i].ToString();
-                if (locationMap.ContainsKey(name))
-                {
-                    int val = locationMap[name];
-                    bool isChecked = (locationVal & val) == val;
-                    checkedListBox1.SetItemChecked(i, isChecked);
-                }
-            }
-        }
+        // The ListView1_SelectedIndexChanged method was removed because its sole purpose
+        // was to update the input fields (which you no longer want).
 
         private void ClearInputFields()
         {
