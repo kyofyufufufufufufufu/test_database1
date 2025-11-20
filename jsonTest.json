@@ -173,6 +173,35 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 4161
+    },
+    {
+      "question": "This is a test question - final.",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Answer1d",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Answer2d",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Answer3d",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Answer4d",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 5,
+      "locations": 1056
     }
   ]
 }
