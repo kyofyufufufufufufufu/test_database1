@@ -14,8 +14,8 @@ namespace WinFormsApp1
     // Structure for question
     public class Question
     {
-        public string question { get; set; } = string.Empty; // Fixed warning
-        public string imageLink { get; set; } = string.Empty; // Fixed warning
+        public string question { get; set; } = string.Empty;
+        public string imageLink { get; set; } = string.Empty;
         public List<Option> options { get; set; } = new List<Option>();
         public int answerIndex { get; set; }
 
@@ -25,7 +25,7 @@ namespace WinFormsApp1
         // and the Body Location flags (bottom 8 bits)
         public int locations { get; set; }
 
-        // Enum used in the C# code to map CheckBox selections
+        // Enum used to map CheckBox selections
         [Flags]
         public enum LocationFlags
         {
@@ -42,8 +42,8 @@ namespace WinFormsApp1
 
     public class Option
     {
-        public string text { get; set; } = string.Empty; // Fixed warning
-        public string imageLink { get; set; } = string.Empty; // Fixed warning
+        public string text { get; set; } = string.Empty;
+        public string imageLink { get; set; } = string.Empty;
 
         public bool useImage { get; set; }
     }

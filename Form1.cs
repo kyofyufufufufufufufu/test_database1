@@ -15,18 +15,6 @@ namespace WinFormsApp1
         private QuestionSet? database;
         private GitHubService? gitService;
 
-        // Note: For clarity, the edit controls are usually declared in Form1.Designer.cs.
-        // Assuming their existence for the logic below:
-        // private GroupBox gbEditQuestion;
-        // private TextBox txtEditQuestion;
-        // private ComboBox cmbEditDifficulty;
-        // private ComboBox cmbEditModule;
-        // private CheckedListBox clbEditLocations;
-        // private TextBox txtEditOption1;
-        // private TextBox txtEditOption2;
-        // private TextBox txtEditOption3;
-        // private TextBox txtEditOption4;
-
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +23,6 @@ namespace WinFormsApp1
             listView1.View = View.List;
             listView1.MultiSelect = false;
 
-            // Initialized to a non-null object to satisfy the constructor warning
             database = new QuestionSet();
 
             button3.Click += CreateQuestion_Click;
@@ -45,6 +32,8 @@ namespace WinFormsApp1
 
         private async void Form1_Load(object? sender, EventArgs e)
         {
+            // This is just one option. I could also create a config file that can read the PAT, but I really don't want anything that's saved to
+            // our group's local save. I'd prefer to keep it this way for now.
             string token = ShowInputDialog("Please enter your GitHub Personal Access Token (PAT):", "GitHub Auth");
 
             if (string.IsNullOrWhiteSpace(token))
@@ -105,7 +94,7 @@ namespace WinFormsApp1
                 return;
             }
 
-            // Calculate Body Location for lower 8 digits when converting to Unity project's Database.cs
+            // Calculate lower 8 digits when converting to Unity project's Database.cs
             int bodyPartSum = 0;
             var locationMap = new Dictionary<string, int>
             {
@@ -127,7 +116,7 @@ namespace WinFormsApp1
             int moduleIndex = 0;
             if (comboBox2.SelectedItem != null)
             {
-                // Ensure a valid number is parsed
+                // Linting parsing
                 if (!int.TryParse(comboBox2.SelectedItem.ToString(), out moduleIndex))
                 {
                     MessageBox.Show("Invalid Module selected.");
@@ -181,7 +170,6 @@ namespace WinFormsApp1
             // Upload
             try
             {
-                // Use null-forgiving operator (!) as we confirmed gitService is non-null above
                 await gitService.SaveDatabaseAsync(database); 
                 RefreshQuestionList();
                 MessageBox.Show("Question saved to GitHub!");
@@ -193,12 +181,11 @@ namespace WinFormsApp1
             }
         }
 
-        // CORRECTED: Now toggles gbEditQuestion visibility and populates the dedicated edit fields.
         private void ListView1_SelectedIndexChanged(object? sender, EventArgs e) 
         {
             if (database == null) return;
 
-            // 1. If no item is selected (e.g., list is deselected)
+            // If no item is selected
             if (listView1.SelectedIndices.Count == 0)
             {
                 ClearInputFields();
@@ -207,17 +194,16 @@ namespace WinFormsApp1
                 return; 
             }
 
-            // 2. An item is selected: Show the edit box
+            // If item is selected, how the edit box
             if (gbEditQuestion != null) gbEditQuestion.Visible = true;
             
             int index = listView1.SelectedIndices[0];
 
-            // Use null-forgiving operator as database is checked and questions is initialized
             if (index < 0 || database.questions!.Count <= index) return;
 
             var q = database.questions![index];
 
-            // 3. Populate the DEDICATED EDIT controls, NOT the CREATE controls.
+            // Pre-fill the edit fields
             txtEditQuestion.Text = q.question;
             if (q.options.Count >= 4)
             {
@@ -227,10 +213,8 @@ namespace WinFormsApp1
                 txtEditOption4.Text = q.options[3].text;
             }
 
-            // Use null-forgiving operator (!)
             cmbEditDifficulty.SelectedItem = q.difficulty.ToString()!; 
 
-            // Decodes Locations for UI
             // Bit Unpacking Logic
             string bin = Convert.ToString(q.locations, 2).PadLeft(13, '0');
             string binModule = bin.Substring(0, 5);
@@ -250,7 +234,6 @@ namespace WinFormsApp1
                     break;
                 }
             }
-            // Use null-forgiving operator (!)
             cmbEditModule.SelectedItem = module.ToString()!; 
 
             // Decodes Body Parts
@@ -273,10 +256,10 @@ namespace WinFormsApp1
             }
         }
 
-        // UPDATED: Now clears both Create and Edit fields for a clean slate.
+        // Clears both Create and Edit fields for a clean slate.
         private void ClearInputFields()
         {
-            // Clear 'Create Question' fields (tabPage1 controls)
+            // Clear Create Question fields for tabPage1
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
@@ -290,7 +273,7 @@ namespace WinFormsApp1
                 checkedListBox1.SetItemChecked(i, false);
             }
 
-            // Clear 'Edit Question' fields
+            // Clear Edit Question fields
             if (gbEditQuestion != null)
             {
                 txtEditQuestion.Text = "";

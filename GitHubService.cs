@@ -16,9 +16,9 @@ namespace WinFormsApp1
         private readonly string _owner;
         private readonly string _repo;
         private readonly string _path;
-        private string? _currentFileSha; // Changed to nullable string to fix warning
+        private string? _currentFileSha;
 
-        // Hardcoded path based on your request, but PAT is passed in
+        // Hardcoded path for test database
         public GitHubService(string personalAccessToken)
         {
             _owner = "kyofyufufufufufufufu";
@@ -27,7 +27,7 @@ namespace WinFormsApp1
 
             _client = new HttpClient();
 
-            // GitHub API requires a User-Agent header for PAT authorization
+            // GitHub API requires PAT authorization
             _client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("WinFormsApp", "1.0"));
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", personalAccessToken);
         }
@@ -43,24 +43,20 @@ namespace WinFormsApp1
             JObject json = JObject.Parse(content);
 
             // Tells GitHub which version of the file we are overwriting later
-            // Used null-forgiving operator (!) as 'sha' is expected from GitHub API
             _currentFileSha = json["sha"]?.ToString()!; 
 
             // Cleaner look
-            // Used null-forgiving operator (!) as 'content' is expected from GitHub API
             string base64Content = json["content"]?.ToString()!; 
             base64Content = base64Content.Replace("\n", "");
 
             byte[] data = Convert.FromBase64String(base64Content);
             string decodedString = Encoding.UTF8.GetString(data);
 
-            // Used null-forgiving operator (!) as we expect a valid QuestionSet from the JSON
             return JsonConvert.DeserializeObject<QuestionSet>(decodedString)!;
         }
 
         public async Task SaveDatabaseAsync(QuestionSet data)
         {
-            // Explicitly check for null SHA before using it
             if (_currentFileSha == null)
             {
                 throw new InvalidOperationException("Cannot save database: File SHA must be loaded by calling GetDatabaseAsync first.");
@@ -93,7 +89,6 @@ namespace WinFormsApp1
             // Save again without reloading
             string responseString = await response.Content.ReadAsStringAsync();
             JObject responseJson = JObject.Parse(responseString);
-            // Used null-forgiving operator (!) as 'sha' is expected from GitHub API response
             _currentFileSha = responseJson["content"]?["sha"]?.ToString()!;
         }
     }
