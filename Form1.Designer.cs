@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            // Create UI components
             tabPage2 = new TabPage();
             label13 = new Label();
             gbEditQuestion = new GroupBox();
@@ -90,7 +89,7 @@
             tabControl1.SuspendLayout();
             SuspendLayout();
             // 
-            // tabPage2 - View/Edit/Delete Questions
+            // tabPage2
             // 
             tabPage2.Controls.Add(label13);
             tabPage2.Controls.Add(gbEditQuestion);
@@ -103,7 +102,7 @@
             tabPage2.Text = "View/Edit/Delete Questions";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label13 - Database Questions
+            // label13
             // 
             label13.AutoSize = true;
             label13.Location = new Point(48, 25);
@@ -112,7 +111,7 @@
             label13.TabIndex = 1;
             label13.Text = "Database Questions";
             // 
-            // gbEditQuestion - Edit Question GroupBox
+            // gbEditQuestion
             // 
             gbEditQuestion.Controls.Add(label16);
             gbEditQuestion.Controls.Add(btnDeleteQuestion);
@@ -132,183 +131,183 @@
             gbEditQuestion.Controls.Add(lblEditOption2);
             gbEditQuestion.Controls.Add(lblEditOption1);
             gbEditQuestion.Controls.Add(lblEditQuestion);
-            gbEditQuestion.Location = new Point(546, 49);
+            gbEditQuestion.Location = new Point(487, 40);
             gbEditQuestion.Name = "gbEditQuestion";
-            gbEditQuestion.Size = new Size(495, 505);
+            gbEditQuestion.Size = new Size(546, 649);
             gbEditQuestion.TabIndex = 3;
             gbEditQuestion.TabStop = false;
             gbEditQuestion.Text = "Edit Selected Question";
             gbEditQuestion.Visible = false;
             // 
-            // label16 - Locations Label
+            // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(34, 275);
+            label16.Location = new Point(16, 274);
             label16.Name = "label16";
             label16.Size = new Size(64, 15);
             label16.TabIndex = 68;
             label16.Text = "Locations: ";
             // 
-            // btnDeleteQuestion - Delete Question Button
+            // btnDeleteQuestion
             // 
             btnDeleteQuestion.BackColor = Color.WhiteSmoke;
-            btnDeleteQuestion.Location = new Point(341, 442);
+            btnDeleteQuestion.Location = new Point(410, 593);
             btnDeleteQuestion.Name = "btnDeleteQuestion";
-            btnDeleteQuestion.Size = new Size(130, 40);
+            btnDeleteQuestion.Size = new Size(106, 33);
             btnDeleteQuestion.TabIndex = 67;
             btnDeleteQuestion.Text = "Delete Question";
             btnDeleteQuestion.UseVisualStyleBackColor = false;
             // 
-            // btnUpdateQuestion - Update Question Button
+            // btnUpdateQuestion
             // 
             btnUpdateQuestion.BackColor = Color.WhiteSmoke;
-            btnUpdateQuestion.Location = new Point(205, 442);
+            btnUpdateQuestion.Location = new Point(286, 593);
             btnUpdateQuestion.Name = "btnUpdateQuestion";
-            btnUpdateQuestion.Size = new Size(130, 40);
+            btnUpdateQuestion.Size = new Size(106, 33);
             btnUpdateQuestion.TabIndex = 66;
             btnUpdateQuestion.Text = "Update Question";
             btnUpdateQuestion.UseVisualStyleBackColor = false;
             // 
-            // clbEditLocations - Locations CheckedListBox
+            // clbEditLocations
             // 
             clbEditLocations.FormattingEnabled = true;
             clbEditLocations.Items.AddRange(new object[] { "Bladder", "Brain", "Eyes", "GI Tract", "Heart", "Lungs", "Smooth Muscle", "Other" });
-            clbEditLocations.Location = new Point(129, 275);
+            clbEditLocations.Location = new Point(111, 274);
             clbEditLocations.Name = "clbEditLocations";
-            clbEditLocations.Size = new Size(123, 148);
+            clbEditLocations.Size = new Size(125, 130);
             clbEditLocations.TabIndex = 65;
             // 
-            // cmbEditModule - Module ComboBox
+            // cmbEditModule
             // 
             cmbEditModule.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditModule.FormattingEnabled = true;
             cmbEditModule.Items.AddRange(new object[] { "0", "1", "2", "3", "4" });
-            cmbEditModule.Location = new Point(304, 237);
+            cmbEditModule.Location = new Point(286, 236);
             cmbEditModule.Name = "cmbEditModule";
             cmbEditModule.Size = new Size(69, 23);
             cmbEditModule.TabIndex = 64;
             // 
-            // cmbEditDifficulty - Difficulty ComboBox
+            // cmbEditDifficulty
             // 
             cmbEditDifficulty.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditDifficulty.FormattingEnabled = true;
             cmbEditDifficulty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbEditDifficulty.Location = new Point(129, 237);
+            cmbEditDifficulty.Location = new Point(111, 236);
             cmbEditDifficulty.Name = "cmbEditDifficulty";
             cmbEditDifficulty.Size = new Size(69, 23);
             cmbEditDifficulty.TabIndex = 63;
             // 
-            // label14 - Module Label
+            // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(216, 240);
+            label14.Location = new Point(198, 239);
             label14.Name = "label14";
             label14.Size = new Size(82, 15);
             label14.TabIndex = 62;
             label14.Text = "Module (0-4): ";
             // 
-            // label15 - Difficulty Label
+            // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(34, 240);
+            label15.Location = new Point(16, 239);
             label15.Name = "label15";
             label15.Size = new Size(89, 15);
             label15.TabIndex = 61;
             label15.Text = "Difficulty (1-5): ";
             // 
-            // txtEditOption4 - Option 4 TextBox
+            // txtEditOption4
             // 
-            txtEditOption4.Location = new Point(120, 190);
+            txtEditOption4.Location = new Point(81, 189);
             txtEditOption4.Name = "txtEditOption4";
             txtEditOption4.Size = new Size(351, 23);
             txtEditOption4.TabIndex = 44;
             // 
-            // txtEditOption3 - Option 3 TextBox
+            // txtEditOption3
             // 
-            txtEditOption3.Location = new Point(120, 151);
+            txtEditOption3.Location = new Point(81, 150);
             txtEditOption3.Name = "txtEditOption3";
             txtEditOption3.Size = new Size(351, 23);
             txtEditOption3.TabIndex = 43;
             // 
-            // txtEditOption2 - Option 2 TextBox
+            // txtEditOption2
             // 
-            txtEditOption2.Location = new Point(120, 112);
+            txtEditOption2.Location = new Point(81, 111);
             txtEditOption2.Name = "txtEditOption2";
             txtEditOption2.Size = new Size(351, 23);
             txtEditOption2.TabIndex = 42;
             // 
-            // txtEditOption1 - Option 1 TextBox
+            // txtEditOption1
             // 
-            txtEditOption1.Location = new Point(120, 73);
+            txtEditOption1.Location = new Point(81, 72);
             txtEditOption1.Name = "txtEditOption1";
             txtEditOption1.Size = new Size(351, 23);
             txtEditOption1.TabIndex = 41;
             // 
-            // txtEditQuestion - Question TextBox
+            // txtEditQuestion
             // 
-            txtEditQuestion.Location = new Point(120, 34);
+            txtEditQuestion.Location = new Point(81, 33);
             txtEditQuestion.Name = "txtEditQuestion";
             txtEditQuestion.Size = new Size(351, 23);
             txtEditQuestion.TabIndex = 40;
             // 
-            // lblEditOption4 - Option 4 Label
+            // lblEditOption4
             // 
             lblEditOption4.AutoSize = true;
-            lblEditOption4.Location = new Point(34, 193);
+            lblEditOption4.Location = new Point(16, 192);
             lblEditOption4.Name = "lblEditOption4";
             lblEditOption4.Size = new Size(59, 15);
             lblEditOption4.TabIndex = 39;
             lblEditOption4.Text = "Option 4: ";
             // 
-            // lblEditOption3 - Option 3 Label
+            // lblEditOption3
             // 
             lblEditOption3.AutoSize = true;
-            lblEditOption3.Location = new Point(34, 154);
+            lblEditOption3.Location = new Point(16, 153);
             lblEditOption3.Name = "lblEditOption3";
             lblEditOption3.Size = new Size(59, 15);
             lblEditOption3.TabIndex = 38;
             lblEditOption3.Text = "Option 3: ";
             // 
-            // lblEditOption2 - Option 2 Label
+            // lblEditOption2
             // 
             lblEditOption2.AutoSize = true;
-            lblEditOption2.Location = new Point(34, 115);
+            lblEditOption2.Location = new Point(16, 114);
             lblEditOption2.Name = "lblEditOption2";
             lblEditOption2.Size = new Size(59, 15);
             lblEditOption2.TabIndex = 37;
             lblEditOption2.Text = "Option 2: ";
             // 
-            // lblEditOption1 - Option 1 Label
+            // lblEditOption1
             // 
             lblEditOption1.AutoSize = true;
-            lblEditOption1.Location = new Point(34, 76);
+            lblEditOption1.Location = new Point(16, 75);
             lblEditOption1.Name = "lblEditOption1";
             lblEditOption1.Size = new Size(59, 15);
             lblEditOption1.TabIndex = 36;
             lblEditOption1.Text = "Option 1: ";
             // 
-            // lblEditQuestion - Question Label
+            // lblEditQuestion
             // 
             lblEditQuestion.AutoSize = true;
-            lblEditQuestion.Location = new Point(34, 37);
+            lblEditQuestion.Location = new Point(16, 36);
             lblEditQuestion.Name = "lblEditQuestion";
             lblEditQuestion.Size = new Size(61, 15);
             lblEditQuestion.TabIndex = 35;
             lblEditQuestion.Text = "Question: ";
             // 
-            // listView1 - Questions ListView for database
+            // listView1
             // 
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
-            listView1.Location = new Point(29, 57);
+            listView1.Location = new Point(17, 49);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
-            listView1.Size = new Size(511, 497);
+            listView1.Size = new Size(450, 640);
             listView1.TabIndex = 2;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
             // 
-            // tabPage1 - Create Question
+            // tabPage1
             // 
             tabPage1.Controls.Add(checkedListBox1);
             tabPage1.Controls.Add(comboBox2);
@@ -349,7 +348,7 @@
             tabPage1.Text = "Create Question";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1 - Locations CheckedListBox
+            // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "Bladder", "Brain", "Eyes", "GI Tract", "Heart", "Lungs", "Smooth Muscle", "Other" });
@@ -358,7 +357,7 @@
             checkedListBox1.Size = new Size(123, 148);
             checkedListBox1.TabIndex = 63;
             // 
-            // comboBox2 - Module ComboBox
+            // comboBox2
             // 
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
@@ -368,7 +367,7 @@
             comboBox2.Size = new Size(69, 23);
             comboBox2.TabIndex = 62;
             // 
-            // comboBox1 - Difficulty ComboBox
+            // comboBox1
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
@@ -378,7 +377,7 @@
             comboBox1.Size = new Size(69, 23);
             comboBox1.TabIndex = 61;
             // 
-            // label12 - Option 4 Label
+            // label12
             // 
             label12.AutoSize = true;
             label12.Location = new Point(15, 298);
@@ -387,7 +386,7 @@
             label12.TabIndex = 60;
             label12.Text = "(Incorrect)";
             // 
-            // label11 - Option 3 Label
+            // label11
             // 
             label11.AutoSize = true;
             label11.Location = new Point(15, 240);
@@ -396,42 +395,42 @@
             label11.TabIndex = 59;
             label11.Text = "(Incorrect)";
             // 
-            // textBox5 - Option 4 TextBox
+            // textBox5
             // 
             textBox5.Location = new Point(95, 290);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(448, 23);
             textBox5.TabIndex = 58;
             // 
-            // textBox3 - Option 3 TextBox
+            // textBox3
             // 
             textBox3.Location = new Point(95, 232);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(448, 23);
             textBox3.TabIndex = 57;
             // 
-            // textBox4 - Option 2 TextBox
+            // textBox4
             // 
             textBox4.Location = new Point(95, 168);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(448, 23);
             textBox4.TabIndex = 56;
             // 
-            // textBox2 - Option 1 TextBox
+            // textBox2
             // 
             textBox2.Location = new Point(95, 110);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(448, 23);
             textBox2.TabIndex = 55;
             // 
-            // textBox1 - Question TextBox
+            // textBox1
             // 
             textBox1.Location = new Point(95, 36);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(448, 23);
             textBox1.TabIndex = 35;
             // 
-            // label10 - Option 2 Label
+            // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(15, 176);
@@ -440,7 +439,7 @@
             label10.TabIndex = 54;
             label10.Text = "(Incorrect)";
             // 
-            // label9 - Option 1 Label
+            // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(15, 118);
@@ -449,7 +448,7 @@
             label9.TabIndex = 53;
             label9.Text = "(Correct)";
             // 
-            // button8 - Clear Option 4 Button
+            // button8
             // 
             button8.Location = new Point(673, 290);
             button8.Name = "button8";
@@ -458,7 +457,7 @@
             button8.Text = "Clear";
             button8.UseVisualStyleBackColor = true;
             // 
-            // button9 - Select Image for Option 4 Button
+            // button9
             // 
             button9.Location = new Point(561, 290);
             button9.Name = "button9";
@@ -466,8 +465,9 @@
             button9.TabIndex = 51;
             button9.Text = "Select Image";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += ImageButton_Click;
             // 
-            // button10 - Clear Option 3 Button
+            // button10
             // 
             button10.Location = new Point(673, 232);
             button10.Name = "button10";
@@ -476,7 +476,7 @@
             button10.Text = "Clear";
             button10.UseVisualStyleBackColor = true;
             // 
-            // button11 - Select Image for Option 3 Button
+            // button11
             // 
             button11.Location = new Point(561, 232);
             button11.Name = "button11";
@@ -484,8 +484,9 @@
             button11.TabIndex = 49;
             button11.Text = "Select Image";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += ImageButton_Click;
             // 
-            // button6 - Clear Option 2 Button
+            // button6
             // 
             button6.Location = new Point(673, 168);
             button6.Name = "button6";
@@ -494,7 +495,7 @@
             button6.Text = "Clear";
             button6.UseVisualStyleBackColor = true;
             // 
-            // button7 - Select Image for Option 2 Button
+            // button7
             // 
             button7.Location = new Point(561, 168);
             button7.Name = "button7";
@@ -502,8 +503,9 @@
             button7.TabIndex = 47;
             button7.Text = "Select Image";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += ImageButton_Click;
             // 
-            // button4 - Clear Option 1 Button
+            // button4
             // 
             button4.Location = new Point(673, 110);
             button4.Name = "button4";
@@ -512,7 +514,7 @@
             button4.Text = "Clear";
             button4.UseVisualStyleBackColor = true;
             // 
-            // button5 - Select Image for Option 1 Button
+            // button5
             // 
             button5.Location = new Point(561, 110);
             button5.Name = "button5";
@@ -520,8 +522,9 @@
             button5.TabIndex = 45;
             button5.Text = "Select Image";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += ImageButton_Click;
             // 
-            // button3 - Create Question Button
+            // button3
             // 
             button3.Location = new Point(15, 616);
             button3.Name = "button3";
@@ -530,7 +533,7 @@
             button3.Text = "Create Question";
             button3.UseVisualStyleBackColor = true;
             // 
-            // label8 - Locations Label
+            // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(15, 421);
@@ -539,7 +542,7 @@
             label8.TabIndex = 43;
             label8.Text = "Locations: ";
             // 
-            // label7 - Module Label
+            // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(226, 362);
@@ -548,7 +551,7 @@
             label7.TabIndex = 42;
             label7.Text = "Module (0-4): ";
             // 
-            // label6 - Difficulty Label
+            // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(15, 362);
@@ -557,7 +560,7 @@
             label6.TabIndex = 41;
             label6.Text = "Difficulty (1-5): ";
             // 
-            // label5 - Option 4 Label
+            // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(15, 283);
@@ -566,7 +569,7 @@
             label5.TabIndex = 40;
             label5.Text = "Option 4: ";
             // 
-            // label4 - Option 3 Label
+            // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(17, 225);
@@ -575,7 +578,7 @@
             label4.TabIndex = 39;
             label4.Text = "Option 3: ";
             // 
-            // label3 - Option 2 Label
+            // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(15, 161);
@@ -584,7 +587,7 @@
             label3.TabIndex = 38;
             label3.Text = "Option2: ";
             // 
-            // label2 - Option 1 Label
+            // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(15, 103);
@@ -593,7 +596,7 @@
             label2.TabIndex = 37;
             label2.Text = "Option 1: ";
             // 
-            // label1 - Question Label
+            // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(15, 39);
@@ -602,7 +605,7 @@
             label1.TabIndex = 36;
             label1.Text = "Question: ";
             // 
-            // button2 - Clear Question Image Button
+            // button2
             // 
             button2.Location = new Point(673, 36);
             button2.Name = "button2";
@@ -611,7 +614,7 @@
             button2.Text = "Clear";
             button2.UseVisualStyleBackColor = true;
             // 
-            // button1 - Select Question Image Button
+            // button1
             // 
             button1.Location = new Point(561, 36);
             button1.Name = "button1";
@@ -619,8 +622,9 @@
             button1.TabIndex = 33;
             button1.Text = "Select Image";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += ImageButton_Click;
             // 
-            // tabControl1 - Main TabControl
+            // tabControl1
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
@@ -630,7 +634,7 @@
             tabControl1.Size = new Size(1059, 779);
             tabControl1.TabIndex = 33;
             // 
-            // Form1 - Main Form
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;

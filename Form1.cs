@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO; // ADDED for file operations
 
 namespace WinFormsApp1
 {
@@ -14,17 +15,21 @@ namespace WinFormsApp1
     {
         private QuestionSet? database;
         private GitHubService? gitService;
+        // Array to hold references to the textboxes 
+        private TextBox[]? imageTargetTextBoxes;
 
         public Form1()
         {
             InitializeComponent();
 
-            // Configure ListView to behave like a list
+            imageTargetTextBoxes = new TextBox[] { textBox1, textBox2, textBox4, textBox3, textBox5 };
+
             listView1.View = View.List;
             listView1.MultiSelect = false;
 
             database = new QuestionSet();
 
+            // Handlers
             button3.Click += CreateQuestion_Click;
             listView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
             this.Load += Form1_Load;
@@ -32,8 +37,10 @@ namespace WinFormsApp1
 
         private async void Form1_Load(object? sender, EventArgs e)
         {
-            // This is just one option. I could also create a config file that can read the PAT, but I really don't want anything that's saved to
-            // our group's local save. I'd prefer to keep it this way for now.
+            // This is just one option
+            // I could also create a config file that can read the PAT, but I really don't want anything that's saved to
+            // our group's local save
+            // I'd prefer to keep it this way for now
             string token = ShowInputDialog("Please enter your GitHub Personal Access Token (PAT):", "GitHub Auth");
 
             if (string.IsNullOrWhiteSpace(token))
@@ -46,13 +53,13 @@ namespace WinFormsApp1
             try
             {
                 gitService = new GitHubService(token);
-                database = await gitService.GetDatabaseAsync();
+                database = await gitService!.GetDatabaseAsync();
                 RefreshQuestionList();
 
                 // Clear fields for new input after loading
                 ClearInputFields();
 
-                // Ensure the edit panel is hidden initially
+                // Edit panel is hidden until question selected
                 if (gbEditQuestion != null)
                 {
                     gbEditQuestion.Visible = false;
@@ -69,7 +76,6 @@ namespace WinFormsApp1
         private void RefreshQuestionList()
         {
             listView1.Items.Clear();
-            // Used null-conditional access
             if (database?.questions != null)
             {
                 foreach (var q in database.questions)
@@ -79,22 +85,100 @@ namespace WinFormsApp1
             }
         }
 
+        // Checks if a path is a local file that actually exists
+        private bool IsLocalFilePath(string path)
+        {
+            if (string.IsNullOrWhiteSpace(path)) return false;
+            // Checks for URL
+            if (path.StartsWith("http", StringComparison.OrdinalIgnoreCase)) return false;
+
+            return Path.IsPathRooted(path) && File.Exists(path);
+        }
+
+        // Uploads the content if it's a local file path, returns tuple
+        private async Task<(string text, string imageLink, bool useImage)> ProcessContentAsync(string input)
+        {
+            if (IsLocalFilePath(input))
+            {
+                if (gitService == null)
+                {
+                    return (string.Empty, string.Empty, false);
+                }
+
+                try
+                {
+                    // Upload file
+                    string publicUrl = await gitService.UploadImageAsync(input);
+                    // Text is empty, imageLink is the URL, and useImage is true
+                    return (string.Empty, publicUrl, true);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error uploading image from path: {input}. Image link will not be saved. Error: {ex.Message}", "Image Upload Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return (input, string.Empty, false);
+                }
+            }
+            return (input, string.Empty, false);
+        }
+
+        private void ImageButton_Click(object? sender, EventArgs e)
+        {
+            if (sender is Button clickedButton && imageTargetTextBoxes != null)
+            {
+                int buttonIndex = -1;
+
+                if (clickedButton == button1) buttonIndex = 0; // Question Text
+                else if (clickedButton == button5) buttonIndex = 1; // Option 1 Text
+                else if (clickedButton == button7) buttonIndex = 2; // Option 2 Text
+                else if (clickedButton == button11) buttonIndex = 3; // Option 3 Text
+                else if (clickedButton == button9) buttonIndex = 4; // Option 4 Text
+
+                if (buttonIndex == -1) return;
+
+                // Open upload dialog box
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp|All files (*.*)|*.*";
+                    openFileDialog.Title = $"Select Image for Option {buttonIndex + 1}";
+
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Stores full path in the textbox
+                        imageTargetTextBoxes[buttonIndex].Text = openFileDialog.FileName;
+                    }
+                }
+            }
+        }
+
+        // Upload logic
         private async void CreateQuestion_Click(object? sender, EventArgs e)
         {
-            // Explicit null checks before calling members
             if (database == null || gitService == null)
             {
-                 MessageBox.Show("Database service is not loaded. Cannot create question.");
-                 return;
-            }
-
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
-            {
-                MessageBox.Show("Please fill in the question text.");
+                MessageBox.Show("Database service is not loaded. Cannot create question.");
                 return;
             }
 
-            // Calculate lower 8 digits when converting to Unity project's Database.cs
+            (string qText, string qImageLink, bool qUseImage) = await ProcessContentAsync(textBox1.Text);
+
+            if (string.IsNullOrWhiteSpace(qText) && string.IsNullOrWhiteSpace(qImageLink))
+            {
+                MessageBox.Show("Please fill in the question text or select a valid image.", "Validation Error");
+                return;
+            }
+
+            (string o1Text, string o1Link, bool o1Use) = await ProcessContentAsync(textBox2.Text);
+            (string o2Text, string o2Link, bool o2Use) = await ProcessContentAsync(textBox4.Text);
+            (string o3Text, string o3Link, bool o3Use) = await ProcessContentAsync(textBox3.Text);
+            (string o4Text, string o4Link, bool o4Use) = await ProcessContentAsync(textBox5.Text);
+
+            if (string.IsNullOrWhiteSpace(o1Text) && string.IsNullOrWhiteSpace(o1Link) ||
+                string.IsNullOrWhiteSpace(o2Text) && string.IsNullOrWhiteSpace(o2Link))
+            {
+                MessageBox.Show("Please provide at least two options.", "Validation Error");
+                return;
+            }
+
             int bodyPartSum = 0;
             var locationMap = new Dictionary<string, int>
             {
@@ -102,7 +186,6 @@ namespace WinFormsApp1
                 { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
             };
 
-            // Safely iterate and check for null key
             foreach (var item in checkedListBox1.CheckedItems)
             {
                 string? key = item?.ToString();
@@ -116,7 +199,6 @@ namespace WinFormsApp1
             int moduleIndex = 0;
             if (comboBox2.SelectedItem != null)
             {
-                // Linting parsing
                 if (!int.TryParse(comboBox2.SelectedItem.ToString(), out moduleIndex))
                 {
                     MessageBox.Show("Invalid Module selected.");
@@ -131,11 +213,9 @@ namespace WinFormsApp1
                 return;
             }
 
-
             string binLocations = Convert.ToString(bodyPartSum, 2).PadLeft(8, '0');
 
-            // Used fixed-size array/string to represent the 5-bit module part
-            // The value is encoded by setting the bit at the index corresponding to the module number
+            // Used fixed-size string to represent the 5-bit module part
             char[] moduleBits = new char[5] { '0', '0', '0', '0', '0' };
             if (moduleIndex >= 0 && moduleIndex < 5)
             {
@@ -151,26 +231,26 @@ namespace WinFormsApp1
             // Build Object
             Question newQ = new Question
             {
-                question = textBox1.Text,
-                imageLink = "",
+                question = qText,
+                imageLink = qImageLink,
                 options = new List<Option>
                 {
-                    new Option { text = textBox2.Text, imageLink = "", useImage = false },
-                    new Option { text = textBox4.Text, imageLink = "", useImage = false },
-                    new Option { text = textBox3.Text, imageLink = "", useImage = false },
-                    new Option { text = textBox5.Text, imageLink = "", useImage = false }
+                    new Option { text = o1Text, imageLink = o1Link, useImage = o1Use },
+                    new Option { text = o2Text, imageLink = o2Link, useImage = o2Use },
+                    new Option { text = o3Text, imageLink = o3Link, useImage = o3Use },
+                    new Option { text = o4Text, imageLink = o4Link, useImage = o4Use }
                 },
-                answerIndex = 0, // Assumines the correct answer is always option 1/textBox2
+                answerIndex = 0, // Assumes the correct answer is always option 1/textBox2
                 difficulty = difficultyLevel,
                 locations = finalLocationInt
             };
 
             database.questions.Add(newQ);
 
-            // Upload
+            // Upload to JSON database
             try
             {
-                await gitService.SaveDatabaseAsync(database); 
+                await gitService.SaveDatabaseAsync(database);
                 RefreshQuestionList();
                 MessageBox.Show("Question saved to GitHub!");
                 ClearInputFields();
@@ -181,29 +261,27 @@ namespace WinFormsApp1
             }
         }
 
-        private void ListView1_SelectedIndexChanged(object? sender, EventArgs e) 
+        // Handles displaying question data when an item is selected from the list
+        private void ListView1_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (database == null) return;
 
-            // If no item is selected
             if (listView1.SelectedIndices.Count == 0)
             {
                 ClearInputFields();
-                // FIX: Hide the edit box when nothing is selected
                 if (gbEditQuestion != null) gbEditQuestion.Visible = false;
-                return; 
+                return;
             }
 
-            // If item is selected, how the edit box
             if (gbEditQuestion != null) gbEditQuestion.Visible = true;
-            
+
             int index = listView1.SelectedIndices[0];
 
             if (index < 0 || database.questions!.Count <= index) return;
 
             var q = database.questions![index];
 
-            // Pre-fill the edit fields
+            // Populate controls
             txtEditQuestion.Text = q.question;
             if (q.options.Count >= 4)
             {
@@ -213,9 +291,9 @@ namespace WinFormsApp1
                 txtEditOption4.Text = q.options[3].text;
             }
 
-            cmbEditDifficulty.SelectedItem = q.difficulty.ToString()!; 
+            cmbEditDifficulty.SelectedItem = q.difficulty.ToString()!;
 
-            // Bit Unpacking Logic
+            // Decodes Locations for UI
             string bin = Convert.ToString(q.locations, 2).PadLeft(13, '0');
             string binModule = bin.Substring(0, 5);
             string binLocations = bin.Substring(5);
@@ -234,7 +312,7 @@ namespace WinFormsApp1
                     break;
                 }
             }
-            cmbEditModule.SelectedItem = module.ToString()!; 
+            cmbEditModule.SelectedItem = module.ToString()!;
 
             // Decodes Body Parts
             int locationVal = Convert.ToInt32(binLocations, 2);
@@ -246,7 +324,7 @@ namespace WinFormsApp1
 
             for (int i = 0; i < clbEditLocations.Items.Count; i++)
             {
-                string? name = clbEditLocations.Items[i]?.ToString(); // Safe conversion to string
+                string? name = clbEditLocations.Items[i]?.ToString();
                 if (name != null && locationMap.ContainsKey(name))
                 {
                     int val = locationMap[name];
@@ -256,10 +334,10 @@ namespace WinFormsApp1
             }
         }
 
-        // Clears both Create and Edit fields for a clean slate.
+        // Clears both Create and Edit fields
         private void ClearInputFields()
         {
-            // Clear Create Question fields for tabPage1
+            // Clear Create Question fields
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
