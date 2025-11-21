@@ -12,8 +12,20 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        private QuestionSet database;
-        private GitHubService gitService;
+        private QuestionSet? database;
+        private GitHubService? gitService;
+
+        // Note: For clarity, the edit controls are usually declared in Form1.Designer.cs.
+        // Assuming their existence for the logic below:
+        // private GroupBox gbEditQuestion;
+        // private TextBox txtEditQuestion;
+        // private ComboBox cmbEditDifficulty;
+        // private ComboBox cmbEditModule;
+        // private CheckedListBox clbEditLocations;
+        // private TextBox txtEditOption1;
+        // private TextBox txtEditOption2;
+        // private TextBox txtEditOption3;
+        // private TextBox txtEditOption4;
 
         public Form1()
         {
@@ -23,15 +35,15 @@ namespace WinFormsApp1
             listView1.View = View.List;
             listView1.MultiSelect = false;
 
+            // Initialized to a non-null object to satisfy the constructor warning
             database = new QuestionSet();
 
             button3.Click += CreateQuestion_Click;
-            // The subscription to ListView1_SelectedIndexChanged is REMOVED to prevent 
-            // the list view selection from updating the input fields on any tab.
+            listView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
             this.Load += Form1_Load;
         }
 
-        private async void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object? sender, EventArgs e)
         {
             string token = ShowInputDialog("Please enter your GitHub Personal Access Token (PAT):", "GitHub Auth");
 
@@ -51,6 +63,12 @@ namespace WinFormsApp1
                 // Clear fields for new input after loading
                 ClearInputFields();
 
+                // Ensure the edit panel is hidden initially
+                if (gbEditQuestion != null)
+                {
+                    gbEditQuestion.Visible = false;
+                }
+
                 MessageBox.Show("Connected to GitHub and loaded database! Ready to create new questions.");
             }
             catch (Exception ex)
@@ -62,7 +80,8 @@ namespace WinFormsApp1
         private void RefreshQuestionList()
         {
             listView1.Items.Clear();
-            if (database != null && database.questions != null)
+            // Used null-conditional access
+            if (database?.questions != null)
             {
                 foreach (var q in database.questions)
                 {
@@ -71,8 +90,15 @@ namespace WinFormsApp1
             }
         }
 
-        private async void CreateQuestion_Click(object sender, EventArgs e)
+        private async void CreateQuestion_Click(object? sender, EventArgs e)
         {
+            // Explicit null checks before calling members
+            if (database == null || gitService == null)
+            {
+                 MessageBox.Show("Database service is not loaded. Cannot create question.");
+                 return;
+            }
+
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 MessageBox.Show("Please fill in the question text.");
@@ -87,11 +113,13 @@ namespace WinFormsApp1
                 { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
             };
 
+            // Safely iterate and check for null key
             foreach (var item in checkedListBox1.CheckedItems)
             {
-                if (locationMap.ContainsKey(item.ToString()))
+                string? key = item?.ToString();
+                if (key != null && locationMap.ContainsKey(key))
                 {
-                    bodyPartSum += locationMap[item.ToString()];
+                    bodyPartSum += locationMap[key];
                 }
             }
 
@@ -153,7 +181,8 @@ namespace WinFormsApp1
             // Upload
             try
             {
-                await gitService.SaveDatabaseAsync(database);
+                // Use null-forgiving operator (!) as we confirmed gitService is non-null above
+                await gitService.SaveDatabaseAsync(database); 
                 RefreshQuestionList();
                 MessageBox.Show("Question saved to GitHub!");
                 ClearInputFields();
@@ -164,11 +193,90 @@ namespace WinFormsApp1
             }
         }
 
-        // The ListView1_SelectedIndexChanged method was removed because its sole purpose
-        // was to update the input fields (which you no longer want).
+        // CORRECTED: Now toggles gbEditQuestion visibility and populates the dedicated edit fields.
+        private void ListView1_SelectedIndexChanged(object? sender, EventArgs e) 
+        {
+            if (database == null) return;
 
+            // 1. If no item is selected (e.g., list is deselected)
+            if (listView1.SelectedIndices.Count == 0)
+            {
+                ClearInputFields();
+                // FIX: Hide the edit box when nothing is selected
+                if (gbEditQuestion != null) gbEditQuestion.Visible = false;
+                return; 
+            }
+
+            // 2. An item is selected: Show the edit box
+            if (gbEditQuestion != null) gbEditQuestion.Visible = true;
+            
+            int index = listView1.SelectedIndices[0];
+
+            // Use null-forgiving operator as database is checked and questions is initialized
+            if (index < 0 || database.questions!.Count <= index) return;
+
+            var q = database.questions![index];
+
+            // 3. Populate the DEDICATED EDIT controls, NOT the CREATE controls.
+            txtEditQuestion.Text = q.question;
+            if (q.options.Count >= 4)
+            {
+                txtEditOption1.Text = q.options[0].text;
+                txtEditOption2.Text = q.options[1].text;
+                txtEditOption3.Text = q.options[2].text;
+                txtEditOption4.Text = q.options[3].text;
+            }
+
+            // Use null-forgiving operator (!)
+            cmbEditDifficulty.SelectedItem = q.difficulty.ToString()!; 
+
+            // Decodes Locations for UI
+            // Bit Unpacking Logic
+            string bin = Convert.ToString(q.locations, 2).PadLeft(13, '0');
+            string binModule = bin.Substring(0, 5);
+            string binLocations = bin.Substring(5);
+
+            // Decodes Module
+            char[] charArray = binModule.ToCharArray();
+            Array.Reverse(charArray);
+            string reversedBinModule = new string(charArray);
+
+            int module = 0;
+            for (int i = 0; i < reversedBinModule.Length; i++)
+            {
+                if (reversedBinModule[i] == '1')
+                {
+                    module = i;
+                    break;
+                }
+            }
+            // Use null-forgiving operator (!)
+            cmbEditModule.SelectedItem = module.ToString()!; 
+
+            // Decodes Body Parts
+            int locationVal = Convert.ToInt32(binLocations, 2);
+            var locationMap = new Dictionary<string, int>
+            {
+                { "Bladder", 1 }, { "Brain", 2 }, { "Eyes", 4 }, { "GI Tract", 8 },
+                { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
+            };
+
+            for (int i = 0; i < clbEditLocations.Items.Count; i++)
+            {
+                string? name = clbEditLocations.Items[i]?.ToString(); // Safe conversion to string
+                if (name != null && locationMap.ContainsKey(name))
+                {
+                    int val = locationMap[name];
+                    bool isChecked = (locationVal & val) == val;
+                    clbEditLocations.SetItemChecked(i, isChecked);
+                }
+            }
+        }
+
+        // UPDATED: Now clears both Create and Edit fields for a clean slate.
         private void ClearInputFields()
         {
+            // Clear 'Create Question' fields (tabPage1 controls)
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
@@ -180,6 +288,23 @@ namespace WinFormsApp1
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 checkedListBox1.SetItemChecked(i, false);
+            }
+
+            // Clear 'Edit Question' fields
+            if (gbEditQuestion != null)
+            {
+                txtEditQuestion.Text = "";
+                txtEditOption1.Text = "";
+                txtEditOption2.Text = "";
+                txtEditOption3.Text = "";
+                txtEditOption4.Text = "";
+                cmbEditDifficulty.SelectedIndex = -1;
+                cmbEditModule.SelectedIndex = -1;
+
+                for (int i = 0; i < clbEditLocations.Items.Count; i++)
+                {
+                    clbEditLocations.SetItemChecked(i, false);
+                }
             }
         }
 

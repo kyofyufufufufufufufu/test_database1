@@ -14,8 +14,8 @@ namespace WinFormsApp1
     // Structure for question
     public class Question
     {
-        public string question { get; set; }
-        public string imageLink { get; set; }
+        public string question { get; set; } = string.Empty; // Fixed warning
+        public string imageLink { get; set; } = string.Empty; // Fixed warning
         public List<Option> options { get; set; } = new List<Option>();
         public int answerIndex { get; set; }
 
@@ -42,8 +42,8 @@ namespace WinFormsApp1
 
     public class Option
     {
-        public string text { get; set; }
-        public string imageLink { get; set; }
+        public string text { get; set; } = string.Empty; // Fixed warning
+        public string imageLink { get; set; } = string.Empty; // Fixed warning
 
         public bool useImage { get; set; }
     }
