@@ -175,35 +175,6 @@
       "locations": 4161
     },
     {
-      "question": "This is a test question - final. RE-EDITED TEST",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "Answer1d TEST",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer2d TEST",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer3dTEST",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer4d TEST",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 5,
-      "locations": 1056
-    },
-    {
       "question": "",
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/gettyimages-2169449761-612x612.jpg",
       "options": [
