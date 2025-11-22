@@ -131,9 +131,9 @@
             gbEditQuestion.Controls.Add(lblEditOption2);
             gbEditQuestion.Controls.Add(lblEditOption1);
             gbEditQuestion.Controls.Add(lblEditQuestion);
-            gbEditQuestion.Location = new Point(546, 49);
+            gbEditQuestion.Location = new Point(487, 40);
             gbEditQuestion.Name = "gbEditQuestion";
-            gbEditQuestion.Size = new Size(495, 505);
+            gbEditQuestion.Size = new Size(546, 649);
             gbEditQuestion.TabIndex = 3;
             gbEditQuestion.TabStop = false;
             gbEditQuestion.Text = "Edit Selected Question";
@@ -142,7 +142,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(34, 275);
+            label16.Location = new Point(16, 274);
             label16.Name = "label16";
             label16.Size = new Size(64, 15);
             label16.TabIndex = 68;
@@ -151,9 +151,9 @@
             // btnDeleteQuestion
             // 
             btnDeleteQuestion.BackColor = Color.WhiteSmoke;
-            btnDeleteQuestion.Location = new Point(341, 442);
+            btnDeleteQuestion.Location = new Point(410, 593);
             btnDeleteQuestion.Name = "btnDeleteQuestion";
-            btnDeleteQuestion.Size = new Size(130, 40);
+            btnDeleteQuestion.Size = new Size(106, 33);
             btnDeleteQuestion.TabIndex = 67;
             btnDeleteQuestion.Text = "Delete Question";
             btnDeleteQuestion.UseVisualStyleBackColor = false;
@@ -161,9 +161,9 @@
             // btnUpdateQuestion
             // 
             btnUpdateQuestion.BackColor = Color.WhiteSmoke;
-            btnUpdateQuestion.Location = new Point(205, 442);
+            btnUpdateQuestion.Location = new Point(286, 593);
             btnUpdateQuestion.Name = "btnUpdateQuestion";
-            btnUpdateQuestion.Size = new Size(130, 40);
+            btnUpdateQuestion.Size = new Size(106, 33);
             btnUpdateQuestion.TabIndex = 66;
             btnUpdateQuestion.Text = "Update Question";
             btnUpdateQuestion.UseVisualStyleBackColor = false;
@@ -172,9 +172,9 @@
             // 
             clbEditLocations.FormattingEnabled = true;
             clbEditLocations.Items.AddRange(new object[] { "Bladder", "Brain", "Eyes", "GI Tract", "Heart", "Lungs", "Smooth Muscle", "Other" });
-            clbEditLocations.Location = new Point(129, 275);
+            clbEditLocations.Location = new Point(111, 274);
             clbEditLocations.Name = "clbEditLocations";
-            clbEditLocations.Size = new Size(123, 148);
+            clbEditLocations.Size = new Size(125, 130);
             clbEditLocations.TabIndex = 65;
             // 
             // cmbEditModule
@@ -182,7 +182,7 @@
             cmbEditModule.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditModule.FormattingEnabled = true;
             cmbEditModule.Items.AddRange(new object[] { "0", "1", "2", "3", "4" });
-            cmbEditModule.Location = new Point(304, 237);
+            cmbEditModule.Location = new Point(286, 236);
             cmbEditModule.Name = "cmbEditModule";
             cmbEditModule.Size = new Size(69, 23);
             cmbEditModule.TabIndex = 64;
@@ -192,7 +192,7 @@
             cmbEditDifficulty.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditDifficulty.FormattingEnabled = true;
             cmbEditDifficulty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbEditDifficulty.Location = new Point(129, 237);
+            cmbEditDifficulty.Location = new Point(111, 236);
             cmbEditDifficulty.Name = "cmbEditDifficulty";
             cmbEditDifficulty.Size = new Size(69, 23);
             cmbEditDifficulty.TabIndex = 63;
@@ -200,7 +200,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(216, 240);
+            label14.Location = new Point(198, 239);
             label14.Name = "label14";
             label14.Size = new Size(82, 15);
             label14.TabIndex = 62;
@@ -209,7 +209,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(34, 240);
+            label15.Location = new Point(16, 239);
             label15.Name = "label15";
             label15.Size = new Size(89, 15);
             label15.TabIndex = 61;
@@ -217,35 +217,35 @@
             // 
             // txtEditOption4
             // 
-            txtEditOption4.Location = new Point(120, 190);
+            txtEditOption4.Location = new Point(81, 189);
             txtEditOption4.Name = "txtEditOption4";
             txtEditOption4.Size = new Size(351, 23);
             txtEditOption4.TabIndex = 44;
             // 
             // txtEditOption3
             // 
-            txtEditOption3.Location = new Point(120, 151);
+            txtEditOption3.Location = new Point(81, 150);
             txtEditOption3.Name = "txtEditOption3";
             txtEditOption3.Size = new Size(351, 23);
             txtEditOption3.TabIndex = 43;
             // 
             // txtEditOption2
             // 
-            txtEditOption2.Location = new Point(120, 112);
+            txtEditOption2.Location = new Point(81, 111);
             txtEditOption2.Name = "txtEditOption2";
             txtEditOption2.Size = new Size(351, 23);
             txtEditOption2.TabIndex = 42;
             // 
             // txtEditOption1
             // 
-            txtEditOption1.Location = new Point(120, 73);
+            txtEditOption1.Location = new Point(81, 72);
             txtEditOption1.Name = "txtEditOption1";
             txtEditOption1.Size = new Size(351, 23);
             txtEditOption1.TabIndex = 41;
             // 
             // txtEditQuestion
             // 
-            txtEditQuestion.Location = new Point(120, 34);
+            txtEditQuestion.Location = new Point(81, 33);
             txtEditQuestion.Name = "txtEditQuestion";
             txtEditQuestion.Size = new Size(351, 23);
             txtEditQuestion.TabIndex = 40;
@@ -253,7 +253,7 @@
             // lblEditOption4
             // 
             lblEditOption4.AutoSize = true;
-            lblEditOption4.Location = new Point(34, 193);
+            lblEditOption4.Location = new Point(16, 192);
             lblEditOption4.Name = "lblEditOption4";
             lblEditOption4.Size = new Size(59, 15);
             lblEditOption4.TabIndex = 39;
@@ -262,7 +262,7 @@
             // lblEditOption3
             // 
             lblEditOption3.AutoSize = true;
-            lblEditOption3.Location = new Point(34, 154);
+            lblEditOption3.Location = new Point(16, 153);
             lblEditOption3.Name = "lblEditOption3";
             lblEditOption3.Size = new Size(59, 15);
             lblEditOption3.TabIndex = 38;
@@ -271,7 +271,7 @@
             // lblEditOption2
             // 
             lblEditOption2.AutoSize = true;
-            lblEditOption2.Location = new Point(34, 115);
+            lblEditOption2.Location = new Point(16, 114);
             lblEditOption2.Name = "lblEditOption2";
             lblEditOption2.Size = new Size(59, 15);
             lblEditOption2.TabIndex = 37;
@@ -280,7 +280,7 @@
             // lblEditOption1
             // 
             lblEditOption1.AutoSize = true;
-            lblEditOption1.Location = new Point(34, 76);
+            lblEditOption1.Location = new Point(16, 75);
             lblEditOption1.Name = "lblEditOption1";
             lblEditOption1.Size = new Size(59, 15);
             lblEditOption1.TabIndex = 36;
@@ -289,7 +289,7 @@
             // lblEditQuestion
             // 
             lblEditQuestion.AutoSize = true;
-            lblEditQuestion.Location = new Point(34, 37);
+            lblEditQuestion.Location = new Point(16, 36);
             lblEditQuestion.Name = "lblEditQuestion";
             lblEditQuestion.Size = new Size(61, 15);
             lblEditQuestion.TabIndex = 35;
@@ -299,10 +299,10 @@
             // 
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
-            listView1.Location = new Point(29, 57);
+            listView1.Location = new Point(17, 49);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
-            listView1.Size = new Size(511, 497);
+            listView1.Size = new Size(450, 640);
             listView1.TabIndex = 2;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -465,6 +465,7 @@
             button9.TabIndex = 51;
             button9.Text = "Select Image";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += ImageButton_Click;
             // 
             // button10
             // 
@@ -483,6 +484,7 @@
             button11.TabIndex = 49;
             button11.Text = "Select Image";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += ImageButton_Click;
             // 
             // button6
             // 
@@ -501,6 +503,7 @@
             button7.TabIndex = 47;
             button7.Text = "Select Image";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += ImageButton_Click;
             // 
             // button4
             // 
@@ -519,6 +522,7 @@
             button5.TabIndex = 45;
             button5.Text = "Select Image";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += ImageButton_Click;
             // 
             // button3
             // 
@@ -618,6 +622,7 @@
             button1.TabIndex = 33;
             button1.Text = "Select Image";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += ImageButton_Click;
             // 
             // tabControl1
             // 

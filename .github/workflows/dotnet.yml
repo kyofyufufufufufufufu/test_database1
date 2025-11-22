@@ -1,0 +1,31 @@
+name: .NET CI Build
+
+# Triggers the workflow on pushes to main and other branches
+on:
+  push:
+    branches: [ "main", "edit-delete-funct" ] 
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest 
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 
+
+    - name: Setup .NET 8.0
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build WinForms App
+      run: dotnet build WinFormsApp1.sln --no-restore --configuration Release
+      
+    # For Unit Tests
