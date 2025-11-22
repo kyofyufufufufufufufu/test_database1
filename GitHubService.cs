@@ -20,7 +20,7 @@ namespace WinFormsApp1
         private readonly string _imagesPath = "images";
         private string? _currentFileSha;
 
-        // Hardcoded path for test database
+        // Hardcoded path for test database, will change when necessary
         public GitHubService(string personalAccessToken)
         {
             _owner = "kyofyufufufufufufufu";
@@ -29,7 +29,7 @@ namespace WinFormsApp1
 
             _client = new HttpClient();
 
-            // GitHub API requires PAT authorization
+            // GitHub API PAT authorization
             _client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("WinFormsApp", "1.0"));
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", personalAccessToken);
         }
@@ -44,7 +44,6 @@ namespace WinFormsApp1
             string content = await response.Content.ReadAsStringAsync();
             JObject json = JObject.Parse(content);
 
-            // Tells GitHub which version of the file we are overwriting later
             _currentFileSha = json["sha"]?.ToString()!;
 
             string base64Content = json["content"]?.ToString()!;
@@ -70,7 +69,6 @@ namespace WinFormsApp1
             string fileName = Path.GetFileName(localFilePath);
             string targetPath = $"{_imagesPath}/{fileName}";
 
-            // Checks if file already exists in folder
             string? sha = null;
             string checkUrl = $"https://api.github.com/repos/{_owner}/{_repo}/contents/{targetPath}";
             try

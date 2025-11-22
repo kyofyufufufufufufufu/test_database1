@@ -33,6 +33,8 @@ namespace WinFormsApp1
             button3.Click += CreateQuestion_Click;
             listView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
             this.Load += Form1_Load;
+            btnUpdateQuestion.Click += UpdateQuestion_Click;
+            btnDeleteQuestion.Click += DeleteQuestion_Click;
         }
 
         private async void Form1_Load(object? sender, EventArgs e)
@@ -64,8 +66,6 @@ namespace WinFormsApp1
                 {
                     gbEditQuestion.Visible = false;
                 }
-
-                MessageBox.Show("Connected to GitHub and loaded database! Ready to create new questions.");
             }
             catch (Exception ex)
             {
@@ -150,6 +150,43 @@ namespace WinFormsApp1
             }
         }
 
+        // Encodes the location and module into the single int
+        private int EncodeLocations(int moduleIndex, CheckedListBox locationChecklist)
+        {
+            int bodyPartSum = 0;
+            var locationMap = new Dictionary<string, int>
+            {
+                { "Bladder", 1 }, { "Brain", 2 }, { "Eyes", 4 }, { "GI Tract", 8 },
+                { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
+            };
+
+            foreach (var item in locationChecklist.CheckedItems)
+            {
+                string? key = item?.ToString();
+                if (key != null && locationMap.ContainsKey(key))
+                {
+                    bodyPartSum += locationMap[key];
+                }
+            }
+
+            // Convert to binary string for the 8-bit body locations
+            string binLocations = Convert.ToString(bodyPartSum, 2).PadLeft(8, '0');
+
+            // Encode Module for upper 5 digits
+            char[] moduleBits = new char[5] { '0', '0', '0', '0', '0' };
+            if (moduleIndex >= 0 && moduleIndex < 5)
+            {
+                moduleBits[moduleIndex] = '1';
+            }
+            Array.Reverse(moduleBits);
+            string binModule = new string(moduleBits);
+
+            // Module on the left, Locations on the right
+            string totalBinary = binModule + binLocations;
+
+            return Convert.ToInt32(totalBinary, 2);
+        }
+
         // Upload logic
         private async void CreateQuestion_Click(object? sender, EventArgs e)
         {
@@ -179,29 +216,12 @@ namespace WinFormsApp1
                 return;
             }
 
-            int bodyPartSum = 0;
-            var locationMap = new Dictionary<string, int>
-            {
-                { "Bladder", 1 }, { "Brain", 2 }, { "Eyes", 4 }, { "GI Tract", 8 },
-                { "Heart", 16 }, { "Lungs", 32 }, { "Smooth Muscle", 64 }, { "Other", 128 }
-            };
-
-            foreach (var item in checkedListBox1.CheckedItems)
-            {
-                string? key = item?.ToString();
-                if (key != null && locationMap.ContainsKey(key))
-                {
-                    bodyPartSum += locationMap[key];
-                }
-            }
-
-            // Encode Module for upper 5 digits when converting to Unity project's Database.cs
-            int moduleIndex = 0;
+            int moduleIndex = -1;
             if (comboBox2.SelectedItem != null)
             {
-                if (!int.TryParse(comboBox2.SelectedItem.ToString(), out moduleIndex))
+                if (!int.TryParse(comboBox2.SelectedItem.ToString(), out moduleIndex) || moduleIndex < 0 || moduleIndex > 4)
                 {
-                    MessageBox.Show("Invalid Module selected.");
+                    MessageBox.Show("Invalid Module selected (must be 0-4).");
                     return;
                 }
             }
@@ -213,20 +233,7 @@ namespace WinFormsApp1
                 return;
             }
 
-            string binLocations = Convert.ToString(bodyPartSum, 2).PadLeft(8, '0');
-
-            // Used fixed-size string to represent the 5-bit module part
-            char[] moduleBits = new char[5] { '0', '0', '0', '0', '0' };
-            if (moduleIndex >= 0 && moduleIndex < 5)
-            {
-                moduleBits[moduleIndex] = '1';
-            }
-            Array.Reverse(moduleBits);
-            string binModule = new string(moduleBits);
-
-            // Combine/Convert to 13 bits total
-            string totalBinary = binModule + binLocations;
-            int finalLocationInt = Convert.ToInt32(totalBinary, 2);
+            int finalLocationInt = EncodeLocations(moduleIndex, checkedListBox1);
 
             // Build Object
             Question newQ = new Question
@@ -261,6 +268,139 @@ namespace WinFormsApp1
             }
         }
 
+        // Updating question in form
+        private async void UpdateQuestion_Click(object? sender, EventArgs e)
+        {
+            if (database == null || gitService == null)
+            {
+                MessageBox.Show("Database service is not loaded. Cannot update question.");
+                return;
+            }
+
+            if (listView1.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("Please select a question to update.", "Validation Error");
+                return;
+            }
+
+            int index = listView1.SelectedIndices[0];
+            var q = database.questions![index];
+
+            if (cmbEditDifficulty.SelectedItem == null || !int.TryParse(cmbEditDifficulty.SelectedItem.ToString(), out int difficultyLevel))
+            {
+                MessageBox.Show("Please select a valid Difficulty level (1-5).", "Validation Error");
+                return;
+            }
+
+            int moduleIndex = -1;
+            if (cmbEditModule.SelectedItem != null)
+            {
+                if (!int.TryParse(cmbEditModule.SelectedItem.ToString(), out moduleIndex) || moduleIndex < 0 || moduleIndex > 4)
+                {
+                    MessageBox.Show("Invalid Module selected (must be 0-4).", "Validation Error");
+                    return;
+                }
+            }
+
+            // Will add 'Select Image' button at a later date for the edit question container
+            string newQText = txtEditQuestion.Text.Trim();
+            if (string.IsNullOrWhiteSpace(newQText) && string.IsNullOrWhiteSpace(q.imageLink))
+            {
+                MessageBox.Show("Question text cannot be empty if no image link exists.", "Validation Error");
+                return;
+            }
+
+            string[] newOptionTexts = new string[]
+            {
+                txtEditOption1.Text.Trim(),
+                txtEditOption2.Text.Trim(),
+                txtEditOption3.Text.Trim(),
+                txtEditOption4.Text.Trim()
+            };
+
+            if (newOptionTexts.Take(2).Any(string.IsNullOrWhiteSpace))
+            {
+                MessageBox.Show("Option 1 and Option 2 cannot be empty.", "Validation Error");
+                return;
+            }
+
+            q.question = newQText;
+            q.difficulty = difficultyLevel;
+            q.locations = EncodeLocations(moduleIndex, clbEditLocations);
+
+            for (int i = 0; i < q.options.Count; i++)
+            {
+                if (i < newOptionTexts.Length)
+                {
+                    q.options[i].text = newOptionTexts[i];
+                }
+            }
+
+            while (q.options.Count < newOptionTexts.Length)
+            {
+                q.options.Add(new Option { text = newOptionTexts[q.options.Count] });
+            }
+
+
+            try
+            {
+                await gitService!.SaveDatabaseAsync(database);
+
+                listView1.Items[index].Text = q.question;
+
+                MessageBox.Show("Question updated and saved to GitHub!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving update to GitHub: {ex.Message}");
+            }
+        }
+
+        // Delete question in database
+        private async void DeleteQuestion_Click(object? sender, EventArgs e)
+        {
+            if (database == null || gitService == null)
+            {
+                MessageBox.Show("Database service is not loaded. Cannot delete question.");
+                return;
+            }
+
+            if (listView1.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("Please select a question to delete.", "Validation Error");
+                return;
+            }
+
+            var result = MessageBox.Show(
+                "Are you sure you want to permanently delete the selected question from the database?",
+                "Confirm Deletion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+            {
+                return;
+            }
+
+            int index = listView1.SelectedIndices[0];
+
+            try
+            {
+                database.questions!.RemoveAt(index);
+
+                await gitService!.SaveDatabaseAsync(database);
+
+                RefreshQuestionList();
+                ClearInputFields();
+
+                MessageBox.Show("Question successfully deleted.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting question: {ex.Message}");
+            }
+        }
+
         // Handles displaying question data when an item is selected from the list
         private void ListView1_SelectedIndexChanged(object? sender, EventArgs e)
         {
@@ -281,17 +421,15 @@ namespace WinFormsApp1
 
             var q = database.questions![index];
 
-            // Populate controls
             txtEditQuestion.Text = q.question;
-            if (q.options.Count >= 4)
-            {
-                txtEditOption1.Text = q.options[0].text;
-                txtEditOption2.Text = q.options[1].text;
-                txtEditOption3.Text = q.options[2].text;
-                txtEditOption4.Text = q.options[3].text;
-            }
 
-            cmbEditDifficulty.SelectedItem = q.difficulty.ToString()!;
+            txtEditOption1.Text = q.options.Count > 0 ? q.options[0].text : string.Empty;
+            txtEditOption2.Text = q.options.Count > 1 ? q.options[1].text : string.Empty;
+            txtEditOption3.Text = q.options.Count > 2 ? q.options[2].text : string.Empty;
+            txtEditOption4.Text = q.options.Count > 3 ? q.options[3].text : string.Empty;
+
+
+            cmbEditDifficulty.SelectedItem = q.difficulty.ToString();
 
             // Decodes Locations for UI
             string bin = Convert.ToString(q.locations, 2).PadLeft(13, '0');
@@ -312,7 +450,7 @@ namespace WinFormsApp1
                     break;
                 }
             }
-            cmbEditModule.SelectedItem = module.ToString()!;
+            cmbEditModule.SelectedItem = module.ToString();
 
             // Decodes Body Parts
             int locationVal = Convert.ToInt32(binLocations, 2);
