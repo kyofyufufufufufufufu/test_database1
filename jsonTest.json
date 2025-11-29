@@ -204,7 +204,7 @@
       "locations": 767
     },
     {
-      "question": "How many hearts does a human have?",
+      "question": "How many hearts does a human have? - NEW EDIT",
       "imageLink": "",
       "options": [
         {
@@ -218,7 +218,7 @@
           "useImage": false
         },
         {
-          "text": "Roughly 4",
+          "text": "500",
           "imageLink": "",
           "useImage": false
         },
@@ -230,7 +230,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2064
+      "locations": 2192
     }
   ]
 }
