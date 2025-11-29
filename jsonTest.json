@@ -202,6 +202,35 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 767
+    },
+    {
+      "question": "How many hearts does a human have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "It depends",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Roughly 4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "I don't know",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2064
     }
   ]
 }
