@@ -59,35 +59,6 @@
       "locations": 8
     },
     {
-      "question": "This is a test question - a third thing.",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "Answer1c",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer2c",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer3c",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer4c",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "locations": 16
-    },
-    {
       "question": "This is a test question - final. EDITED",
       "imageLink": "",
       "options": [
