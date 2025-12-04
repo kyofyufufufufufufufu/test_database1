@@ -529,5 +529,20 @@ namespace WinFormsApp1
 
             return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : "";
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
