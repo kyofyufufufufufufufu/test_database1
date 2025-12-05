@@ -202,6 +202,35 @@
       "answerIndex": 0,
       "difficulty": 4,
       "locations": 1089
+    },
+    {
+      "question": "How many people are in this picture?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/rug.png",
+      "options": [
+        {
+          "text": "0",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "3",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 257
     }
   ]
 }
