@@ -231,6 +231,35 @@
       "answerIndex": 0,
       "difficulty": 1,
       "locations": 257
+    },
+    {
+      "question": "How many people are in this picture?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/001.png",
+      "options": [
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "292838300558",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "uhhh idk check out this picture though",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/clock2.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 520
     }
   ]
 }
