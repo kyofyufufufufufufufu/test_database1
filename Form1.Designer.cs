@@ -51,6 +51,12 @@
             lblEditQuestion = new Label();
             listView1 = new ListView();
             tabPage1 = new TabPage();
+            textBox6 = new TextBox();
+            button14 = new Button();
+            label18 = new Label();
+            button13 = new Button();
+            button12 = new Button();
+            label17 = new Label();
             checkedListBox1 = new CheckedListBox();
             comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
@@ -83,12 +89,11 @@
             button2 = new Button();
             button1 = new Button();
             tabControl1 = new TabControl();
-            label17 = new Label();
-            button12 = new Button();
-            button13 = new Button();
-            label18 = new Label();
-            button14 = new Button();
-            textBox6 = new TextBox();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
             tabPage2.SuspendLayout();
             gbEditQuestion.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -315,6 +320,11 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label23);
+            tabPage1.Controls.Add(label22);
+            tabPage1.Controls.Add(label21);
+            tabPage1.Controls.Add(label20);
+            tabPage1.Controls.Add(label19);
             tabPage1.Controls.Add(textBox6);
             tabPage1.Controls.Add(button14);
             tabPage1.Controls.Add(label18);
@@ -359,6 +369,62 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Create Question";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(42, 39);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(409, 23);
+            textBox6.TabIndex = 69;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(170, 665);
+            button14.Name = "button14";
+            button14.Size = new Size(128, 23);
+            button14.TabIndex = 68;
+            button14.Text = "Duplicate Question";
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label18.Location = new Point(42, 67);
+            label18.Name = "label18";
+            label18.Size = new Size(131, 15);
+            label18.TabIndex = 67;
+            label18.Text = "(Accepted formats: .csv)";
+            label18.Click += label18_Click;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(563, 39);
+            button13.Name = "button13";
+            button13.Size = new Size(97, 23);
+            button13.TabIndex = 66;
+            button13.Text = "Clear";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(457, 39);
+            button12.Name = "button12";
+            button12.Size = new Size(97, 23);
+            button12.TabIndex = 65;
+            button12.Text = "Select File";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(42, 14);
+            label17.Name = "label17";
+            label17.Size = new Size(74, 15);
+            label17.TabIndex = 64;
+            label17.Text = "Bulk Upload:";
+            label17.Click += label17_Click;
             // 
             // checkedListBox1
             // 
@@ -646,61 +712,56 @@
             tabControl1.Size = new Size(1059, 779);
             tabControl1.TabIndex = 33;
             // 
-            // label17
+            // label19
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(42, 14);
-            label17.Name = "label17";
-            label17.Size = new Size(74, 15);
-            label17.TabIndex = 64;
-            label17.Text = "Bulk Upload:";
-            label17.Click += label17_Click;
+            label19.AutoSize = true;
+            label19.ForeColor = Color.ForestGreen;
+            label19.Location = new Point(789, 131);
+            label19.Name = "label19";
+            label19.Size = new Size(120, 15);
+            label19.TabIndex = 70;
+            label19.Text = "{imagename.filetype}";
+            label19.Click += label19_Click;
             // 
-            // button12
+            // label20
             // 
-            button12.Location = new Point(457, 39);
-            button12.Name = "button12";
-            button12.Size = new Size(97, 23);
-            button12.TabIndex = 65;
-            button12.Text = "Select File";
-            button12.UseVisualStyleBackColor = true;
+            label20.AutoSize = true;
+            label20.ForeColor = Color.ForestGreen;
+            label20.Location = new Point(789, 185);
+            label20.Name = "label20";
+            label20.Size = new Size(120, 15);
+            label20.TabIndex = 71;
+            label20.Text = "{imagename.filetype}";
             // 
-            // button13
+            // label21
             // 
-            button13.Location = new Point(563, 39);
-            button13.Name = "button13";
-            button13.Size = new Size(97, 23);
-            button13.TabIndex = 66;
-            button13.Text = "Clear";
-            button13.UseVisualStyleBackColor = true;
-            button13.Click += button13_Click;
+            label21.AutoSize = true;
+            label21.ForeColor = Color.ForestGreen;
+            label21.Location = new Point(789, 244);
+            label21.Name = "label21";
+            label21.Size = new Size(120, 15);
+            label21.TabIndex = 72;
+            label21.Text = "{imagename.filetype}";
             // 
-            // label18
+            // label22
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label18.Location = new Point(42, 67);
-            label18.Name = "label18";
-            label18.Size = new Size(131, 15);
-            label18.TabIndex = 67;
-            label18.Text = "(Accepted formats: .csv)";
-            label18.Click += label18_Click;
+            label22.AutoSize = true;
+            label22.ForeColor = Color.ForestGreen;
+            label22.Location = new Point(789, 307);
+            label22.Name = "label22";
+            label22.Size = new Size(120, 15);
+            label22.TabIndex = 73;
+            label22.Text = "{imagename.filetype}";
             // 
-            // button14
+            // label23
             // 
-            button14.Location = new Point(170, 665);
-            button14.Name = "button14";
-            button14.Size = new Size(128, 23);
-            button14.TabIndex = 68;
-            button14.Text = "Duplicate Question";
-            button14.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(42, 39);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(409, 23);
-            textBox6.TabIndex = 69;
+            label23.AutoSize = true;
+            label23.ForeColor = Color.ForestGreen;
+            label23.Location = new Point(789, 365);
+            label23.Name = "label23";
+            label23.Size = new Size(120, 15);
+            label23.TabIndex = 74;
+            label23.Text = "{imagename.filetype}";
             // 
             // Form1
             // 
@@ -783,5 +844,10 @@
         private Label label18;
         private Button button14;
         private TextBox textBox6;
+        private Label label19;
+        private Label label23;
+        private Label label22;
+        private Label label21;
+        private Label label20;
     }
 }

@@ -18,11 +18,20 @@ namespace WinFormsApp1
         // Array to hold references to the textboxes 
         private TextBox[]? imageTargetTextBoxes;
 
+        // New dictionary to store image file path separately from the text box
+        // 0=Question, 1=Opt1, 2=Opt2, 3=Opt3, 4=Opt4
+        private Dictionary<int, string> pendingImagePaths = new Dictionary<int, string>();
+
+        // Array to hold references to labels so we can update visually
+        private Label[]? targetLabels;
+
         public Form1()
         {
             InitializeComponent();
 
             imageTargetTextBoxes = new TextBox[] { textBox1, textBox2, textBox4, textBox3, textBox5 };
+
+            targetLabels = new Label[] { label19, label20, label21, label22, label23 };
 
             listView1.View = View.List;
             listView1.MultiSelect = false;
@@ -95,30 +104,32 @@ namespace WinFormsApp1
             return Path.IsPathRooted(path) && File.Exists(path);
         }
 
-        // Uploads the content if it's a local file path, returns tuple
-        private async Task<(string text, string imageLink, bool useImage)> ProcessContentAsync(string input)
+        // Uploads the content if a local file path exists, returns tuple with both the text and image link if they are used simultaneously
+        // Accepts text and file path
+        private async Task<(string text, string imageLink, bool useImage)> ProcessContentAsync(string textInput, string? imagePath)
         {
-            if (IsLocalFilePath(input))
+            // Check if imagePath is valid
+            if (IsLocalFilePath(imagePath!))
             {
                 if (gitService == null)
                 {
-                    return (string.Empty, string.Empty, false);
+                    return (textInput, string.Empty, false);
                 }
 
                 try
                 {
                     // Upload file
-                    string publicUrl = await gitService.UploadImageAsync(input);
-                    // Text is empty, imageLink is the URL, and useImage is true
-                    return (string.Empty, publicUrl, true);
+                    string publicUrl = await gitService.UploadImageAsync(imagePath!);
+
+                    return (textInput, publicUrl, true);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error uploading image from path: {input}. Image link will not be saved. Error: {ex.Message}", "Image Upload Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return (input, string.Empty, false);
+                    MessageBox.Show($"Error uploading image from path: {imagePath}. Image link will not be saved. Error: {ex.Message}", "Image Upload Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return (textInput, string.Empty, false);
                 }
             }
-            return (input, string.Empty, false);
+            return (textInput, string.Empty, false);
         }
 
         private void ImageButton_Click(object? sender, EventArgs e)
@@ -143,8 +154,20 @@ namespace WinFormsApp1
 
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        // Stores full path in the textbox
-                        imageTargetTextBoxes[buttonIndex].Text = openFileDialog.FileName;
+                        // Store path in dictionary
+                        pendingImagePaths[buttonIndex] = openFileDialog.FileName;
+
+                        // Extract just the filename (e.g., "heart.png") from the full path
+                        string filename = System.IO.Path.GetFileName(openFileDialog.FileName);
+
+                        if (targetLabels != null && targetLabels.Length > buttonIndex)
+                        {
+                            // Set the dedicated status label to display the filename
+                            targetLabels[buttonIndex].Text = filename;
+
+                            // Set the desired ForestGreen color
+                            targetLabels[buttonIndex].ForeColor = Color.ForestGreen;
+                        }
                     }
                 }
             }
@@ -196,7 +219,15 @@ namespace WinFormsApp1
                 return;
             }
 
-            (string qText, string qImageLink, bool qUseImage) = await ProcessContentAsync(textBox1.Text);
+            // Get paths from dictionary
+            string? qPath = pendingImagePaths.ContainsKey(0) ? pendingImagePaths[0] : null;
+            string? o1Path = pendingImagePaths.ContainsKey(1) ? pendingImagePaths[1] : null;
+            string? o2Path = pendingImagePaths.ContainsKey(2) ? pendingImagePaths[2] : null;
+            string? o3Path = pendingImagePaths.ContainsKey(3) ? pendingImagePaths[3] : null;
+            string? o4Path = pendingImagePaths.ContainsKey(4) ? pendingImagePaths[4] : null;
+
+            // Passes both the textbox and image's file path
+            (string qText, string qImageLink, bool qUseImage) = await ProcessContentAsync(textBox1.Text, qPath);
 
             if (string.IsNullOrWhiteSpace(qText) && string.IsNullOrWhiteSpace(qImageLink))
             {
@@ -204,10 +235,11 @@ namespace WinFormsApp1
                 return;
             }
 
-            (string o1Text, string o1Link, bool o1Use) = await ProcessContentAsync(textBox2.Text);
-            (string o2Text, string o2Link, bool o2Use) = await ProcessContentAsync(textBox4.Text);
-            (string o3Text, string o3Link, bool o3Use) = await ProcessContentAsync(textBox3.Text);
-            (string o4Text, string o4Link, bool o4Use) = await ProcessContentAsync(textBox5.Text);
+            // Updates calls for options/answers
+            (string o1Text, string o1Link, bool o1Use) = await ProcessContentAsync(textBox2.Text, o1Path);
+            (string o2Text, string o2Link, bool o2Use) = await ProcessContentAsync(textBox4.Text, o2Path);
+            (string o3Text, string o3Link, bool o3Use) = await ProcessContentAsync(textBox3.Text, o3Path);
+            (string o4Text, string o4Link, bool o4Use) = await ProcessContentAsync(textBox5.Text, o4Path);
 
             if (string.IsNullOrWhiteSpace(o1Text) && string.IsNullOrWhiteSpace(o1Link) ||
                 string.IsNullOrWhiteSpace(o2Text) && string.IsNullOrWhiteSpace(o2Link))
@@ -484,6 +516,21 @@ namespace WinFormsApp1
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
 
+            // Clear the dictionary of images
+            pendingImagePaths.Clear();
+
+            // Reset labels to default text and color
+            if (targetLabels != null)
+            {
+                targetLabels[0].Text = ""; // Label 19
+                targetLabels[1].Text = ""; // Label 20
+                targetLabels[2].Text = ""; // Label 21
+                targetLabels[3].Text = ""; // Label 22
+                targetLabels[4].Text = ""; // Label 23
+
+                foreach (var lbl in targetLabels) lbl.ForeColor = Color.Black;
+            }
+
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 checkedListBox1.SetItemChecked(i, false);
@@ -541,6 +588,11 @@ namespace WinFormsApp1
         }
 
         private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
         {
 
         }
