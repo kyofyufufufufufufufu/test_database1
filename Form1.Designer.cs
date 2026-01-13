@@ -51,6 +51,11 @@
             lblEditQuestion = new Label();
             listView1 = new ListView();
             tabPage1 = new TabPage();
+            label23 = new Label();
+            label22 = new Label();
+            label21 = new Label();
+            label20 = new Label();
+            label19 = new Label();
             textBox6 = new TextBox();
             button14 = new Button();
             label18 = new Label();
@@ -89,11 +94,21 @@
             button2 = new Button();
             button1 = new Button();
             tabControl1 = new TabControl();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
+            label24 = new Label();
+            button15 = new Button();
+            button16 = new Button();
+            label25 = new Label();
+            button17 = new Button();
+            button18 = new Button();
+            label26 = new Label();
+            button19 = new Button();
+            button20 = new Button();
+            label27 = new Label();
+            button21 = new Button();
+            button22 = new Button();
+            label28 = new Label();
+            button23 = new Button();
+            button24 = new Button();
             tabPage2.SuspendLayout();
             gbEditQuestion.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -124,6 +139,21 @@
             // 
             // gbEditQuestion
             // 
+            gbEditQuestion.Controls.Add(label28);
+            gbEditQuestion.Controls.Add(button23);
+            gbEditQuestion.Controls.Add(button24);
+            gbEditQuestion.Controls.Add(label27);
+            gbEditQuestion.Controls.Add(button21);
+            gbEditQuestion.Controls.Add(button22);
+            gbEditQuestion.Controls.Add(label26);
+            gbEditQuestion.Controls.Add(button19);
+            gbEditQuestion.Controls.Add(button20);
+            gbEditQuestion.Controls.Add(label25);
+            gbEditQuestion.Controls.Add(button17);
+            gbEditQuestion.Controls.Add(button18);
+            gbEditQuestion.Controls.Add(label24);
+            gbEditQuestion.Controls.Add(button15);
+            gbEditQuestion.Controls.Add(button16);
             gbEditQuestion.Controls.Add(label16);
             gbEditQuestion.Controls.Add(btnDeleteQuestion);
             gbEditQuestion.Controls.Add(btnUpdateQuestion);
@@ -153,7 +183,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(16, 274);
+            label16.Location = new Point(16, 413);
             label16.Name = "label16";
             label16.Size = new Size(64, 15);
             label16.TabIndex = 68;
@@ -183,7 +213,7 @@
             // 
             clbEditLocations.FormattingEnabled = true;
             clbEditLocations.Items.AddRange(new object[] { "Bladder", "Brain", "Eyes", "GI Tract", "Heart", "Lungs", "Smooth Muscle", "Other" });
-            clbEditLocations.Location = new Point(111, 274);
+            clbEditLocations.Location = new Point(111, 413);
             clbEditLocations.Name = "clbEditLocations";
             clbEditLocations.Size = new Size(125, 130);
             clbEditLocations.TabIndex = 65;
@@ -193,7 +223,7 @@
             cmbEditModule.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditModule.FormattingEnabled = true;
             cmbEditModule.Items.AddRange(new object[] { "0", "1", "2", "3", "4" });
-            cmbEditModule.Location = new Point(286, 236);
+            cmbEditModule.Location = new Point(286, 374);
             cmbEditModule.Name = "cmbEditModule";
             cmbEditModule.Size = new Size(69, 23);
             cmbEditModule.TabIndex = 64;
@@ -203,7 +233,7 @@
             cmbEditDifficulty.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEditDifficulty.FormattingEnabled = true;
             cmbEditDifficulty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbEditDifficulty.Location = new Point(111, 236);
+            cmbEditDifficulty.Location = new Point(111, 374);
             cmbEditDifficulty.Name = "cmbEditDifficulty";
             cmbEditDifficulty.Size = new Size(69, 23);
             cmbEditDifficulty.TabIndex = 63;
@@ -211,7 +241,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(198, 239);
+            label14.Location = new Point(198, 377);
             label14.Name = "label14";
             label14.Size = new Size(82, 15);
             label14.TabIndex = 62;
@@ -220,7 +250,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(16, 239);
+            label15.Location = new Point(16, 377);
             label15.Name = "label15";
             label15.Size = new Size(89, 15);
             label15.TabIndex = 61;
@@ -228,28 +258,28 @@
             // 
             // txtEditOption4
             // 
-            txtEditOption4.Location = new Point(81, 189);
+            txtEditOption4.Location = new Point(81, 293);
             txtEditOption4.Name = "txtEditOption4";
             txtEditOption4.Size = new Size(351, 23);
             txtEditOption4.TabIndex = 44;
             // 
             // txtEditOption3
             // 
-            txtEditOption3.Location = new Point(81, 150);
+            txtEditOption3.Location = new Point(81, 232);
             txtEditOption3.Name = "txtEditOption3";
             txtEditOption3.Size = new Size(351, 23);
             txtEditOption3.TabIndex = 43;
             // 
             // txtEditOption2
             // 
-            txtEditOption2.Location = new Point(81, 111);
+            txtEditOption2.Location = new Point(81, 169);
             txtEditOption2.Name = "txtEditOption2";
             txtEditOption2.Size = new Size(351, 23);
             txtEditOption2.TabIndex = 42;
             // 
             // txtEditOption1
             // 
-            txtEditOption1.Location = new Point(81, 72);
+            txtEditOption1.Location = new Point(81, 102);
             txtEditOption1.Name = "txtEditOption1";
             txtEditOption1.Size = new Size(351, 23);
             txtEditOption1.TabIndex = 41;
@@ -264,7 +294,7 @@
             // lblEditOption4
             // 
             lblEditOption4.AutoSize = true;
-            lblEditOption4.Location = new Point(16, 192);
+            lblEditOption4.Location = new Point(16, 296);
             lblEditOption4.Name = "lblEditOption4";
             lblEditOption4.Size = new Size(59, 15);
             lblEditOption4.TabIndex = 39;
@@ -273,7 +303,7 @@
             // lblEditOption3
             // 
             lblEditOption3.AutoSize = true;
-            lblEditOption3.Location = new Point(16, 153);
+            lblEditOption3.Location = new Point(16, 235);
             lblEditOption3.Name = "lblEditOption3";
             lblEditOption3.Size = new Size(59, 15);
             lblEditOption3.TabIndex = 38;
@@ -282,7 +312,7 @@
             // lblEditOption2
             // 
             lblEditOption2.AutoSize = true;
-            lblEditOption2.Location = new Point(16, 114);
+            lblEditOption2.Location = new Point(16, 172);
             lblEditOption2.Name = "lblEditOption2";
             lblEditOption2.Size = new Size(59, 15);
             lblEditOption2.TabIndex = 37;
@@ -291,7 +321,7 @@
             // lblEditOption1
             // 
             lblEditOption1.AutoSize = true;
-            lblEditOption1.Location = new Point(16, 75);
+            lblEditOption1.Location = new Point(16, 105);
             lblEditOption1.Name = "lblEditOption1";
             lblEditOption1.Size = new Size(59, 15);
             lblEditOption1.TabIndex = 36;
@@ -369,6 +399,57 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Create Question";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.ForeColor = Color.ForestGreen;
+            label23.Location = new Point(789, 365);
+            label23.Name = "label23";
+            label23.Size = new Size(120, 15);
+            label23.TabIndex = 74;
+            label23.Text = "{imagename.filetype}";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.ForeColor = Color.ForestGreen;
+            label22.Location = new Point(789, 307);
+            label22.Name = "label22";
+            label22.Size = new Size(120, 15);
+            label22.TabIndex = 73;
+            label22.Text = "{imagename.filetype}";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.ForeColor = Color.ForestGreen;
+            label21.Location = new Point(789, 244);
+            label21.Name = "label21";
+            label21.Size = new Size(120, 15);
+            label21.TabIndex = 72;
+            label21.Text = "{imagename.filetype}";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.ForeColor = Color.ForestGreen;
+            label20.Location = new Point(789, 185);
+            label20.Name = "label20";
+            label20.Size = new Size(120, 15);
+            label20.TabIndex = 71;
+            label20.Text = "{imagename.filetype}";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.ForeColor = Color.ForestGreen;
+            label19.Location = new Point(789, 131);
+            label19.Name = "label19";
+            label19.Size = new Size(120, 15);
+            label19.TabIndex = 70;
+            label19.Text = "{imagename.filetype}";
+            label19.Click += label19_Click;
             // 
             // textBox6
             // 
@@ -712,56 +793,145 @@
             tabControl1.Size = new Size(1059, 779);
             tabControl1.TabIndex = 33;
             // 
-            // label19
+            // label24
             // 
-            label19.AutoSize = true;
-            label19.ForeColor = Color.ForestGreen;
-            label19.Location = new Point(789, 131);
-            label19.Name = "label19";
-            label19.Size = new Size(120, 15);
-            label19.TabIndex = 70;
-            label19.Text = "{imagename.filetype}";
-            label19.Click += label19_Click;
+            label24.AutoSize = true;
+            label24.ForeColor = Color.ForestGreen;
+            label24.Location = new Point(289, 66);
+            label24.Name = "label24";
+            label24.Size = new Size(120, 15);
+            label24.TabIndex = 73;
+            label24.Text = "{imagename.filetype}";
             // 
-            // label20
+            // button15
             // 
-            label20.AutoSize = true;
-            label20.ForeColor = Color.ForestGreen;
-            label20.Location = new Point(789, 185);
-            label20.Name = "label20";
-            label20.Size = new Size(120, 15);
-            label20.TabIndex = 71;
-            label20.Text = "{imagename.filetype}";
+            button15.Location = new Point(198, 62);
+            button15.Name = "button15";
+            button15.Size = new Size(75, 23);
+            button15.TabIndex = 72;
+            button15.Text = "Clear";
+            button15.UseVisualStyleBackColor = true;
             // 
-            // label21
+            // button16
             // 
-            label21.AutoSize = true;
-            label21.ForeColor = Color.ForestGreen;
-            label21.Location = new Point(789, 244);
-            label21.Name = "label21";
-            label21.Size = new Size(120, 15);
-            label21.TabIndex = 72;
-            label21.Text = "{imagename.filetype}";
+            button16.Location = new Point(86, 62);
+            button16.Name = "button16";
+            button16.Size = new Size(106, 23);
+            button16.TabIndex = 71;
+            button16.Text = "Select Image";
+            button16.UseVisualStyleBackColor = true;
             // 
-            // label22
+            // label25
             // 
-            label22.AutoSize = true;
-            label22.ForeColor = Color.ForestGreen;
-            label22.Location = new Point(789, 307);
-            label22.Name = "label22";
-            label22.Size = new Size(120, 15);
-            label22.TabIndex = 73;
-            label22.Text = "{imagename.filetype}";
+            label25.AutoSize = true;
+            label25.ForeColor = Color.ForestGreen;
+            label25.Location = new Point(289, 135);
+            label25.Name = "label25";
+            label25.Size = new Size(120, 15);
+            label25.TabIndex = 76;
+            label25.Text = "{imagename.filetype}";
             // 
-            // label23
+            // button17
             // 
-            label23.AutoSize = true;
-            label23.ForeColor = Color.ForestGreen;
-            label23.Location = new Point(789, 365);
-            label23.Name = "label23";
-            label23.Size = new Size(120, 15);
-            label23.TabIndex = 74;
-            label23.Text = "{imagename.filetype}";
+            button17.Location = new Point(198, 131);
+            button17.Name = "button17";
+            button17.Size = new Size(75, 23);
+            button17.TabIndex = 75;
+            button17.Text = "Clear";
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            button18.Location = new Point(86, 131);
+            button18.Name = "button18";
+            button18.Size = new Size(106, 23);
+            button18.TabIndex = 74;
+            button18.Text = "Select Image";
+            button18.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.ForeColor = Color.ForestGreen;
+            label26.Location = new Point(289, 202);
+            label26.Name = "label26";
+            label26.Size = new Size(120, 15);
+            label26.TabIndex = 79;
+            label26.Text = "{imagename.filetype}";
+            // 
+            // button19
+            // 
+            button19.Location = new Point(198, 198);
+            button19.Name = "button19";
+            button19.Size = new Size(75, 23);
+            button19.TabIndex = 78;
+            button19.Text = "Clear";
+            button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            button20.Location = new Point(86, 198);
+            button20.Name = "button20";
+            button20.Size = new Size(106, 23);
+            button20.TabIndex = 77;
+            button20.Text = "Select Image";
+            button20.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.ForeColor = Color.ForestGreen;
+            label27.Location = new Point(289, 265);
+            label27.Name = "label27";
+            label27.Size = new Size(120, 15);
+            label27.TabIndex = 82;
+            label27.Text = "{imagename.filetype}";
+            // 
+            // button21
+            // 
+            button21.Location = new Point(198, 261);
+            button21.Name = "button21";
+            button21.Size = new Size(75, 23);
+            button21.TabIndex = 81;
+            button21.Text = "Clear";
+            button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            button22.Location = new Point(86, 261);
+            button22.Name = "button22";
+            button22.Size = new Size(106, 23);
+            button22.TabIndex = 80;
+            button22.Text = "Select Image";
+            button22.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.ForeColor = Color.ForestGreen;
+            label28.Location = new Point(289, 326);
+            label28.Name = "label28";
+            label28.Size = new Size(120, 15);
+            label28.TabIndex = 85;
+            label28.Text = "{imagename.filetype}";
+            // 
+            // button23
+            // 
+            button23.Location = new Point(198, 322);
+            button23.Name = "button23";
+            button23.Size = new Size(75, 23);
+            button23.TabIndex = 84;
+            button23.Text = "Clear";
+            button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            button24.Location = new Point(86, 322);
+            button24.Name = "button24";
+            button24.Size = new Size(106, 23);
+            button24.TabIndex = 83;
+            button24.Text = "Select Image";
+            button24.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -849,5 +1019,20 @@
         private Label label22;
         private Label label21;
         private Label label20;
+        private Label label28;
+        private Button button23;
+        private Button button24;
+        private Label label27;
+        private Button button21;
+        private Button button22;
+        private Label label26;
+        private Button button19;
+        private Button button20;
+        private Label label25;
+        private Button button17;
+        private Button button18;
+        private Label label24;
+        private Button button15;
+        private Button button16;
     }
 }
