@@ -329,6 +329,36 @@
       "difficulty": 2,
       "isMinigame": false,
       "locations": 514
+    },
+    {
+      "question": "CHECKING AGAIN",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "DDDDDDDDDDDD",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "AAAAAAAAAAA",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "HHHHHHHHHHHH",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "DAGEGAWEA",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "isMinigame": true,
+      "locations": 265
     }
   ]
 }
