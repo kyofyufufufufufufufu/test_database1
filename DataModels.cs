@@ -21,6 +21,8 @@ namespace WinFormsApp1
 
         public int difficulty { get; set; }
 
+        public bool isMinigame { get; set; } = false;
+
         // This is the packed integer that holds both the Module (top 5 bits) 
         // and the Body Location flags (bottom 8 bits)
         public int locations { get; set; }

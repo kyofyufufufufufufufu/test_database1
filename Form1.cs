@@ -25,8 +25,8 @@ namespace WinFormsApp1
         {
             InitializeComponent();
 
-            imageTargetTextBoxes = new TextBox[] { textBox1, textBox2, textBox4, textBox3, textBox5 };
-            targetLabels = new Label[] { label19, label20, label21, label22, label23 };
+            imageTargetTextBoxes = new TextBox[] { textBox1, textBox2, textBox4, textBox3, textBox5, textBox7 };
+            targetLabels = new Label[] { label19, label20, label21, label22, label23, label32 };
 
             listView1.View = View.List;
             listView1.MultiSelect = false;
@@ -82,6 +82,7 @@ namespace WinFormsApp1
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to load: {ex.Message}");
+                this.Close();
             }
         }
 
@@ -138,6 +139,7 @@ namespace WinFormsApp1
                 else if (clickedButton == button20) buttonIndex = 7;
                 else if (clickedButton == button22) buttonIndex = 8;
                 else if (clickedButton == button24) buttonIndex = 9;
+                else if (clickedButton == button26) buttonIndex = 10;
 
                 if (buttonIndex == -1) return;
 
@@ -196,6 +198,7 @@ namespace WinFormsApp1
                 7 => label26,
                 8 => label27,
                 9 => label28,
+                10 => label34,
                 _ => null
             };
         }
@@ -236,6 +239,7 @@ namespace WinFormsApp1
             var o2 = await ProcessContentAsync(textBox4.Text, pendingImagePaths.ContainsKey(2) ? pendingImagePaths[2] : null);
             var o3 = await ProcessContentAsync(textBox3.Text, pendingImagePaths.ContainsKey(3) ? pendingImagePaths[3] : null);
             var o4 = await ProcessContentAsync(textBox5.Text, pendingImagePaths.ContainsKey(4) ? pendingImagePaths[4] : null);
+            var o5 = await ProcessContentAsync(textBox7.Text, pendingImagePaths.ContainsKey(5) ? pendingImagePaths[5] : null);
 
             // Based on current Designer labels, Option 1 is marked as "(Correct)"
             int correctIdx = 0;
@@ -278,14 +282,16 @@ namespace WinFormsApp1
             txtEditOption2.Text = q.options.Count > 1 ? q.options[1].text : "";
             txtEditOption3.Text = q.options.Count > 2 ? q.options[2].text : "";
             txtEditOption4.Text = q.options.Count > 3 ? q.options[3].text : "";
+            txtEditOption5.Text = q.options.Count > 4 ? q.options[4].text : "";
 
             label24.Text = Path.GetFileName(q.imageLink);
             label25.Text = q.options.Count > 0 ? Path.GetFileName(q.options[0].imageLink) : "";
             label26.Text = q.options.Count > 1 ? Path.GetFileName(q.options[1].imageLink) : "";
             label27.Text = q.options.Count > 2 ? Path.GetFileName(q.options[2].imageLink) : "";
             label28.Text = q.options.Count > 3 ? Path.GetFileName(q.options[3].imageLink) : "";
+            label34.Text = q.options.Count > 3 ? Path.GetFileName(q.options[4].imageLink) : "";
 
-            Label[] editLabels = { label24, label25, label26, label27, label28 };
+            Label[] editLabels = { label24, label25, label26, label27, label28, label34 };
             foreach (var lbl in editLabels) lbl.ForeColor = Color.Black;
 
             // Decode packed integer for Module and Locations
@@ -350,7 +356,7 @@ namespace WinFormsApp1
 
         private void ClearInputFields()
         {
-            textBox1.Clear(); textBox2.Clear(); textBox3.Clear(); textBox4.Clear(); textBox5.Clear();
+            textBox1.Clear(); textBox2.Clear(); textBox3.Clear(); textBox4.Clear(); textBox5.Clear(); textBox7.Clear();
             foreach (var lbl in targetLabels!) lbl.Text = "";
             pendingImagePaths.Clear();
             for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, false);
