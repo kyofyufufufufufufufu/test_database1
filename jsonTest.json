@@ -31,36 +31,6 @@
       "locations": 767
     },
     {
-      "question": "TEST QUESTION BCDEFG",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "CORRECT ANSWER 20",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCORRECT ANSWER 1",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCORRECT ANSWER 2",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCORRECT ANSWER 3",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 4,
-      "minigameType": "MultipleChoice",
-      "locations": 1089
-    },
-    {
       "question": "How many people are in this picture?",
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/rug.png",
       "options": [
