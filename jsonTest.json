@@ -1,36 +1,6 @@
 {
   "questions": [
     {
-      "question": "This is a test question - final. EDITED",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "Answer1d",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer2d",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer3d - EDIT",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer4d",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "MultipleChoice",
-      "locations": 288
-    },
-    {
       "question": "NEW TEST QUESTION!!!!! 1",
       "imageLink": "",
       "options": [
