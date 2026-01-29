@@ -1,34 +1,3 @@
 {
-  "questions": [
-    {
-      "question": "",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "MultipleChoice",
-      "locations": 514
-    }
-  ]
+  "questions": []
 }
