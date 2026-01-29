@@ -1,35 +1,6 @@
 {
   "questions": [
     {
-      "question": "This is a test question - eyes.",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "Answer1a",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer2a",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer3a",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Answer4a",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "locations": 4
-    },
-    {
       "question": "This is a test question - whatever.",
       "imageLink": "",
       "options": [
@@ -56,6 +27,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 513
     },
     {
@@ -85,6 +57,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 288
     },
     {
@@ -114,6 +87,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 2,
+      "minigameType": "MultipleChoice",
       "locations": 513
     },
     {
@@ -143,6 +117,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 767
     },
     {
@@ -172,6 +147,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 767
     },
     {
@@ -201,6 +177,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 4,
+      "minigameType": "MultipleChoice",
       "locations": 1089
     },
     {
@@ -230,6 +207,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 257
     },
     {
@@ -259,6 +237,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 520
     },
     {
@@ -288,6 +267,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 2,
+      "minigameType": "MultipleChoice",
       "locations": 514
     },
     {
@@ -317,6 +297,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 2,
+      "minigameType": "MultipleChoice",
       "locations": 514
     },
     {
@@ -346,6 +327,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
+      "minigameType": "MultipleChoice",
       "locations": 264
     },
     {
@@ -380,6 +362,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 2,
+      "minigameType": "MultipleChoice",
       "locations": 513
     }
   ]
