@@ -1,36 +1,6 @@
 {
   "questions": [
     {
-      "question": "NEW TEST QUESTION!!!!! 1",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "THIS IS THE CORRECT ANSWER",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCORRECT 1",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCRRRECT2",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "INCORECTTTTT 3",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "MultipleChoice",
-      "locations": 513
-    },
-    {
       "question": "",
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/gettyimages-2169449761-612x612.jpg",
       "options": [
