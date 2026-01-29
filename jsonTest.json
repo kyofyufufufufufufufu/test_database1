@@ -32,36 +32,6 @@
     },
     {
       "question": "How many people are in this picture?",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/rug.png",
-      "options": [
-        {
-          "text": "0",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "1",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "2",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "3",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/01-11-25_10-59-50 PM.png",
-          "useImage": true
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "MultipleChoice",
-      "locations": 257
-    },
-    {
-      "question": "How many people are in this picture?",
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/001.png",
       "options": [
         {
