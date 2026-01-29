@@ -59,41 +59,6 @@
       "difficulty": 2,
       "minigameType": "MultipleChoice",
       "locations": 514
-    },
-    {
-      "question": "tesad",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "geagwea",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gegaega",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gegewgweggggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "ggggggggggggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gggggggggggggggggg",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "MultipleChoice",
-      "locations": 513
     }
   ]
 }
