@@ -61,36 +61,6 @@
       "locations": 514
     },
     {
-      "question": "CHECKING AGAIN",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "DDDDDDDDDDDD",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "AAAAAAAAAAA",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "HHHHHHHHHHHH",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "DAGEGAWEA",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "MultipleChoice",
-      "locations": 264
-    },
-    {
       "question": "tesad",
       "imageLink": "",
       "options": [
