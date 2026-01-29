@@ -31,36 +31,6 @@
       "locations": 767
     },
     {
-      "question": "Testing Fifth Option",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "Yes",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "No",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Nope",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Nooooo",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "MultipleChoice",
-      "locations": 514
-    },
-    {
       "question": "",
       "imageLink": "",
       "options": [
