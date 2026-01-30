@@ -319,36 +319,6 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 383
-    },
-    {
-      "question": "TEST (DIFF AND MOD) JDSGJHWOIEHGOI",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "YAY",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "HELLO",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "HURRAY",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "GBYE",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "None",
-      "locations": 2052
     }
   ]
 }
