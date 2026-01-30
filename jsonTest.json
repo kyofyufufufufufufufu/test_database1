@@ -34,6 +34,96 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 384
+    },
+    {
+      "question": "TEST (Duplication) How many letters are in the word 'dog'?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "3",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "0",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 5,
+      "minigameType": "None",
+      "locations": 257
+    },
+    {
+      "question": "TEST (Duplication) How many letters are in the word 'dog'? (2)",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "3",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "0",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 5,
+      "minigameType": "None",
+      "locations": 257
+    },
+    {
+      "question": "TEST (Duplication) How many letters are in the word 'dog'? (3)",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "3",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "0",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 5,
+      "minigameType": "None",
+      "locations": 257
     }
   ]
 }
