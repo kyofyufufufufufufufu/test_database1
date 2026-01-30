@@ -321,41 +321,6 @@
       "locations": 383
     },
     {
-      "question": "DSFAEGAWG",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "S",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "S",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "SSS",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "S",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "S",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 3,
-      "minigameType": "None",
-      "locations": 2080
-    },
-    {
       "question": "TEST (DIFF AND MOD) JDSGJHWOIEHGOI",
       "imageLink": "",
       "options": [
