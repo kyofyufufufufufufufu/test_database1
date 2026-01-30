@@ -256,36 +256,6 @@
       "locations": 2112
     },
     {
-      "question": "TEST (Difficulty/Module) TEST TEST TEST",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "1",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "2",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "3",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "TESTING",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 3,
-      "minigameType": "None",
-      "locations": 516
-    },
-    {
       "question": "dagwegagwegg",
       "imageLink": "",
       "options": [
