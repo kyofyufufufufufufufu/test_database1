@@ -124,6 +124,66 @@
       "difficulty": 5,
       "minigameType": "Card Match",
       "locations": 257
+    },
+    {
+      "question": "TEST (Difficulty) How many stars are in the sky?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Millions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "four",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "!!!??/3323r2???",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 4,
+      "minigameType": "Whack-a-Mole",
+      "locations": 264
+    },
+    {
+      "question": "TEST (Difficulty) How many stars are in the sky? (2)",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Millions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "four",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "!!!??/3323r2???",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 4,
+      "minigameType": "Whack-a-Mole",
+      "locations": 264
     }
   ]
 }
