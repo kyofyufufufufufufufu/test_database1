@@ -29,6 +29,41 @@
       "difficulty": 0,
       "minigameType": "None",
       "locations": 272
+    },
+    {
+      "question": "TEST(Difficulty) How many legs does a human have on average?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "100",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "35",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1000",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "25",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
     }
   ]
 }
