@@ -1,36 +1,6 @@
 {
   "questions": [
     {
-      "question": "TEST How many hearts does a human have?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "1",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "3",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "4",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "2",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 0,
-      "minigameType": "None",
-      "locations": 272
-    },
-    {
       "question": "TEST(Difficulty) How many legs does a human have on average?",
       "imageLink": "",
       "options": [
