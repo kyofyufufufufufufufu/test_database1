@@ -256,41 +256,6 @@
       "locations": 2112
     },
     {
-      "question": "dagwegagwegg",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "ggggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "g",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gggg",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 258
-    },
-    {
       "question": "sgwegawegag",
       "imageLink": "",
       "options": [
