@@ -254,36 +254,6 @@
       "difficulty": 4,
       "minigameType": "Whack-a-Mole",
       "locations": 2112
-    },
-    {
-      "question": "sgwegawegag",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "sdggggggggggggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "ggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gggggggggggggggggggggggggggggggg",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "gg",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "Whack-a-Mole",
-      "locations": 514
     }
   ]
 }
