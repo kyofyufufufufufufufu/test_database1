@@ -114,6 +114,54 @@ namespace WinFormsApp1
             return responseJson["content"]?["download_url"]?.ToString()!;
         }
 
+        // Deleting an image from the GitHub repository
+        public async Task DeleteImageAsync(string imageUrl)
+        {
+            if (string.IsNullOrWhiteSpace(imageUrl)) return;
+
+            try
+            {
+                //Extract the filename from the URL
+                string fileName = Path.GetFileName(new Uri(imageUrl).LocalPath);
+                string targetPath = $"{_imagesPath}/{fileName}";
+                string url = $"https://api.github.com/repos/{_owner}/{_repo}/contents/{targetPath}";
+
+                // Get SHA for deletion
+                HttpResponseMessage getResponse = await _client.GetAsync(url);
+                if (!getResponse.IsSuccessStatusCode) return;
+
+                string getContent = await getResponse.Content.ReadAsStringAsync();
+                JObject json = JObject.Parse(getContent);
+                string? sha = json["sha"]?.ToString();
+
+                if (string.IsNullOrEmpty(sha)) return;
+
+                // DELETE request
+                var body = new
+                {
+                    message = $"Delete orphaned image: {fileName} via WinForms App",
+                    sha = sha
+                };
+
+                var request = new HttpRequestMessage(HttpMethod.Delete, url)
+                {
+                    Content = new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json")
+                };
+
+                HttpResponseMessage deleteResponse = await _client.SendAsync(request);
+
+                if (!deleteResponse.IsSuccessStatusCode)
+                {
+                    string error = await deleteResponse.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Failed to delete image: {error}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in DeleteImageAsync: {ex.Message}");
+            }
+        }
+
         // Saving updated database to GitHub
         public async Task SaveDatabaseAsync(QuestionSet data)
         {

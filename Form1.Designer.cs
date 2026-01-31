@@ -251,18 +251,19 @@
             label33.AutoSize = true;
             label33.Location = new Point(48, 495);
             label33.Name = "label33";
-            label33.Size = new Size(95, 15);
+            label33.Size = new Size(94, 15);
             label33.TabIndex = 87;
-            label33.Text = "Minigame (T/F): ";
+            label33.Text = "Minigame Type: ";
+            label33.UseWaitCursor = true;
             // 
             // comboBox4
             // 
             comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "True", "False" });
+            comboBox4.Items.AddRange(new object[] { "None", "Card Match", "Whack-a-Mole", "Slapjack" });
             comboBox4.Location = new Point(151, 492);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(62, 23);
+            comboBox4.Size = new Size(99, 23);
             comboBox4.TabIndex = 86;
             // 
             // label28
@@ -450,7 +451,7 @@
             cmbEditModule.Items.AddRange(new object[] { "0", "1", "2", "3", "4" });
             cmbEditModule.Location = new Point(151, 463);
             cmbEditModule.Name = "cmbEditModule";
-            cmbEditModule.Size = new Size(69, 23);
+            cmbEditModule.Size = new Size(99, 23);
             cmbEditModule.TabIndex = 64;
             // 
             // cmbEditDifficulty
@@ -460,7 +461,7 @@
             cmbEditDifficulty.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
             cmbEditDifficulty.Location = new Point(151, 434);
             cmbEditDifficulty.Name = "cmbEditDifficulty";
-            cmbEditDifficulty.Size = new Size(69, 23);
+            cmbEditDifficulty.Size = new Size(99, 23);
             cmbEditDifficulty.TabIndex = 63;
             // 
             // label14
@@ -568,7 +569,7 @@
             listView1.Location = new Point(17, 49);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
-            listView1.Size = new Size(450, 640);
+            listView1.Size = new Size(454, 640);
             listView1.TabIndex = 2;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -690,10 +691,10 @@
             // 
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "True", "False" });
-            comboBox3.Location = new Point(544, 436);
+            comboBox3.Items.AddRange(new object[] { "None", "Card Match", "Whack-a-Mole", "Slapjack" });
+            comboBox3.Location = new Point(543, 436);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(62, 23);
+            comboBox3.Size = new Size(90, 23);
             comboBox3.TabIndex = 76;
             // 
             // label29
@@ -701,9 +702,9 @@
             label29.AutoSize = true;
             label29.Location = new Point(443, 438);
             label29.Name = "label29";
-            label29.Size = new Size(95, 15);
+            label29.Size = new Size(94, 15);
             label29.TabIndex = 75;
-            label29.Text = "Minigame (T/F): ";
+            label29.Text = "Minigame Type: ";
             // 
             // label23
             // 
@@ -816,7 +817,7 @@
             // 
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "Bladder", "Brain", "Eyes", "GI Tract", "Heart", "Lungs", "Smooth Muscle", "Other" });
-            checkedListBox1.Location = new Point(149, 493);
+            checkedListBox1.Location = new Point(149, 490);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(123, 148);
             checkedListBox1.TabIndex = 63;
@@ -828,7 +829,7 @@
             comboBox2.Items.AddRange(new object[] { "0", "1", "2", "3", "4" });
             comboBox2.Location = new Point(334, 436);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(69, 23);
+            comboBox2.Size = new Size(90, 23);
             comboBox2.TabIndex = 62;
             // 
             // comboBox1
@@ -838,7 +839,7 @@
             comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
             comboBox1.Location = new Point(149, 436);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(69, 23);
+            comboBox1.Size = new Size(90, 23);
             comboBox1.TabIndex = 61;
             // 
             // label12
@@ -1000,7 +1001,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(41, 497);
+            label8.Location = new Point(41, 494);
             label8.Name = "label8";
             label8.Size = new Size(64, 15);
             label8.TabIndex = 43;

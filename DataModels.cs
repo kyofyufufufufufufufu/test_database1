@@ -1,4 +1,4 @@
-﻿// Class for structuring Questions for json file 
+﻿﻿﻿// Class for structuring Questions for json file 
 
 using System;
 using System.Collections.Generic;
@@ -21,13 +21,14 @@ namespace WinFormsApp1
 
         public int difficulty { get; set; }
 
-        public bool isMinigame { get; set; } = false;
+        // Minigame holds three options: Card Match, Whack-a-Mole, and Slapjack
+        public string minigameType { get; set; } = "MultipleChoice";
 
         // This is the packed integer that holds both the Module (top 5 bits) 
         // and the Body Location flags (bottom 8 bits)
         public int locations { get; set; }
 
-        // Enum used to map CheckBox selections
+        // Enum used to map checkbox selections to bits in the locations integer
         [Flags]
         public enum LocationFlags
         {
@@ -48,5 +49,6 @@ namespace WinFormsApp1
         public string imageLink { get; set; } = string.Empty;
 
         public bool useImage { get; set; }
+
     }
 }
