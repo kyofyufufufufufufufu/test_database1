@@ -349,6 +349,41 @@
       "difficulty": 5,
       "minigameType": "Card Match",
       "locations": 896
+    },
+    {
+      "question": "TEST (BULK) Images added through local upload",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
+      "options": [
+        {
+          "text": "That's a kitty cat (green)",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertgreen.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (red)",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertred.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (blue)",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertblue.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (yellow)",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertyellow.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (violet)",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertviolet.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 3,
+      "minigameType": "Slapjack",
+      "locations": 640
     }
   ]
 }
