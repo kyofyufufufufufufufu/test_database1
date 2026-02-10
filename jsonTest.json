@@ -254,6 +254,101 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 1025
+    },
+    {
+      "question": "TEST (Bulk) This is for the minigame test and Module and BodyLocations!",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "A",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "B",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "C",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "D",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 3,
+      "minigameType": "Whack-a-Mole",
+      "locations": 320
+    },
+    {
+      "question": "TEST (Bulk) This is another test for minigames -- Slapjack",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "3",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "44",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "5555",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "Slapjack",
+      "locations": 516
+    },
+    {
+      "question": "TEST (Bulk) This is another test for minigames -- Card Match",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Dog",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Cat",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mouse",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bird",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 5,
+      "minigameType": "Card Match",
+      "locations": 896
     }
   ]
 }
