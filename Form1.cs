@@ -1,5 +1,6 @@
 // Form1 logic for reading, writing and editing WinForms questions, answers that are saved to the json database
-// Includes a duplicate Question button for adding multipe similar questions/options, bulk upload, and image links
+// Includes a duplicate Question button for adding multipe similar questions/options
+// Includes a bulk upload feature for adding large numbers of questions at once via CSV, with image support as well
 
 using System;
 using System.Collections.Generic;
@@ -551,10 +552,9 @@ namespace WinFormsApp1
         // Bulk Upload Section
 
         // Button logic for Bulk Upload
-        // Button logic for Bulk Upload
         private async void button12_Click(object? sender, EventArgs e)
         {
-            // Fixes CS8602/CS8604: Proven to the compiler that these aren't null
+            // Null reference protection, ensures database and git service are loaded before allowing bulk upload
             if (database == null || gitService == null)
             {
                 MessageBox.Show("Database is still loading. Please try again in a moment.");
@@ -576,7 +576,6 @@ namespace WinFormsApp1
 
                     string questionText = columns[0].Trim('"');
 
-                    // database.questions is now safe to call because of the guard clause above
                     if (database.questions.Any(q => q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase)))
                     {
                         continue;
@@ -615,7 +614,6 @@ namespace WinFormsApp1
                     database.questions.Add(newQuestion);
                 }
 
-                // gitService is now safe to call
                 await gitService.SaveDatabaseAsync(database);
                 RefreshQuestionList();
                 MessageBox.Show("Bulk Upload Successful!");
@@ -635,7 +633,6 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    // The ! tells the compiler we know gitService is not null here
                     return await gitService!.UploadImageAsync(pathOrUrl);
                 }
                 catch

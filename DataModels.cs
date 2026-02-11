@@ -24,7 +24,6 @@ namespace WinFormsApp1
             {
                 // Match string to LocationFlags enum
                 // Ignores spaces and NOT case sensitive
-                // Reference Question.LocationFlags because the enum is inside the Question class
                 if (Enum.TryParse(part.Trim().Replace(" ", "_"), true, out Question.LocationFlags flag))
                 {
                     locationValue |= (int)flag;
