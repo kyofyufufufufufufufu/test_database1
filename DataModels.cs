@@ -1,4 +1,4 @@
-﻿﻿﻿// Class for structuring Questions for json file 
+﻿// Class for structuring Questions for json file 
 
 using System;
 using System.Collections.Generic;
@@ -9,6 +9,31 @@ namespace WinFormsApp1
     public class QuestionSet
     {
         public List<Question> questions = new List<Question>();
+
+        // Bulk Upload Section
+
+        // Turns a string of comma-separated body locations into the packed integer format for storage in the JSON file
+        public static int EncodeLocations(int moduleIndex, string locationString)
+        {
+            int locationValue = 0;
+
+            // Split strings by comma and trim spaces, then match to enum values
+            string[] parts = locationString.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var part in parts)
+            {
+                // Match string to LocationFlags enum
+                // Ignores spaces and NOT case sensitive
+                // Reference Question.LocationFlags because the enum is inside the Question class
+                if (Enum.TryParse(part.Trim().Replace(" ", "_"), true, out Question.LocationFlags flag))
+                {
+                    locationValue |= (int)flag;
+                }
+            }
+
+            // Shift module index by 8 bits and combine with flags
+            return (moduleIndex << 8) | locationValue;
+        }
     }
 
     // Structure for question
@@ -49,6 +74,5 @@ namespace WinFormsApp1
         public string imageLink { get; set; } = string.Empty;
 
         public bool useImage { get; set; }
-
     }
 }

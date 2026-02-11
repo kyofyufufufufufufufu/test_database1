@@ -55,6 +55,9 @@ namespace WinFormsApp1
             button19.Click += ClearImage_Click;
             button21.Click += ClearImage_Click;
             button23.Click += ClearImage_Click;
+
+            // Bulk upload for Create tab
+            button12.Click += button12_Click;
         }
 
         private async void Form1_Load(object? sender, EventArgs e)
@@ -115,7 +118,7 @@ namespace WinFormsApp1
                 if (gitService == null) return (textInput, string.Empty, false);
                 try
                 {
-                    string publicUrl = await gitService.UploadImageAsync(imagePath!); //
+                    string publicUrl = await gitService.UploadImageAsync(imagePath!);
                     return (textInput, publicUrl, true);
                 }
                 catch (Exception ex)
@@ -543,6 +546,105 @@ namespace WinFormsApp1
             Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 70, DialogResult = DialogResult.OK };
             prompt.Controls.Add(textBox); prompt.Controls.Add(confirmation); prompt.Controls.Add(textLabel);
             return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : "";
+        }
+
+        // Bulk Upload Section
+
+        // Button logic for Bulk Upload
+        // Button logic for Bulk Upload
+        private async void button12_Click(object? sender, EventArgs e)
+        {
+            // Fixes CS8602/CS8604: Proven to the compiler that these aren't null
+            if (database == null || gitService == null)
+            {
+                MessageBox.Show("Database is still loading. Please try again in a moment.");
+                return;
+            }
+
+            OpenFileDialog ofd = new OpenFileDialog { Filter = "CSV Files|*.csv" };
+            if (ofd.ShowDialog() != DialogResult.OK) return;
+
+            try
+            {
+                var lines = File.ReadAllLines(ofd.FileName);
+
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    if (string.IsNullOrWhiteSpace(lines[i])) continue;
+
+                    var columns = lines[i].Split(',');
+
+                    string questionText = columns[0].Trim('"');
+
+                    // database.questions is now safe to call because of the guard clause above
+                    if (database.questions.Any(q => q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        continue;
+                    }
+
+                    var newQuestion = new Question();
+                    newQuestion.question = questionText;
+
+                    string qImgPath = columns[1].Trim('"');
+                    newQuestion.imageLink = await HandleImageUpload(qImgPath);
+
+                    for (int opt = 0; opt < 5; opt++)
+                    {
+                        string txt = columns[2 + (opt * 2)].Trim('"');
+                        string imgPath = columns[3 + (opt * 2)].Trim('"');
+
+                        if (!string.IsNullOrWhiteSpace(txt) || !string.IsNullOrWhiteSpace(imgPath))
+                        {
+                            newQuestion.options.Add(new Option
+                            {
+                                text = txt,
+                                imageLink = await HandleImageUpload(imgPath),
+                                useImage = !string.IsNullOrWhiteSpace(imgPath)
+                            });
+                        }
+                    }
+
+                    newQuestion.answerIndex = 0;
+                    newQuestion.difficulty = int.Parse(columns[13]);
+                    newQuestion.minigameType = columns[14].Trim('"');
+
+                    int module = int.Parse(columns[15]);
+                    string locs = columns[16].Trim('"');
+                    newQuestion.locations = QuestionSet.EncodeLocations(module, locs);
+
+                    database.questions.Add(newQuestion);
+                }
+
+                // gitService is now safe to call
+                await gitService.SaveDatabaseAsync(database);
+                RefreshQuestionList();
+                MessageBox.Show("Bulk Upload Successful!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error during bulk upload: {ex.Message}");
+            }
+        }
+
+        // Helper to decide if we need to upload to GitHub or just use a URL
+        private async Task<string> HandleImageUpload(string pathOrUrl)
+        {
+            if (string.IsNullOrWhiteSpace(pathOrUrl) || pathOrUrl == "NaN") return "";
+
+            if (File.Exists(pathOrUrl))
+            {
+                try
+                {
+                    // The ! tells the compiler we know gitService is not null here
+                    return await gitService!.UploadImageAsync(pathOrUrl);
+                }
+                catch
+                {
+                    return pathOrUrl;
+                }
+            }
+
+            return pathOrUrl;
         }
     }
 }
