@@ -384,6 +384,111 @@
       "difficulty": 3,
       "minigameType": "Slapjack",
       "locations": 640
+    },
+    {
+      "question": "TEST (BULK/BATTLE) LOREM IPSUM 2",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "To pump blood",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To digest food",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To filter air",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To make databases",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "None of the above",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 272
+    },
+    {
+      "question": "TEST (BULK/BATTLE/IMAGES) LOREM IPSUM 2",
+      "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
+      "options": [
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tizanidine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 257
+    },
+    {
+      "question": "TEST (BULK/BATTLE/IMAGES) LOREM IPSUM 3",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
+      "options": [
+        {
+          "text": "That's a kitty cat (green)",
+          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertgreen.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (red)",
+          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertred.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (blue)",
+          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertblue.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (yellow)",
+          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertyellow.png",
+          "useImage": true
+        },
+        {
+          "text": "That's a kitty cat (violet)",
+          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertviolet.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
     }
   ]
 }
