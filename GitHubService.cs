@@ -110,8 +110,14 @@ namespace WinFormsApp1
             string responseString = await response.Content.ReadAsStringAsync();
             JObject responseJson = JObject.Parse(responseString);
 
-            // Permanent, public link for file
-            return responseJson["content"]?["download_url"]?.ToString()!;
+            // construct the RAW link
+            // Prevents 403 error or metadata redirect
+            string rawUrl = $"https://raw.githubusercontent.com/{_owner}/{_repo}/main/{targetPath}";
+
+            // Update the SHA for future operations on this session if needed
+            _currentFileSha = responseJson["content"]?["sha"]?.ToString()!;
+
+            return rawUrl;
         }
 
         // Deleting an image from the GitHub repository
