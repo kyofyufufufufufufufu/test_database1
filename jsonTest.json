@@ -126,11 +126,11 @@
       "locations": 264
     },
     {
-      "question": "TEST (Difficulty) How many stars are in the sky? (2)",
+      "question": "TEST (Difficulty 4, Module 0) How many stars are in the sky? (2)",
       "imageLink": "",
       "options": [
         {
-          "text": "Millions",
+          "text": "Millions(Correct)",
           "imageLink": "",
           "useImage": false
         },
