@@ -1739,6 +1739,1231 @@
       "difficulty": 1,
       "locations": 2048,
       "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Albuterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Pseudoephedrine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 544,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "It is a sleeping B3-adrenergic receptor. What drug should you give to activate it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Levabuterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terbutaline.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Formoterol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 513,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it quickly?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Levabuterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Dopamine.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 544,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it over a long period?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Salmeterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Albuterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terbutaline.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanolol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 544,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "The nasal mucus glands ",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "are stimulated by the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "are stimulated by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "are inhibited by the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "under the control of the parasympathetic nervous system exclusively",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "under the control of the sympathetic nervous system exclusively",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 384,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "The longitudinal motility muscle in the GI tract experiences ",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "an increase due to stimulation by the parasympathetic nervous system.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "an increase due to stimulation by the sympathetic nervous system.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "a decrease due to stimulation by the parasympathetic nervous system.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no change due to the sympathetic nervous system.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no change due to the sympathetic nervous system.",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 264,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "A direct effect of activation of the alpha-1 receptors is",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "constriction of the radial eye muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of the radial eye muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decrease in aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase in aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there are no alpha-1 receptors in the eye",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 260,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "Which of the following is NOT true about alpha-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Activation results in constriction of the radial eye muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in major blood vessels",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in the eyes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the bladder sphincter",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the prostate capsule",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 516,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "Which of the following is NOT true about alpha-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Activation results in vasoconstriction in the eyes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the radial eye muscles ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in major blood vessels",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the bladder sphincter",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the prostate capsule",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 260,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "Which of the following is NOT true about alpha-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Activation results in constriction of the bladder sphincter",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in the eyes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the radial eye muscles ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in major blood vessels",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the prostate capsule",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 257,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "Which of the following is NOT true about alpha-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Activation results in constriction of the prostate capsule",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the bladder sphincter",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in the eyes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in relaxation of the radial eye muscles ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activation results in vasodilation in major blood vessels",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 448,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is an effect of activating the alpha-2 receptor?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Decreased blood pressure ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased quantity of aqueous humor.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased release of neurotransmitter ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activates pain transmission",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vasoconstriction of blood vessels",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 528,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is an effect of activating the alpha-2 receptor?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Decreased release of neurotransmitter ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased blood pressure ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased quantity of aqueous humor.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Activates pain transmission",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vasoconstriction of blood vessels",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 258,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is an effect of activating the alpha-2 receptor?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Inhibits pain transmission",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased release of neurotransmitter ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased blood pressure ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increased quantity of aqueous humor.",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vasoconstriction of blood vessels",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 514,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Increase aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease cardiac output ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease renin secretion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Relaxation of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 516,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-1 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Increase renin secretion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease cardiac output ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Relaxation of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 640,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-2 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Decrease degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Constriction of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase renin secretion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase cardiac output",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 640,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-2 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Increase aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Constriction of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase renin secretion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase cardiac output",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 516,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-2 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Decrease GI tract motility",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease skeletal muscle glucose uptake",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Constriction of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 520,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "What is the effect of activating the beta-2 receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Increase skeletal muscle glucose uptake",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase GI tract motility",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Constriction of pulmonary smooth muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Increase degranulation of mast cells",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Decrease aqueous humor production",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 640,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mirabegron",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Propanolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Doxazosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Clonidine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tizanidine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Esmolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mirabegron",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mirabegron",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Propanolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Doxazosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Clonidine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tizanidine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "Nebivolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Esmolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mirabegron",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Alpha1-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor.png",
+      "options": [
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tizanidine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1025,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Alpha1-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor.png",
+      "options": [
+        {
+          "text": "Doxazosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Propanolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Clonidine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tetrahydrozoline",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1043,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Labetalol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Atenolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terazosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Levabuterol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Atropine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Labetalol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salbutamol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Glycopyrrium",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Labetalol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salbutamol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Solafenicin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Labetalol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salbutamol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Cevimeline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Scopolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Labetalol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salbutamol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Scopolamine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Carvedilol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terbutaline.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terazosin.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Scopolamine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Tamsulosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Carvedilol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Dobutamine.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
     }
   ]
 }
