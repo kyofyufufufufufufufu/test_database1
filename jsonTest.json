@@ -425,7 +425,7 @@
       "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
       "options": [
         {
-          "text": "Tamsulosin",
+          "text": "Tamsulosin (Correct)",
           "imageLink": "",
           "useImage": false
         },
@@ -451,7 +451,7 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 1,
+      "difficulty": 4,
       "minigameType": "None",
       "locations": 257
     },
