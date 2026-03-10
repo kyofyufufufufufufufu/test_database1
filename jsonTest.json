@@ -355,7 +355,7 @@
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
       "options": [
         {
-          "text": "That's a kitty cat (green)",
+          "text": "That's a kitty cat (green) (Correct)",
           "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertgreen.png",
           "useImage": true
         },
@@ -383,7 +383,7 @@
       "answerIndex": 0,
       "difficulty": 3,
       "minigameType": "Slapjack",
-      "locations": 640
+      "locations": 384
     },
     {
       "question": "TEST (BULK/BATTLE) LOREM IPSUM 2",
