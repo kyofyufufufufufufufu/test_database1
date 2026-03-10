@@ -361,8 +361,8 @@
       "options": [
         {
           "text": "To pump blood (Correct)",
-          "imageLink": "",
-          "useImage": false
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/dfaeaw.PNG",
+          "useImage": true
         },
         {
           "text": "To digest food",
