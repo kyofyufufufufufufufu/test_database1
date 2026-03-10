@@ -126,11 +126,11 @@
       "locations": 513
     },
     {
-      "question": "TEST (Difficulty) How many stars are in the sky?",
+      "question": "TEST (Difficulty 5) How many stars are in the sky?",
       "imageLink": "",
       "options": [
         {
-          "text": "Millions",
+          "text": "Millions (Correct)",
           "imageLink": "",
           "useImage": false
         },
@@ -151,9 +151,9 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "Whack-a-Mole",
-      "locations": 4104
+      "difficulty": 5,
+      "minigameType": "None",
+      "locations": 264
     },
     {
       "question": "TEST (Difficulty) How many stars are in the sky? (2)",
