@@ -321,11 +321,11 @@
       "locations": 516
     },
     {
-      "question": "TEST (Bulk) This is another test for minigames -- Card Match",
+      "question": "MODULE 1 TEST (Bulk) This is another test for minigames -- Card Match",
       "imageLink": "",
       "options": [
         {
-          "text": "Dog",
+          "text": "Dog (Correct)",
           "imageLink": "",
           "useImage": false
         },
@@ -346,9 +346,9 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 5,
+      "difficulty": 1,
       "minigameType": "Card Match",
-      "locations": 896
+      "locations": 640
     },
     {
       "question": "TEST (BULK) Images added through local upload",
