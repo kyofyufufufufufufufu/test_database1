@@ -256,11 +256,11 @@
       "locations": 320
     },
     {
-      "question": "TEST (Bulk) This is another test for minigames -- Slapjack",
+      "question": "TEST (Difficulty 1, Module 1) This is another test for minigames -- Slapjack",
       "imageLink": "",
       "options": [
         {
-          "text": "1",
+          "text": "1 (Correct)",
           "imageLink": "",
           "useImage": false
         },
@@ -287,7 +287,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "minigameType": "Slapjack",
+      "minigameType": "None",
       "locations": 516
     },
     {
