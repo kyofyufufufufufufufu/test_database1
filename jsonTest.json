@@ -2964,6 +2964,321 @@
       "difficulty": 1,
       "locations": 2048,
       "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/AdrenergicReceptor_jump.png",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Carvedilol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bisoprolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Tamsulosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terbutaline.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 1040,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Atropine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Doxazosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanalol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Pseudoephedrine.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Glycopyrronium.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terazosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Solafenicin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Tamsulosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bisoprolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Albuterol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Tiotropium.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Nebivolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terazosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Levabuterol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Oxybutynin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Carvedilol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Pseudoephedrine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Dobutamine.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Benztropine.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanalol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Timolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Albuterol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Solafenicin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Metoprolol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Terazosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Formoterol.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
+    },
+    {
+      "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Cevimeline.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Solafenicin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Tamsulosin.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Carvedilol.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "locations": 2048,
+      "minigameType": "MultipleChoice"
     }
   ]
 }
