@@ -192,7 +192,7 @@
     },
     {
       "question": "TEST (Module 2, Difficulty 1) An overactive Alpha1-receptor appears. What compound should you use to calm it?",
-      "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
+      "imageLink": "https://raw.githubusercontent.com/AlecDuval/gitDatabaseTest/main/images/AdrenergicReceptor.png",
       "options": [
         {
           "text": "Tamsulosin (Correct)",
@@ -392,7 +392,7 @@
     },
     {
       "question": "TEST (diff 4, module 0) LOREM IPSUM 2 IMAGE UPLOAD THRU BULK",
-      "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
+      "imageLink": "https://raw.githubusercontent.com/AlecDuval/gitDatabaseTest/main/images/AdrenergicReceptor.png",
       "options": [
         {
           "text": "Tamsulosin (Correct)",
