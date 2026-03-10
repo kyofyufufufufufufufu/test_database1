@@ -321,7 +321,7 @@
       "locations": 640
     },
     {
-      "question": "TEST (BULK) Images added through local upload",
+      "question": "TEST (Module 0, Diff 3) Images added through local upload in BULK",
       "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
       "options": [
         {
