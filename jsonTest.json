@@ -1,11 +1,11 @@
 {
   "questions": [
     {
-      "question": "TEST(Difficulty) How many legs does a human have on average?",
+      "question": "TEST(Difficulty 1, Module 0) How many legs does a human have on average?",
       "imageLink": "",
       "options": [
         {
-          "text": "2",
+          "text": "2 (Correct)",
           "imageLink": "",
           "useImage": false
         },
