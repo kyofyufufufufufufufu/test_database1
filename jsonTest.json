@@ -564,6 +564,101 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 16
+    },
+    {
+      "question": "Test 1: Full Row",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Option A",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Option B",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Option C",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Option D",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Option E",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "MultipleChoice",
+      "locations": 304
+    },
+    {
+      "question": "Test 2: No Images/No Locs",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "True",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "False",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "0",
+      "locations": 512
+    },
+    {
+      "question": "Test 3: Internal Comma Check",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Yes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "No",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "0",
+      "locations": 256
+    },
+    {
+      "question": "Test 4: Only 2 Options",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Choice 1",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Choice 2",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "1",
+      "locations": 768
     }
   ]
 }
