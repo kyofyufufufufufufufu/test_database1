@@ -554,7 +554,7 @@ namespace WinFormsApp1
         // Button logic for Bulk Upload
         private async void button12_Click(object? sender, EventArgs e)
         {
-            // Null reference protection, ensures database and git service are loaded before allowing bulk upload
+            // Null reference protection
             if (database == null || gitService == null)
             {
                 MessageBox.Show("Database is still loading. Please try again in a moment.");
@@ -629,6 +629,7 @@ namespace WinFormsApp1
         {
             if (string.IsNullOrWhiteSpace(pathOrUrl) || pathOrUrl == "NaN") return "";
 
+            // Local files 
             if (File.Exists(pathOrUrl))
             {
                 try
@@ -637,8 +638,16 @@ namespace WinFormsApp1
                 }
                 catch
                 {
-                    return pathOrUrl;
+                    return "";
                 }
+            }
+
+            // Convert GitHub API links to 'Raw' links
+            // ((This fixes the issue where Unity tries to read JSON metadata as an image))
+            if (pathOrUrl.Contains("api.github.com"))
+            {
+                return pathOrUrl.Replace("api.github.com/repos", "raw.githubusercontent.com")
+                                 .Replace("/contents/", "/main/");
             }
 
             return pathOrUrl;
