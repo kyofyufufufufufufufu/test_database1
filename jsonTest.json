@@ -426,41 +426,6 @@
       "locations": 257
     },
     {
-      "question": "TEST (Diff 1, Module 0) LOREM IPSUM 3 IMAGE UPLOAD THRU BULK",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
-      "options": [
-        {
-          "text": "That's a kitty cat (green) (Correct)",
-          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertgreen.png",
-          "useImage": true
-        },
-        {
-          "text": "That's a kitty cat (red)",
-          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertred.png",
-          "useImage": true
-        },
-        {
-          "text": "That's a kitty cat (blue)",
-          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertblue.png",
-          "useImage": true
-        },
-        {
-          "text": "That's a kitty cat (yellow)",
-          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertyellow.png",
-          "useImage": true
-        },
-        {
-          "text": "That's a kitty cat (violet)",
-          "imageLink": "C:\\Users\\tabit\\OneDrive\\Pictures\\noobertviolet.png",
-          "useImage": true
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 384
-    },
-    {
       "question": "[TEST] [Diff 1, Module 0] 1234?",
       "imageLink": "",
       "options": [
