@@ -36,11 +36,11 @@
       "locations": 384
     },
     {
-      "question": "TEST (Duplication) How many letters are in the word 'dog'?",
+      "question": "TEST (Module 1, Diff 5) How many letters are in the word 'dog'?",
       "imageLink": "",
       "options": [
         {
-          "text": "3",
+          "text": "3 (Correct)",
           "imageLink": "",
           "useImage": false
         },
