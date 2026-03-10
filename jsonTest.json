@@ -260,7 +260,7 @@
       "imageLink": "",
       "options": [
         {
-          "text": "A",
+          "text": "A (Correct)",
           "imageLink": "",
           "useImage": false
         },
@@ -281,8 +281,8 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 3,
-      "minigameType": "Whack-a-Mole",
+      "difficulty": 4,
+      "minigameType": "None",
       "locations": 320
     },
     {
