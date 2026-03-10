@@ -391,7 +391,7 @@
       "locations": 272
     },
     {
-      "question": "TEST (BULK/BATTLE/IMAGES) LOREM IPSUM 2",
+      "question": "TEST (diff 4, module 0) LOREM IPSUM 2 IMAGE UPLOAD THRU BULK",
       "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
       "options": [
         {
