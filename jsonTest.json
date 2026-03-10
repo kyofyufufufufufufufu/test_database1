@@ -291,7 +291,7 @@
       "locations": 516
     },
     {
-      "question": "MODULE 1 TEST (Bulk) This is another test for minigames -- Card Match",
+      "question": "TEST (Difficulty 1, Module 1) This is another test for minigames -- Card Match",
       "imageLink": "",
       "options": [
         {
@@ -317,7 +317,7 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "minigameType": "Card Match",
+      "minigameType": "None",
       "locations": 640
     },
     {
