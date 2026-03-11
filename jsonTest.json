@@ -722,8 +722,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping a2-adrenergic receptor. What drug should you give to activate it?",
@@ -757,8 +757,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping B3-adrenergic receptor. What drug should you give to activate it?",
@@ -792,8 +792,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it quickly?",
@@ -827,8 +827,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it over a long period?",
@@ -862,8 +862,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping a1-adrenergic receptor. What drug should you give to activate it?",
@@ -897,8 +897,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "The radial muscle of the pupil is ",
@@ -932,8 +932,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "The concentric muscle of the pupil is ",
@@ -967,8 +967,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "Aqueous humor production in the eye is ",
@@ -1002,8 +1002,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "Aqueous humor resorption in the eye is ",
@@ -1037,8 +1037,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "The ciliary muscle of the eye is ",
@@ -1072,8 +1072,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "The salivary glands ",
@@ -1107,8 +1107,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 264,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 264
     },
     {
       "question": "The effect of the sympathetic nervous system on sweat glands is to",
@@ -1142,8 +1142,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 384,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 384
     },
     {
       "question": "The effect of the parasympathetic nervous system on sweat glands is to",
@@ -1177,8 +1177,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 384,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 384
     },
     {
       "question": "The nasal mucus glands ",
@@ -1212,8 +1212,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 384,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 384
     },
     {
       "question": "The longitudinal motility muscle in the GI tract experiences ",
@@ -1247,8 +1247,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 264,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 264
     },
     {
       "question": "A direct effect of activation of the alpha-1 receptors is",
@@ -1282,8 +1282,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 272,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 272
     },
     {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
@@ -1317,8 +1317,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 528,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 528
     },
     {
       "question": "What is an effect of activating the alpha-2 receptor in the eye?",
@@ -1352,8 +1352,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 516,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 516
     },
     {
       "question": " What is an effect of activating the alpha-2 receptor at the presynaptic nerve terminals?",
@@ -1387,8 +1387,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 514,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 514
     },
     {
       "question": "What is an effect of activating the alpha-2 receptor?",
@@ -1422,8 +1422,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 516,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 516
     },
     {
       "question": "What is the effect of activating the beta-1 receptors in the heart?",
@@ -1457,8 +1457,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 528,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 528
     },
     {
       "question": "What is the effect of activating the beta-1 receptors in the eye?",
@@ -1492,8 +1492,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "What is the effect of activating the beta-1 receptors?",
@@ -1527,8 +1527,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 528,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 528
     },
     {
       "question": "What is the effect of activating the beta-2 receptors?",
@@ -1562,8 +1562,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 288,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 288
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -1597,8 +1597,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
@@ -1632,8 +1632,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Alpha1-receptor appears. What compound should you use to calm it?",
@@ -1667,8 +1667,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1041,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1041
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -1702,8 +1702,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
@@ -1737,8 +1737,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it?",
@@ -1772,8 +1772,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping B3-adrenergic receptor. What drug should you give to activate it?",
@@ -1807,8 +1807,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 513,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 513
     },
     {
       "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it quickly?",
@@ -1842,8 +1842,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "It is a sleeping B2-adrenergic receptor. What drug should you give to activate it over a long period?",
@@ -1877,8 +1877,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 544,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 544
     },
     {
       "question": "The nasal mucus glands ",
@@ -1912,8 +1912,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 384,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 384
     },
     {
       "question": "The longitudinal motility muscle in the GI tract experiences ",
@@ -1947,8 +1947,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 264,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 264
     },
     {
       "question": "A direct effect of activation of the alpha-1 receptors is",
@@ -1982,8 +1982,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
@@ -2017,8 +2017,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 516,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 516
     },
     {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
@@ -2052,8 +2052,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 260,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 260
     },
     {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
@@ -2087,8 +2087,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 257,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 257
     },
     {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
@@ -2122,8 +2122,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 448,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 448
     },
     {
       "question": "What is an effect of activating the alpha-2 receptor?",
@@ -2157,8 +2157,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 528,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 528
     },
     {
       "question": "What is an effect of activating the alpha-2 receptor?",
@@ -2192,8 +2192,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 258,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 258
     },
     {
       "question": "What is an effect of activating the alpha-2 receptor?",
@@ -2227,8 +2227,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 514,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 514
     },
     {
       "question": "What is the effect of activating the beta-1 receptors?",
@@ -2262,8 +2262,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 516,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 516
     },
     {
       "question": "What is the effect of activating the beta-1 receptors?",
@@ -2297,8 +2297,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 640,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 640
     },
     {
       "question": "What is the effect of activating the beta-2 receptors?",
@@ -2332,8 +2332,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 640,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 640
     },
     {
       "question": "What is the effect of activating the beta-2 receptors?",
@@ -2367,8 +2367,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 516,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 516
     },
     {
       "question": "What is the effect of activating the beta-2 receptors?",
@@ -2402,8 +2402,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 520,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 520
     },
     {
       "question": "What is the effect of activating the beta-2 receptors?",
@@ -2437,8 +2437,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 640,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 640
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -2472,8 +2472,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -2507,8 +2507,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -2542,8 +2542,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
@@ -2577,8 +2577,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
@@ -2612,8 +2612,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Beta1-receptor appears. What compound should you use to calm it specifically?",
@@ -2647,8 +2647,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive Alpha1-receptor appears. What compound should you use to calm it?",
@@ -2682,8 +2682,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1025,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1025
     },
     {
       "question": "An overactive Alpha1-receptor appears. What compound should you use to calm it?",
@@ -2717,8 +2717,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1043,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1043
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -2752,8 +2752,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -2787,8 +2787,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -2822,8 +2822,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -2857,8 +2857,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
@@ -2892,8 +2892,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -2927,8 +2927,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
@@ -2962,8 +2962,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive Beta2-receptor appears. What compound should you use to calm it?",
@@ -2997,8 +2997,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 1040,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 1040
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3032,8 +3032,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3067,8 +3067,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3102,8 +3102,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3137,8 +3137,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3172,8 +3172,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3207,8 +3207,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "An overactive muscarinic receptor appears. What compound should you use to calm it?",
@@ -3242,8 +3242,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     },
     {
       "question": "A sleeping muscarinic receptor appears. What compound should you use to calm it?",
@@ -3277,8 +3277,8 @@
       ],
       "answerIndex": 0,
       "difficulty": 1,
-      "locations": 2048,
-      "minigameType": "None"
+      "minigameType": "None",
+      "locations": 2048
     }
   ]
 }
