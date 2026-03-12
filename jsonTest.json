@@ -3336,8 +3336,8 @@
         },
         {
           "text": "1000",
-          "imageLink": "",
-          "useImage": false
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Illustration2.png",
+          "useImage": true
         }
       ],
       "answerIndex": 0,
