@@ -3279,6 +3279,71 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 2048
+    },
+    {
+      "question": "Which of these organs is a heart?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/28daa99689a911de7db7ee7b227097d9.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/26065-stomach-main__79349.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/brain.jpg",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/liver-organ-illustration-image-vector.jpg",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 0
+    },
+    {
+      "question": "How many fingers does a human have on average?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "10",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "400",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "12",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "32",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1000",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 276
     }
   ]
 }
