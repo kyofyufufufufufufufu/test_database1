@@ -3308,7 +3308,7 @@
       "answerIndex": 0,
       "difficulty": 1,
       "minigameType": "None",
-      "locations": 0
+      "locations": 256
     },
     {
       "question": "How many fingers does a human have on average?",
