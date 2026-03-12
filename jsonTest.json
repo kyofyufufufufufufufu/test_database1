@@ -3373,7 +3373,7 @@
       "answerIndex": 0,
       "difficulty": 1,
       "minigameType": "None",
-      "locations": 256
+      "locations": 4096
     }
   ]
 }
