@@ -55,9 +55,31 @@ namespace WinFormsApp1
             return JsonConvert.DeserializeObject<QuestionSet>(decodedString)!;
         }
 
+        // Fetches the latest SHA for the JSON database file from GitHub
+        // Call this before SaveDatabaseAsync when image uploads may have occurred
+        // in between the last GetDatabaseAsync and the save, to avoid SHA conflicts
+        public async Task RefreshShaAsync()
+        {
+            string url = $"https://api.github.com/repos/{_owner}/{_repo}/contents/{_path}";
+
+            HttpResponseMessage response = await _client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+
+            string content = await response.Content.ReadAsStringAsync();
+            JObject json = JObject.Parse(content);
+
+            _currentFileSha = json["sha"]?.ToString()!;
+        }
+
         // Uploading image to GitHub images folder
         public async Task<string> UploadImageAsync(string localFilePath)
         {
+            // Check if the path is already a URL to prevent redundant uploads
+            if (string.IsNullOrWhiteSpace(localFilePath) || localFilePath.StartsWith("http"))
+            {
+                return localFilePath;
+            }
+
             if (!File.Exists(localFilePath))
             {
                 throw new FileNotFoundException($"Image file not found at: {localFilePath}");
@@ -71,9 +93,10 @@ namespace WinFormsApp1
 
             string? sha = null;
             string checkUrl = $"https://api.github.com/repos/{_owner}/{_repo}/contents/{targetPath}";
+
             try
             {
-                // GET request
+                // GET request to check for existing file
                 HttpResponseMessage checkResponse = await _client.GetAsync(checkUrl);
                 if (checkResponse.IsSuccessStatusCode)
                 {
@@ -101,21 +124,16 @@ namespace WinFormsApp1
             // PUT request
             HttpResponseMessage response = await _client.PutAsync(url, httpContent);
 
-            if (!response.IsSuccessStatusCode)
+            // Treat this as a success and return the raw URL
+            if (!response.IsSuccessStatusCode && response.StatusCode != (System.Net.HttpStatusCode)422)
             {
                 string error = await response.Content.ReadAsStringAsync();
                 throw new Exception($"GitHub API Error uploading image: {response.StatusCode} - {error}");
             }
 
-            string responseString = await response.Content.ReadAsStringAsync();
-            JObject responseJson = JObject.Parse(responseString);
-
             // construct the RAW link
             // Prevents 403 error or metadata redirect
             string rawUrl = $"https://raw.githubusercontent.com/{_owner}/{_repo}/main/{targetPath}";
-
-            // Update the SHA for future operations on this session if needed
-            _currentFileSha = responseJson["content"]?["sha"]?.ToString()!;
 
             return rawUrl;
         }

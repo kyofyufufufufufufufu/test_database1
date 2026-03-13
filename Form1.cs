@@ -2,6 +2,7 @@
 // Includes a duplicate Question button for adding multipe similar questions/options
 // Includes a bulk upload feature for adding large numbers of questions at once via CSV, with image support as well
 
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -49,6 +50,8 @@ namespace WinFormsApp1
             button20.Click += ImageButton_Click;
             button22.Click += ImageButton_Click;
             button24.Click += ImageButton_Click;
+            button26.Click += ImageButton_Click;
+            button28.Click += ImageButton_Click;
 
             // Clear buttons for the Edit tab
             button15.Click += ClearImage_Click;
@@ -56,6 +59,8 @@ namespace WinFormsApp1
             button19.Click += ClearImage_Click;
             button21.Click += ClearImage_Click;
             button23.Click += ClearImage_Click;
+            button25.Click += ClearImage_Click;
+            button27.Click += ClearImage_Click;
 
             // Bulk upload for Create tab
             button12.Click += button12_Click;
@@ -109,24 +114,17 @@ namespace WinFormsApp1
         {
             if (string.IsNullOrWhiteSpace(path)) return false;
             if (path.StartsWith("http", StringComparison.OrdinalIgnoreCase)) return false;
-            return Path.IsPathRooted(path) && File.Exists(path);
+            // Updated to catch cross-platform path strings
+            return Path.IsPathRooted(path) || path.Contains("\\");
         }
 
         private async Task<(string text, string imageLink, bool useImage)> ProcessContentAsync(string textInput, string? imagePath)
         {
-            if (IsLocalFilePath(imagePath!))
+            // if the path exists or looks like a local path, process it through the universal uploader
+            if (!string.IsNullOrEmpty(imagePath))
             {
-                if (gitService == null) return (textInput, string.Empty, false);
-                try
-                {
-                    string publicUrl = await gitService.UploadImageAsync(imagePath!);
-                    return (textInput, publicUrl, true);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error uploading image: {ex.Message}");
-                    return (textInput, string.Empty, false);
-                }
+                string uploadedUrl = await HandleImageUpload(imagePath);
+                return (textInput, uploadedUrl, !string.IsNullOrEmpty(uploadedUrl));
             }
             return (textInput, string.Empty, false);
         }
@@ -147,6 +145,7 @@ namespace WinFormsApp1
                 else if (clickedButton == button22) buttonIndex = 8;
                 else if (clickedButton == button24) buttonIndex = 9;
                 else if (clickedButton == button26) buttonIndex = 10;
+                else if (clickedButton == button28) buttonIndex = 11;
 
                 if (buttonIndex == -1) return;
 
@@ -177,6 +176,7 @@ namespace WinFormsApp1
                 else if (clickedButton == button19) index = 7;
                 else if (clickedButton == button21) index = 8;
                 else if (clickedButton == button23) index = 9;
+                else if (clickedButton == button27) index = 10;
 
                 if (index != -1)
                 {
@@ -206,6 +206,7 @@ namespace WinFormsApp1
                 8 => label27,
                 9 => label28,
                 10 => label34,
+                11 => label34,
                 _ => null
             };
         }
@@ -243,6 +244,7 @@ namespace WinFormsApp1
         {
             if (database == null || gitService == null) return;
 
+            // All image paths now pass through ProcessContentAsync which uses the passive HandleImageUpload logic
             string? qPath = pendingImagePaths.ContainsKey(0) ? pendingImagePaths[0] : null;
             var (qText, qLink, qUse) = await ProcessContentAsync(textBox1.Text, qPath);
 
@@ -253,6 +255,7 @@ namespace WinFormsApp1
             var o5 = await ProcessContentAsync(textBox7.Text, pendingImagePaths.ContainsKey(5) ? pendingImagePaths[5] : null);
 
             // Option 1 is marked as the correct answer, this will always be the case for each question
+            // Will be randomized in the Unity game, so no need for user input on this part
             int correctIdx = 0;
 
             var newQ = new Question
@@ -414,6 +417,9 @@ namespace WinFormsApp1
 
             var q = database.questions[listView1.SelectedIndices[0]];
 
+            // Passive upload handling for editing existing questions
+            // If the user selects a new image, it will upload and replace the link
+            // If the user leaves the image as is, it will keep the existing link
             if (pendingImagePaths.ContainsKey(5))
                 (_, q.imageLink, _) = await ProcessContentAsync(txtEditQuestion.Text, pendingImagePaths[5]);
             else if (string.IsNullOrEmpty(label24.Text)) q.imageLink = "";
@@ -446,8 +452,8 @@ namespace WinFormsApp1
                 q.options[4].text = txtEditOption5.Text;
 
                 // Check for new image
-                if (pendingImagePaths.ContainsKey(10))
-                    (_, q.options[4].imageLink, q.options[4].useImage) = await ProcessContentAsync(txtEditOption5.Text, pendingImagePaths[10]);
+                if (pendingImagePaths.ContainsKey(11))
+                    (_, q.options[4].imageLink, q.options[4].useImage) = await ProcessContentAsync(txtEditOption5.Text, pendingImagePaths[11]);
                 else if (string.IsNullOrEmpty(label34.Text)) { q.options[4].imageLink = ""; q.options[4].useImage = false; }
             }
             else if (q.options.Count >= 5)
@@ -457,7 +463,7 @@ namespace WinFormsApp1
             }
 
             await gitService.SaveDatabaseAsync(database);
-            for (int i = 5; i <= 10; i++) pendingImagePaths.Remove(i);
+            for (int i = 5; i <= 11; i++) pendingImagePaths.Remove(i);
             RefreshQuestionList();
             MessageBox.Show("Successfully updated question to database.");
         }
@@ -554,10 +560,9 @@ namespace WinFormsApp1
         // Button logic for Bulk Upload
         private async void button12_Click(object? sender, EventArgs e)
         {
-            // Null reference protection
             if (database == null || gitService == null)
             {
-                MessageBox.Show("Database is still loading. Please try again in a moment.");
+                MessageBox.Show("Please wait for the database to load first.");
                 return;
             }
 
@@ -566,88 +571,99 @@ namespace WinFormsApp1
 
             try
             {
-                var lines = File.ReadAllLines(ofd.FileName);
-
-                for (int i = 1; i < lines.Length; i++)
+                using (var parser = new Microsoft.VisualBasic.FileIO.TextFieldParser(ofd.FileName))
                 {
-                    if (string.IsNullOrWhiteSpace(lines[i])) continue;
+                    parser.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.Delimited;
+                    parser.SetDelimiters(",");
+                    parser.HasFieldsEnclosedInQuotes = true;
 
-                    var columns = lines[i].Split(',');
+                    if (!parser.EndOfData) parser.ReadFields(); // Skip Header
 
-                    string questionText = columns[0].Trim('"');
-
-                    if (database.questions.Any(q => q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase)))
+                    while (!parser.EndOfData)
                     {
-                        continue;
-                    }
+                        string[]? columns = parser.ReadFields();
+                        if (columns == null || columns.Length == 0) continue;
 
-                    var newQuestion = new Question();
-                    newQuestion.question = questionText;
+                        // --- THE SAFETY NET ---
+                        // This local function prevents IndexOutOfRangeException forever.
+                        string GetValue(int index) => (columns.Length > index) ? columns[index]?.Trim() ?? "" : "";
 
-                    string qImgPath = columns[1].Trim('"');
-                    newQuestion.imageLink = await HandleImageUpload(qImgPath);
+                        string questionText = GetValue(0);
+                        if (string.IsNullOrWhiteSpace(questionText)) continue;
 
-                    for (int opt = 0; opt < 5; opt++)
-                    {
-                        string txt = columns[2 + (opt * 2)].Trim('"');
-                        string imgPath = columns[3 + (opt * 2)].Trim('"');
+                        // Duplicate Check
+                        if (database.questions.Any(q => q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase)))
+                            continue;
 
-                        if (!string.IsNullOrWhiteSpace(txt) || !string.IsNullOrWhiteSpace(imgPath))
+                        var newQuestion = new Question { question = questionText };
+                        newQuestion.imageLink = await HandleImageUpload(GetValue(1));
+
+                        // Loop through 5 possible options
+                        for (int i = 0; i < 5; i++)
                         {
-                            newQuestion.options.Add(new Option
+                            string txt = GetValue(2 + (i * 2));
+                            string img = GetValue(3 + (i * 2));
+
+                            if (!string.IsNullOrWhiteSpace(txt) || !string.IsNullOrWhiteSpace(img))
                             {
-                                text = txt,
-                                imageLink = await HandleImageUpload(imgPath),
-                                useImage = !string.IsNullOrWhiteSpace(imgPath)
-                            });
+                                newQuestion.options.Add(new Option
+                                {
+                                    text = txt,
+                                    imageLink = await HandleImageUpload(img),
+                                    useImage = !string.IsNullOrWhiteSpace(img)
+                                });
+                            }
                         }
+
+                        // Metadata - TryParse handles "None" or empty strings without crashing
+                        int.TryParse(GetValue(12), out int ansIdx);
+                        newQuestion.answerIndex = ansIdx;
+
+                        int.TryParse(GetValue(13), out int diff);
+                        newQuestion.difficulty = diff;
+
+                        string mini = GetValue(14);
+                        newQuestion.minigameType = string.IsNullOrWhiteSpace(mini) ? "MultipleChoice" : mini;
+
+                        // These were the crash-prone lines! Now they use GetValue and TryParse.
+                        int.TryParse(GetValue(15), out int mod);
+                        string locs = GetValue(16);
+
+                        newQuestion.locations = QuestionSet.EncodeLocations(mod, locs);
+                        database.questions.Add(newQuestion);
                     }
-
-                    newQuestion.answerIndex = 0;
-                    newQuestion.difficulty = int.Parse(columns[13]);
-                    newQuestion.minigameType = columns[14].Trim('"');
-
-                    int module = int.Parse(columns[15]);
-                    string locs = columns[16].Trim('"');
-                    newQuestion.locations = QuestionSet.EncodeLocations(module, locs);
-
-                    database.questions.Add(newQuestion);
                 }
 
+                // Refresh the JSON file's SHA before saving. Image uploads during the loop
+                await gitService.RefreshShaAsync();
                 await gitService.SaveDatabaseAsync(database);
                 RefreshQuestionList();
                 MessageBox.Show("Bulk Upload Successful!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error during bulk upload: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}\n\nTrace: {ex.StackTrace}");
             }
         }
 
         // Helper to decide if we need to upload to GitHub or just use a URL
         private async Task<string> HandleImageUpload(string pathOrUrl)
         {
-            if (string.IsNullOrWhiteSpace(pathOrUrl) || pathOrUrl == "NaN") return "";
+            // Added null check and URL bypass
+            if (string.IsNullOrWhiteSpace(pathOrUrl)) return "";
+            if (pathOrUrl.StartsWith("http")) return pathOrUrl;
 
-            // Local files 
+            // Check if the file exists on the CURRENT machine to attempt an upload
             if (File.Exists(pathOrUrl))
             {
-                try
-                {
-                    return await gitService!.UploadImageAsync(pathOrUrl);
-                }
-                catch
-                {
-                    return "";
-                }
+                return await gitService.UploadImageAsync(pathOrUrl);
             }
-
-            // Convert GitHub API links to 'Raw' links
-            // ((This fixes the issue where Unity tries to read JSON metadata as an image))
-            if (pathOrUrl.Contains("api.github.com"))
+            // If file isn't found but has backslashes, it's a local path from another PC.
+            // We strip the path to just the filename and point it to the GitHub images folder.
+            else if (pathOrUrl.Contains("\\"))
             {
-                return pathOrUrl.Replace("api.github.com/repos", "raw.githubusercontent.com")
-                                 .Replace("/contents/", "/main/");
+                string fileName = Path.GetFileName(pathOrUrl);
+                return $"https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/{fileName}";
             }
 
             return pathOrUrl;
