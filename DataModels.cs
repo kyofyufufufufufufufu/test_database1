@@ -72,6 +72,8 @@ namespace WinFormsApp1
         public string text { get; set; } = string.Empty;
         public string imageLink { get; set; } = string.Empty;
 
-        public bool useImage { get; set; }
+
+        // Tells Unity whether to attempt to render an image for this specific option
+        public bool useImage { get; set; } = false;
     }
 }
