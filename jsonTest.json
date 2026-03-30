@@ -3309,41 +3309,6 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 256
-    },
-    {
-      "question": "How many fingers does a human have on average?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "10",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "400",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "12",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobertgreen.png",
-          "useImage": true
-        },
-        {
-          "text": "1000",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Illustration2.png",
-          "useImage": true
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "None",
-      "locations": 276
     }
   ]
 }
