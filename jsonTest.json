@@ -2973,12 +2973,17 @@
           "text": "have no effect on the bronchiol smooth muscle",
           "imageLink": "",
           "useImage": false
+        },
+        {
+          "text": "",
+          "imageLink": "",
+          "useImage": false
         }
       ],
       "answerIndex": 0,
       "difficulty": 0,
       "minigameType": "None",
-      "locations": 256
+      "locations": 512
     },
     {
       "question": "Dopamine can cross the blood-brain barrier",
