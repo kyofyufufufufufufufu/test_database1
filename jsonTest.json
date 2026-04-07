@@ -2948,12 +2948,17 @@
           "text": "have no effect on smooth muscle",
           "imageLink": "",
           "useImage": false
+        },
+        {
+          "text": "",
+          "imageLink": "",
+          "useImage": false
         }
       ],
       "answerIndex": 0,
-      "difficulty": 0,
+      "difficulty": 1,
       "minigameType": "None",
-      "locations": 256
+      "locations": 512
     },
     {
       "question": "Beta 2 receptors when activated",
