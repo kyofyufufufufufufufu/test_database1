@@ -2616,9 +2616,9 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 0,
+      "difficulty": 1,
       "minigameType": "None",
-      "locations": 272
+      "locations": 528
     },
     {
       "question": "The salivary glands are",
