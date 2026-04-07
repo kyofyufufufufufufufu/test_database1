@@ -2676,9 +2676,9 @@
         }
       ],
       "answerIndex": 0,
-      "difficulty": 0,
+      "difficulty": 1,
       "minigameType": "None",
-      "locations": 264
+      "locations": 520
     },
     {
       "question": "Alpha 1 receptors",
