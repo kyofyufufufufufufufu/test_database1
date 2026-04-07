@@ -2589,6 +2589,741 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 2048
+    },
+    {
+      "question": "Heart rate is",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increased by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased by the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "not affected by the sympathetic or parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 272
+    },
+    {
+      "question": "The salivary glands are",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "stimulated by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "stimulated by the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "not affected by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "not affected by the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 264
+    },
+    {
+      "question": "In the gut, blood vessels are",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "contracting with the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxing with the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "not affected by the sympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contracting with the parasympathetic nervous system",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 264
+    },
+    {
+      "question": "Alpha 1 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increases Ca++",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases Ca++",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 1 and 2 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increases cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increases Ca++",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases Ca++",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 3 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increases cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases cyclic AMP",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increases Ca++",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases Ca++",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Alpha 1 receptors are located in",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the bladdaer and GI sphincters",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "major blood vessels",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "none of the following",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Alpha 2 receptors are located in",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "the eye and central nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the bladdaer and GI sphincters",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the central nervous system",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye and central nervous system",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 1 receptors are located in",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the heart",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the kidney",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 2 receptors are located in",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "mast cells",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bronchiol smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 3 receptors are located in",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "the bladder detrusor muscles",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the eye",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the heart",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Alpha 1 receptors when activated",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "contract blood vessels in the smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dilate blood vessels in smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "have no effect on smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Beta 2 receptors when activated",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "cause bronchioldilation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "cause bonchiolconstriction",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "have no effect on the bronchiol smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Dopamine can cross the blood-brain barrier",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "false",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "true",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Only under stress",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "N/A",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Dopamine is a substrate for",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "both norepinephrine and epinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "only norepinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "only epinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "neither norpinephrine or epinephrine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 256
+    },
+    {
+      "question": "Alpha 1 receptor agonist effect in major blood vessels leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increased peripheral resistance and increased diastolic blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased peripheral resistance and decreased diastolic blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased peipheral resistance and increased disatolic blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased peipheral resistance and decreased diastolic blood pressure",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "Alpha 1 receptor agonist effect in the eye leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "contraction of the radial muscles to causes mydriasis",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of the radial muscles to causes mydriasis",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction of the radial muscles to cause miosis",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of the radial muscles to causes miosis",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 260
+    },
+    {
+      "question": "Alpha 1 receptor agonist effect in the bladder and GI sphincters leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "constriction of the sphincters, blocking outflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "constription of the sphincters, improving outlfow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of the sphincters, blocking outflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of the sphincters, improving outflow",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 265
+    },
+    {
+      "question": "Alpha 1 receptor agonist effect of the prostate capsule around the urethra leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "constriction, blocking outflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "constriction, improving outflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation, blocking outflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation, improving outflow",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 257
+    },
+    {
+      "question": "Alpha 2 receptor agonist effect in the central nervous system leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "decrease in blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase in blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no change in blood pressure",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 258
+    },
+    {
+      "question": "Alpha 2 receptor agonost effect in the presynaptic nerve terminals leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "inhibition of norepinephrine release",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "promotion of norepinephrine release",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no effect of norepinephrine release",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 258
+    },
+    {
+      "question": "Beta 1 receptor agonist effect in the heart leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increase in heart rate and contractility",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decrease in heart rate and contractility",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase in heart rate and decrease in contractility",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decrease in heart rate and increase in contractility",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 272
+    },
+    {
+      "question": "Beta 1 receptor agonist effect in the eye leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increase production of aqueous humor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decrease production of aqueous humor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no effect on production of aqueous humor",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 260
+    },
+    {
+      "question": "Beta 2 receptor agonist effect in the bronchiol smooth muscle leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "relaxation and increase in airflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction and increase in airflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation and decrease in airflow",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction and decrease in airflow",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 288
+    },
+    {
+      "question": "Beta 3 receptor agonist effect in the bladder and detrusor muscle leads to",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "relaxation and decrease un urinary output",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction and increase in urinary output",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation and increase in urinary output",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation and decrease in urinary output",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "None",
+      "locations": 257
     }
   ]
 }
