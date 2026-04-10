@@ -1,140 +1,64 @@
-# Database Management System
+# Contributing Guide
 
-### Database Structure
+## Code Quality
 
-This is the test database for PharmacyGO!
+Before submitting code, ensure it follows standard C# conventions.
 
-This database requires the use of a Winforms application -- accessible through
-a PAT token -- and have question sets added to the database's json file.
+- **Format:** Ensure your IDE is set to use the EditorConfig settings included in the repo
+- **Build check:** Run a clean build to ensure no new warnings or errors are introduced:
+```bash
+dotnet build
+```
 
-### Features
-- Create, Read, Update, and Deletion (CRUD) of question sets in the database.
-- A duplicate question button for easy creation of similar questions.
-- A bulk upload feature that allows .csv file contents to be added to the database.
-- Adding, deleting, and replacing images within the database's live view in the Edit tab of the WinForms application.
+---
 
-#### CRUD
-##### How it works
-The application fetches the json file (jsonTest.json) through the GitHub API,
-which parses into memory as a QuestionSet object, and allows users to perform edits locally.
+## Contribution Workflow
 
-Clicking Save or Bulk Upload serializes the object back to JSON and pushes a commit to the repo.
+### 1. Branching
 
-#### Bulk Upload
-The bulk upload feature allows multiple question sets to be added to the database at once. 
+Always create a new branch for your work. Do not commit directly to `main`.
 
-1. **Download the Template:** [Template](./bulk_upload_template.csv.xlsx). *(Click to open/download)*
-2. **Fill the Data:** Ensure you follow the column order strictly with the [tutorial](./Bulk%20Upload%20Tutorial.pdf).
-3. **Run Upload:** Click the Bulk Upload button in the app and select your file. **The upload may take time if adding images**
+Examples:
+- `feature/minigame-name`
+- `fix/bug-description`
+- `docs/update-csv-template`
 
-| Column # | Content | Note |
-| :--- | :--- | :--- |
-| 1 | Question Text | The main prompt. |
-| 2 | Question Image | Local path or URL. |
-| 3-12 | Options 1-5 | Alternates between Text and Image (e.g., Opt1 Text, Opt1 Image). |
-| 13 | Correct Index | Always `0` for PharmacyGO! |
-| 14 | Difficulty | Integer (1-5). |
-| 15 | Minigame | `Card Match`, `Whack-a-Mole`, or `Slapjack`. |
-| 16 | Module | Integer (e.g., `3`). |
-| 17 | Body Locations | Comma-separated (e.g., `Heart, Lungs`). |
+### 2. Opening a Pull Request
 
-> **The system will automatically skip any row where the `Question Text` matches an entry already in the database.**
+When your feature is ready, open a PR against `main`. Your PR description should include:
 
-### Question Set Structure
-| Propery  | .NET 8 Type | Default  | Purpose |
-| ------------- | ------------- | ------------- | ------------- |
-| Question | string  | ""  | The prompt shown to the player.  |
-| Options | List<Option>  | new()  | 1-5 items/answers. **Index 0 is always the correct option.** |
-| MinigameType  | string  | "None"  | Triggers game logic for minigames. |
-| Locations  | int  | 0 | Bit-packed Module and Body Part flags.  |
+- What was changed or added
+- A screenshot of the UI if applicable
+- Anything that caused changes to the JSON database structure
 
-* Bits 0-7 are Body Location flags (Example: Heart = 16, Lungs = 32)
-* Bits 8-12 are Module Numbers (Shift right by 8)
+### 3. Definition of Done
 
-### Prerequisites & Local Setup
+A task is considered done only when:
 
-To run this project, you need Visual Studio 2022 (with the .NET Desktop Development workload - .NET 8) or VS Code with the C# Dev Kit. You can have both if you work between these two programs.
+- The code compiles without errors or null warnings
+- Images upload correctly to the `/images` folder on GitHub
+- The locations bitwise encoding logic is verified for the specific module
+- `jsonTest.json` is successfully updated via the app
 
-#### Steps:
-    Clone the Repository:
-    
-    Bash
+### 4. Code Review Expectations
 
-    git clone https://github.com/kyofyufufufufufufufu/test_database1.git
-    cd test_database1
+- Expect feedback within 24–48 hours
+- Approve only if you have verified the JSON output is valid and the app runs without errors
 
-    Install Dependencies:
-The project uses Newtonsoft.Json for data handling.
+---
 
-Visual Studio should restore these automatically, but you can run:
-    Bash
+## Reporting Bugs & Requests
 
-    dotnet restore
+Open an [Issue](https://github.com/kyofyufufufufufufufu/test_database1/issues) in this repository and include:
 
-    Environment Setup: You will need a GitHub Personal Access Token (PAT)
-    with repo permissions to allow the app to fetch and save the jsonTest.json file.
+- Steps to reproduce the bug
+- The CSV file used (if it was a bulk upload error)
+- The specific error message received in the MessageBox
 
+---
 
+## Support & Handoff
 
-### Code Quality (Linters & Formatters)
+For installation help, technical issues, or feature requests, submit a request via the [PharmacyGO Support & Feedback Form](https://forms.gle/NajcPYnEa8jS3CWN6). Submissions are monitored by the project manager and will be routed to the appropriate team or future development group.
 
-Before submitting code, please ensure it follows the standard C# conventions.
-
-    Format Code: Ensure your IDE is set to use EditorConfig settings included in the repo.
-
-    Build Check: Run a clean build to ensure no new warnings or errors are introduced:
-    Bash
-
-    dotnet build
-
-### Contribution Workflow
-#### 1. Branching
-
-Always create a new branch for your work. Do not commit directly to main.
-
-    Feature: minigame-name
-
-    Fix: bug-description
-
-    Docs: update-csv-template
-
-#### 2. Pull Requests (PRs)
-
-When your feature is ready, open a PR against the main branch. Your PR description should include:
-
-    -What was changed or added.
-
-    -A screenshot of the UI (if applicable).
-
-    -Anything that caused changes to the json database structure.
-
-#### 3. Definition of Done (DoD)
-
-A task is considered Done only when:
-
-    -The code compiles without errors or null warnings.
-
-    -Images upload correctly to the /images folder on GitHub.
-
-    -The locations bitwise encoding logic is verified for the specific module.
-
-    -The jsonTest.json file is successfully updated via the app.
-
-#### 4. Code Review Expectations
-
-    -Expect feedback within 24–48 hours.
-
-### Reporting Bugs & Requests
-
-    -Where: Open an Issue in the GitHub repository.
-
-    -Details: Include steps to reproduce the bug, the CSV file used (if it was a bulk upload error), and the specific error message received in the MessageBox.
-
-### Where to Ask for Help
-
-If you run into issues with the GitHub API or the WinForms designer:
-
-    Primary Contact: Reach out via our project Discord/Teams channel.
-If you’re not a member of this channel, please contact geigerta@oregonstate.edu
-
-    Documentation: Refer to the DataModels.cs comments for bitwise logic explanations.
+If you run into issues with the GitHub API or the WinForms designer, refer to the `DataModels.cs` comments for bitwise logic explanations, or contact geigerta@oregonstate.edu.
