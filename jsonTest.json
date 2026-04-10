@@ -3409,6 +3409,36 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 512
+    },
+    {
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Albuterol.jpg",
+      "options": [
+        {
+          "text": "Albuterol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salmeterol ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Mirabegron ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 512
     }
   ]
 }
