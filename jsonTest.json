@@ -4174,6 +4174,36 @@
       "difficulty": 1,
       "minigameType": "none",
       "locations": 257
+    },
+    {
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Salmeterol.jpg",
+      "options": [
+        {
+          "text": "Salmeterol ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tertbutaline ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Albuterol ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Levalbuterol ",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 512
     }
   ]
 }
