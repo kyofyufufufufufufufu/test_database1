@@ -4204,6 +4204,36 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 512
+    },
+    {
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Mirabegrone.jpg",
+      "options": [
+        {
+          "text": "Mirabegron ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vilanterol ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salmeterol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Epinephrine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 513
     }
   ]
 }
