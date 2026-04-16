@@ -3469,6 +3469,711 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 512
+    },
+    {
+      "question": "At what dose does dopamine hit the alpha 1 receptor?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "high dose",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "medium dose",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "low dose",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it always hits alpha receptors",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 384
+    },
+    {
+      "question": "What feature is missing from dopamine, not allowing it to cross the BBB?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "carboxyl group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "imine group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tert butyl group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it does not lack anything, it can cross the BBB",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 258
+    },
+    {
+      "question": "What catalyzes the degradation of epinephrine and norepinepherine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "monoamine oxidase",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dopamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "acetylcholine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catechol o-methyltransferase",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What is this part of the structure called?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "imine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What can lower the levels of dopamine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "carbidopa",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "L-DOPA",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "epinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "psudoephedrine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What effect does low dose dopamine have on the body?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "blocks the reuptake of norepinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "inhibits the breakdown of norepinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is not an indirect agonist, it directly binds to the receptor",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What is the key difference between ephedrine and pseudoephedrine from epinephrine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "they do not contain a catechol group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they have differing stereochemistry",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they are considered direct agonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there are no major differences",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What is the core backbone in the indirect adrenergic agonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta-phenethyl amine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "phenylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "arylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catecholamine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "What receptor does dobutamine hit?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta 1 and beta 2 receptor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dopamine receptor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta 1, 2, and dopamine receptor",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "If a patient is experiencing tachycardia, muscle twitching, and excitability, what adgrenergic agonist did they most likley take?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta 2 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta 3 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha 1 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta 1 antagonost",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 288
+    },
+    {
+      "question": "What part of the structure gives beta 2 selectivity?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "tert butyl group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "imine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "carboxyl",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 384
+    },
+    {
+      "question": "Why is albuterol dosed higher per puff than levalbuterol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "because albuterol contains the 1:1 mixture of the R and S isomer, requiring more of the active R-isomer",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "because albuterol contains the 1:2 mixture of the R and S isomer, requiring more of the active R-isomer",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "because albuterol contains the 2:1 mixture of the R and S isomer, requiring more of the active S-isomer",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "albuterol is not dosed higher than levalbuterol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 288
+    },
+    {
+      "question": "What effect does tertbutaline have when injected?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "hault in contractions to stop premature labor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bonchodilation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hault in contractions and bronchodilation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tertbutaline cannot be injected",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 288
+    },
+    {
+      "question": "What is the part of the structure in the red box called?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Resorcinol_box.jpg",
+      "options": [
+        {
+          "text": "resorcinol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tert butyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "imine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 384
+    },
+    {
+      "question": "What part of the structure in salmeterol causes the long acting effect?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "long hydrophobic tail",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "phenylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "terty butyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catecholamine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 384
+    },
+    {
+      "question": "What differentiates vilanterol from the other beta agonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "the di-chlorophenyl group makes it more lipohilic than the other beta agonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there is nothing different about vilanterol compared to the others",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the di-chlorophenyl group makes it more hydrophilic than the other beta agonists",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 288
+    },
+    {
+      "question": "Where is Mirabegron absorbed in the body?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "small intestine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "stomach",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "large intestine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "colon",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 264
+    },
+    {
+      "question": "What is the core backbone in beta selective agonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "phenylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-phenethyl amine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "arylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "catecholamine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 384
+    },
+    {
+      "question": "Overuse of Visine can lead to potential for tissue necrosis",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "true",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "false",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 256
+    },
+    {
+      "question": "What effect does Phenylephrine have on heart rate?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "it has no effect",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases heart rate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increases heart rate",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 272
+    },
+    {
+      "question": "What side effects do alpha-1 agonists have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "reflex bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "urinary retention",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "appetite suppression",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "photophobia",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 276
+    },
+    {
+      "question": "How do alpha-2 agonists lower blood pressure",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "inhibiting norepinephrine release and blocking the barorelfex",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "promoting norepinephrine release",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "promoting the baroreflex",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-1 agonists do not lower blood pressure",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 272
+    },
+    {
+      "question": "What is midodrine used for?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "orthostatic hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "rebound congenstion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "nasal congestion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "asthma",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 384
+    },
+    {
+      "question": "Why are LABAs used in combination with inhaled corticosteroids?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "to prevent decrease in bronchoplasticity and help with inflammation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "to promote decrease in bronchoplasticity",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is not used in combination with inhaled corticosteroids",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 288
+    },
+    {
+      "question": "If a patient needs to be treated for overactive bladder, what type of adrenergic agonist would be used?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta-3 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-2 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-2 agonist",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 257
     }
   ]
 }
