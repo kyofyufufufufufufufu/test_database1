@@ -4234,6 +4234,1521 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 513
+    },
+    {
+      "question": "What is this core structure called that is in beta-1 selective adrenergic antagonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "4'-phenyl substituent",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-phenethyl amine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "phenylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "arylethanolamine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "The core group in Labetalol that allows it to bind to the receptor is similar to what other drug?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Epinephrine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Dopamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Acetylcholine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Salmeterol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Why can propranolol pass through the blood brain barrier?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "it is highly lipophilic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is highly hydrophobic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is a small molecule",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is a large molecule",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What CYP is nebivolol metabolized by?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "CYP2D6",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP3A4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C9",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C19",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Which beta antagonists are nonselective?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Timolol and Propranolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Timolol and Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol and Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Propranolol and Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Why do you not abruptly stop taking a beta-1 selective antagonoist?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "it can cause rebound tachycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it can cause bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it can cause excitation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there is no reason, you can discontinue at any point",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Which beta-1 selective antagonist is considered short acting?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Esmolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atenolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Metoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What comorbidities are non-selective beta anatagonists contraindicated with?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "insulin-dependent diabetes, asthma, and COPD",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Asthma, COPD, and hypertension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypertension, glaucoma, and diabetes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they are not  contraindicated with anything",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Prazosin can cross the blood brain barrier",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 514
+    },
+    {
+      "question": "What receptors are antagonized for the treatment of benign prostatic hyperplasia?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "alpha-1 receptors",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-2 receptors",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 receptors",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta -2 receptors",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is a major side effect of alpha-1 antagonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "orthostatic hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "excitability",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypertension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bradycardia",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "When would you suggest to dose an alpha-1 antagonist to avoid syncope and othostatic hypotension?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "at bedtime",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "first thing in the morning",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "any time of day",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "30 minutes before a meal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Labetolol is a mix of which stereoisomers?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta-1 antagonist, beta-2 partial agonist, alpha-1 antagonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 agonist, beta-2 agonist, alpha-1 antagonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 antagonists, beta-2 agonist, alpha-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 antagonist, beta-2 partial agonist, alpha-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "In carvedilol, which enantiomer provides the cardioprotective effect?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "beta antagonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-1 antagonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpa-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is Carvedilol used in treatment of?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "tachycardia and hypertension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bradycardia and hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tachycardia and hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bradycardia and hypertension",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What options are there for delivery of timolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "oral and ophthalmic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "only oral",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "only ophthalmic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "oral and otic",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Why is timolol more potent as a beta-blocker compared to propranolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "the tert-butyl group",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the thiadiazole ring",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the morpholine ring",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is not more potent than propranolol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "How do beta-1 selective antagonists help post heart attack?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "decrease oxygen and workload",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased oxygen and workload",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased oxygen and increased workload",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase oxygen and decreased workload",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Beta-1 antagonists are first line options for treatment of hypertension",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What disease state are beta-1 selective antagonists contraindicated?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "insulin-dependent diabetes",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "asthma",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "COPD",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they are not contraindicated with anything",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Why are beta-1 selective antagonists contraindicated with insulin-dependent diabetes?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "they can mask symptoms of hypoglycemia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they can mask symptoms of hyperglycemia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they can exaggerate symptoms of hypoglycemia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "they are not contraindicated with insulin-dependent diabetes",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Non-selective beta blockers can cross the blood brain barrier",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 514
+    },
+    {
+      "question": "Non-selective beta blockers are considered first line therapy for hypertension",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Non-selective beta blockers are used to treat symptoms of hyperthyroidism",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "If a patient comes in with Frostbite or Raynaud's syndrome, what kind of adrenergic antagonist can you use in treatment?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "alpha-1 antagonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "beta-1 antagonist",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "non-selective beta blocker",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "alpha-1 agonist",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the corresponding NYHA class with stage A heart failure?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "there is no corresponding NYHA class",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class I. asymptomatic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class II. symptomatic with moderate exertion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class IV. symptomatic at rest",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What is the corresponding NYHA class with stage B heart failure?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "class I. asymptomatic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class II. symptomatic with moderate exertion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class III. symptomatic with minimal exertion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class I. asymptomatic",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What are the corresponding NYHA class with stage C heart failure?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "class II.  symptomatic with moderate exertion or III. Symptomatic with minimal exertion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class I. asymptomatic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class IV. Symptomatic at rest",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there is no corresponding NYHA class",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What is the corresponding NYHA class with stage D heart failure?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "class IV. symptomatic at rest",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class I. asymptomatic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "class II. symptomatic with moderate exertion",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "there is no corresponding NYHA class",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What CYP is metoprolol metabolized by?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "CYP2D6",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP3A4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C9",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C19",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "How is digoxin cleared?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "renally",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hepatically",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "unchanged in stool",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Digoxin is considered first line therapy for atrial fibrillation",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Which form of metoprolol is considered short acting?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "metoprolol tartrate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "metoprolol succinate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "both are long acting",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "both are short acting",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is a major side effect of using doxazosin?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "orthostatic hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "excitability",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tachycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypertension",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Beta antagonists have not been shown to reduce risk of stroke and heart attack",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "How does digoxin help to control rapid heart rates in patients with atrial fibrillation?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "through increasing parasympathetic drive",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "through increasing symapthetic drive",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "through decreasing parasympathetic drive",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "through decreasing sympathetic drive",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "How do we circumvent the short half-life of metorpolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "by using the XL formulation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "by dosing more frequently",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "by dosing less fequently",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "metoprolol does not have a short half life",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "Clonidine will increase the risk of what from beta-1 antagonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tachycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypertension",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Clonidine will increase the risk of what from alpha-1 antagonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "orthostatic hypotension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "hypertension",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tachycardia",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Beta antagonists are indicated for heart attack in which setting?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "acute",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "long term",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Beta antagonists have been shown to have benefit in long term use post heart attack",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "Alpha-1 selective antagonists are considered first line therapy for hypertension",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 528
+    },
+    {
+      "question": "What is the brand name for esmolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Brevibloc",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for propranolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Brevibloc",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for metoprolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Brevibloc",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for atenolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bevibloc",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for nebivolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Bystolic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for timolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Timoptic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bystolic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for prazosin?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Minipress",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bystolic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Hytrin",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for doxazosin?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Cardura",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Minipress",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Hytrin",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for terazosin?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Hytrin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Cardura",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Inderal",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for tamsulosin",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Flomax",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Cardura",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tenormin",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for labetolol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Normodyne",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bystolic",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Brevibloc",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
+    },
+    {
+      "question": "What is the brand name for carvedilol?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Coreg",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Normodyne",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Cardura",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Lopressor",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 640
     }
   ]
 }
