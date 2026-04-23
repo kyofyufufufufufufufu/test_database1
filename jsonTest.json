@@ -5781,21 +5781,21 @@
       "locations": 1024
     },
     {
-      "question": "What is the name of this drug?  (2)",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Labetalol.jpg",
+      "question": "What is the name of this drug? ",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Propanalol.jpg",
       "options": [
         {
-          "text": "Labetalol ",
+          "text": "Propranolol",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Atenolol ",
+          "text": "Timolol",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Nebivolol",
+          "text": "Labetalol",
           "imageLink": "",
           "useImage": false
         },
