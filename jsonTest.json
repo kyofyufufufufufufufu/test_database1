@@ -7446,11 +7446,11 @@
       "locations": 2176
     },
     {
-      "question": "What is the name of this drug? (2)",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Cevimeline.jpg",
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Muscarine.jpg",
       "options": [
         {
-          "text": "Cevimeline ",
+          "text": "Muscarine ",
           "imageLink": "",
           "useImage": false
         },
@@ -7460,12 +7460,12 @@
           "useImage": false
         },
         {
-          "text": "Muscarine ",
+          "text": "Atropine ",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Atropine ",
+          "text": "Oxybutynin ",
           "imageLink": "",
           "useImage": false
         }
