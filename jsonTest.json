@@ -7566,26 +7566,26 @@
       "locations": 2176
     },
     {
-      "question": "What is the name of this drug? (6)",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Cevimeline.jpg",
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Oxybutynin.jpg",
       "options": [
         {
-          "text": "Cevimeline ",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Bethanechol ",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Muscarine ",
+          "text": "Oxybutynin",
           "imageLink": "",
           "useImage": false
         },
         {
           "text": "Atropine ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Dicyclomine ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Solidenacin ",
           "imageLink": "",
           "useImage": false
         }
