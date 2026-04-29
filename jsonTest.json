@@ -7476,26 +7476,26 @@
       "locations": 2176
     },
     {
-      "question": "What is the name of this drug? (3)",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Cevimeline.jpg",
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Bethanechol.jpg",
       "options": [
-        {
-          "text": "Cevimeline ",
-          "imageLink": "",
-          "useImage": false
-        },
         {
           "text": "Bethanechol ",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Muscarine ",
+          "text": "Acetylcholine ",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Atropine ",
+          "text": "Scopolamine ",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Dicyclomine ",
           "imageLink": "",
           "useImage": false
         }
