@@ -7506,26 +7506,26 @@
       "locations": 2176
     },
     {
-      "question": "What is the name of this drug? (4)",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Cevimeline.jpg",
+      "question": "What is the name of this drug?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/Scopolamine.jpg",
       "options": [
         {
-          "text": "Cevimeline ",
+          "text": "Scopolamine ",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Bethanechol ",
+          "text": "Glycopyrronium bromide ",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Muscarine ",
+          "text": "Hyoscayamine",
           "imageLink": "",
           "useImage": false
         },
         {
-          "text": "Atropine ",
+          "text": "Dicyclomine ",
           "imageLink": "",
           "useImage": false
         }
