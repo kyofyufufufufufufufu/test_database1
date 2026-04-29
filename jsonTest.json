@@ -5959,6 +5959,1461 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 1024
+    },
+    {
+      "question": "Which muscarinic cholinergic receptor types are stimulatory?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "M1, M3, M5",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M2, M4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M1, M2, M4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M2, M5",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "When the M1 receptor is actvated and releases Ca++, what is the effect?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "contraction of smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreases heart rate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased heart rate",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "When the M2 receptor is activated and released cAMP, what is the effect?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "a negative feedback loop and decreased in heart rate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increase in heart rate",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction of smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "relaxation of smooth muscle",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "The effects acronym called SLUDS is a recult of which receptors?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "M1, M3",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M1, M3, M5",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M2, M4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "M1, M2, M4",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What does the letter S in SLUDS stand for?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "salivation and sweating",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "salivation and syncope",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "sycope and somnolence",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "sweating and somnolence",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What does the letter L in SLUDS stand for?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "lacrimation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "lactation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "low blood pressure",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "low blood sugar",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What does the letter U in SLUDS stand for?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "uination",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "uremia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "urticaria",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "ulcerative colitis",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What does the letter D in SLUDS stand for?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "defecation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "depression",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "diarrhea",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dehydration",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What effect does a muscarinic agonist acting on the M1 receptor have in the eye?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "contraction of the iris sphincter for miosis and the ciliary muscle for near vision",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dilation of the iris sphincter for miosis and the ciliary muscle for near vision",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "contraction of the iris sphincter for mydriasis and the ciliary muscle for near vision",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "dilation of the iris sphincter for mydriasis and the ciliary muscle for far vision",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 768
+    },
+    {
+      "question": "What effect does a muscarinic agonist on the M1 receptor have in the bladder?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increased longitudinal tone and defecation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased longitudinal tone and defecation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "incresed longitudinal tone and decreased defecation",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased longitudinal tone and increased defecation",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 769
+    },
+    {
+      "question": "What effect does a muscarinic agonist on the M1 receptor in the GI tract have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increased detrusor tone and increased urination",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased detrusor tone and increased urination",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased detrusor tone and decreased urination",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased detrusor tone and decreased urination",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 768
+    },
+    {
+      "question": "What effect does a muscarinic agonist on the M1 receptor in the glands have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "increased salivation, sweating, and secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased salivation, sweating, and secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "increased salivation and decreased sweating and secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "decreased salivation and increased sweating and secretions",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What effect does a muscarinic agonist on the M1 receptor in the lungs have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "bronchoconstriction and increase in lung secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bronchoconstriction and decreased in lung secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bronchodilation and increased in lung secretions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bronchodilation and decrease in lung secretions",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "What effect does a muscarinic agonist on the M2 receptor in the heart have?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "tachycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "no change",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 784
+    },
+    {
+      "question": "Which muscarinic agonist can be used for glaucoma?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "pilocarpine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "acetylcholine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "methacholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 768
+    },
+    {
+      "question": "Which muscarinic agonist can be used to stimulate the GI and bladder?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "pilocarpine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "cevimeline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "acetylcholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 769
+    },
+    {
+      "question": "Which muscarinic agonist can be used for symptomatic releif of Sjogrens syndrome?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "cevimeline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "pilocarpine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "bethanechol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "acetylcholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Cevimeline is highly selective for M2 over M1 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What effect does a muscarinic antagonist have on the eye?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "mydriasis",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "miosis",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 768
+    },
+    {
+      "question": "What can a muscarinic antagonist be used for relating to the heart?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "all of the following",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "reflex sinus bradycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "cardiac arrest",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "atrial fibrillation",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 784
+    },
+    {
+      "question": "Muscarinic antagonist can be used to treat incontinence",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 769
+    },
+    {
+      "question": "Muscarinic antagonist can be used to treat hyperhidrosis",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What effects does atropine have at high doses?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "amnesia, delirium, and hallucinations",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "flushing, blurred vision, and delirium",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "amnesia, flushing, and urinary retention",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "amnesia, flushing, and urinary retention",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What effects does atropine have at low doses?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "flushing, blurred vision, tachycardia, and urinary retention",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "amnesia, delirium, and halluciantions",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "flushing, blurred vision, and delirium",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "amnesia, flushing, and urinary retention",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the name of the muscarinic antagonist that can be used to treat motion sickness?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Scopolamine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atropine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Oxybutynin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Solifenacin",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 768
+    },
+    {
+      "question": "Dicyclomine is more selective for M1 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Since dicyclomine is more M1 selective, what side effects would we expect not to be as an issue compared to non-selective antagonists?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "tachycardia",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "blurred vision",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "flushing",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "sweating",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 784
+    },
+    {
+      "question": "Tiotropium and Glycopyrrolate are more selective for M1 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Umeclidium is more selective for M2 receptors",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Cevimeline is metabolized by what CYP enzyme?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "CYP2D6",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP3A4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C9",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C19",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Belladonna can cross the blood brain barrier",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 770
+    },
+    {
+      "question": "How many sterioisomers are there in hyoscyamine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "one",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "two",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "four",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "eight",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What part of scopolamine allows it to cross the dermal barrier?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "the epoxide",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the ester",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the benzene ring",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "the tropane ring",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Why does glycopyrronium bromide stay in the digestive tract and no pass through the membrane?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "because of the permanent positive charge",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "because of the benzene ring",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "because of the ester",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it can pass through the membrane",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Solifenacin is metabolized by which CYP enzyme?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "CYP3A4",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2D6",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C19",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "CYP2C9",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Oxybutynin is given as a racemate",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Tiotropium and Ipratropium both a permanent positive charge",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Tiotropium is considered a short acting muscarinic antagonist",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "What is the normal tidal volume in men and women?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "500mL in men and 400mL in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "600mL in men and 400mL in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "500mL in men and 600mL in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "600mL in men and 300mL in women",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "What is the normal vital capacity in men and women?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "5L in men and 4L in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "6L in men and 4L in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "5L in men and 6L in women",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "6L in men and 3L in women",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "LABAs can be used as monotherapy to control asthma",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "LABAs are to be used in combination with what for long-term control of asthma?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "inhaled corticosteroids",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "long acting muscarinic antagonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "short acting beta agonists",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "it is not meant to be used in combination therapy",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "What is the normal range for FEV1?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "3-4L",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "2-5L",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "1-3L",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "4-6L",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 800
+    },
+    {
+      "question": "What is the brand name for acetylcholine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Urocholine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Evoxac",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for cevimeline?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Evoxac",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Urocholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "what is the brand name for scopolamine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Transdermscop",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vesicare",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Ditropan",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for dicyclomine?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Transdermscop",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Urocholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for ipratropium?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Atrovent",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Spiriva",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for tiotropium?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Spiriva",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Atovent",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Urocholine",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Evoxac",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for glycopyrrolate",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Cuvposa",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Evoxac",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Miochol",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What is the brand name for oxybutynin?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "Ditropan",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Vesicare",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bentyl",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Urocholine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "What plant is atropine from?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "deadly nightshade",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "thorn apple",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "amanita muscarii",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "clitocybe dealbata",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
+    },
+    {
+      "question": "Botulin toxin inhibits acetylcholine release",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "TRUE",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "FALSE",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "none",
+      "locations": 896
     }
   ]
 }
