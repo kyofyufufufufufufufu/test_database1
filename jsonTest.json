@@ -7694,41 +7694,6 @@
       "difficulty": 0,
       "minigameType": "1",
       "locations": 0
-    },
-    {
-      "question": "TEST_IMG_ONLY What is this molecule?",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/molecule_a.png",
-      "options": [
-        {
-          "text": "",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a1.png",
-          "useImage": true
-        },
-        {
-          "text": "",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a2.png",
-          "useImage": true
-        },
-        {
-          "text": "",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a3.png",
-          "useImage": true
-        },
-        {
-          "text": "",
-          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a4.png",
-          "useImage": true
-        },
-        {
-          "text": "",
-          "imageLink": "0",
-          "useImage": true
-        }
-      ],
-      "answerIndex": 1,
-      "difficulty": 0,
-      "minigameType": "1",
-      "locations": 0
     }
   ]
 }
