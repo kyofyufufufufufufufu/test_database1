@@ -7624,6 +7624,226 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 2176
+    },
+    {
+      "question": "TEST_DUP What is the primary function of the heart?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "To pump blood",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To digest food",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To filter air",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To make databases",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "None of the above",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 784
+    },
+    {
+      "question": "TEST_DIFF_OPTIONS What is the primary function of the heart?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "To pump blood",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To filter waste",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To regulate temperature",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To produce hormones",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To store energy",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 784
+    },
+    {
+      "question": "TEST_IMG_ONLY What is this molecule?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/molecule_a.png",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a1.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a2.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a3.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a4.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "1",
+      "locations": 1
+    },
+    {
+      "question": "TEST_IMG_ONLY What is this molecule?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/molecule_a.png",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a1.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a2.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a3.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_a4.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "1",
+      "locations": 1
+    },
+    {
+      "question": "TEST_IMG_ONLY What is this molecule?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/molecule_b.png",
+      "options": [
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_b1.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_b2.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_b3.png",
+          "useImage": true
+        },
+        {
+          "text": "",
+          "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/opt_b4.png",
+          "useImage": true
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 0,
+      "minigameType": "1",
+      "locations": 1
+    },
+    {
+      "question": "TEST_SHARED_ANSWERS What drug targets Alpha1?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/receptor_a.png",
+      "options": [
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 1025
+    },
+    {
+      "question": "TEST_SHARED_ANSWERS What drug targets Alpha1?",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/receptor_b.png",
+      "options": [
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Prazosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Doxazosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Alfuzosin",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 1025
     }
   ]
 }
