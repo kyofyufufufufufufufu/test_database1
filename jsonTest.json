@@ -7626,41 +7626,6 @@
       "locations": 2176
     },
     {
-      "question": "TEST_DUP What is the primary function of the heart?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "To pump blood",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To digest food",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To filter air",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To make databases",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "None of the above",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "None",
-      "locations": 784
-    },
-    {
       "question": "TEST_DIFF_OPTIONS What is the primary function of the heart?",
       "imageLink": "",
       "options": [
