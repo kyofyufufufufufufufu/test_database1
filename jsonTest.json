@@ -1261,41 +1261,6 @@
       "locations": 264
     },
     {
-      "question": "A direct effect of activation of the alpha-1 receptors is",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "constriction of the radial eye muscles",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "relaxation of the radial eye muscles",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "decrease in aqueous humor production",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "increase in aqueous humor production",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "there are no alpha-1 receptors in the eye",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 260
-    },
-    {
       "question": "Which of the following is NOT true about alpha-1 receptors?",
       "imageLink": "",
       "options": [
