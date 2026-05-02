@@ -7814,36 +7814,6 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 1025
-    },
-    {
-      "question": "TEST_SHARED_ANSWERS What drug targets Alpha1?",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/receptor_b.png",
-      "options": [
-        {
-          "text": "Tamsulosin",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Prazosin",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Doxazosin",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Alfuzosin",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 1025
     }
   ]
 }
