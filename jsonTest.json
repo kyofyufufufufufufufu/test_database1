@@ -7719,36 +7719,6 @@
       "difficulty": 0,
       "minigameType": "1",
       "locations": 1
-    },
-    {
-      "question": "TEST_SHARED_ANSWERS What drug targets Alpha1?",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/receptor_a.png",
-      "options": [
-        {
-          "text": "Tamsulosin",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Carvedilol",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Bisoprolol",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "Terbutaline",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 1025
     }
   ]
 }
