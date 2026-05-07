@@ -7589,41 +7589,6 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 2176
-    },
-    {
-      "question": "TEST_DIFF_OPTIONS What is the primary function of the heart?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "To pump blood",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To filter waste",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To regulate temperature",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To produce hormones",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To store energy",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "None",
-      "locations": 784
     }
   ]
 }
