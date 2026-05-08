@@ -591,22 +591,18 @@ namespace WinFormsApp1
                         string questionText = GetValue(0);
                         if (string.IsNullOrWhiteSpace(questionText)) continue;
 
-                        // Duplicate Check
-                        if (database.questions.Any(q => q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase)))
-                            continue;
+                        // Pre-process images and build options before the duplicate check
+                        // so that local paths are already resolved to GitHub URLs for comparison
+                        string resolvedQuestionImage = await HandleImageUpload(GetValue(1));
 
-                        var newQuestion = new Question { question = questionText };
-                        newQuestion.imageLink = await HandleImageUpload(GetValue(1));
-
-                        // Loop through 5 possible options
+                        var resolvedOptions = new List<Option>();
                         for (int i = 0; i < 5; i++)
                         {
                             string txt = GetValue(2 + (i * 2));
                             string img = GetValue(3 + (i * 2));
-
                             if (!string.IsNullOrWhiteSpace(txt) || !string.IsNullOrWhiteSpace(img))
                             {
-                                newQuestion.options.Add(new Option
+                                resolvedOptions.Add(new Option
                                 {
                                     text = txt,
                                     imageLink = await HandleImageUpload(img),
@@ -614,6 +610,30 @@ namespace WinFormsApp1
                                 });
                             }
                         }
+
+                        // Duplicate Check compares resolved URLs so local paths and GitHub URLs always match
+                        var incomingOptions = resolvedOptions
+                            .Select(o => (o.text?.ToLowerInvariant() ?? "") + "|" + (o.imageLink?.ToLowerInvariant() ?? ""))
+                            .ToList();
+
+                        bool isDuplicate = database.questions.Any(q =>
+                        {
+                            if (!q.question.Equals(questionText, StringComparison.OrdinalIgnoreCase))
+                                return false;
+
+                            var existingOptions = q.options
+                                .Select(o => (o.text?.ToLowerInvariant() ?? "") + "|" + (o.imageLink?.ToLowerInvariant() ?? ""))
+                                .ToList();
+
+                            return incomingOptions.Count == existingOptions.Count &&
+                                   incomingOptions.All(o => existingOptions.Contains(o));
+                        });
+
+                        if (isDuplicate) continue;
+
+                        var newQuestion = new Question { question = questionText };
+                        newQuestion.imageLink = resolvedQuestionImage;
+                        newQuestion.options.AddRange(resolvedOptions);
 
                         // Metadata - TryParse handles "None" or empty strings without crashing
                         int.TryParse(GetValue(12), out int ansIdx);
