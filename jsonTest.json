@@ -9264,31 +9264,6 @@
       "difficulty": 1,
       "minigameType": "None",
       "locations": 1025
-    },
-    {
-      "question": "TEST (BULK) Images added through local upload",
-      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
-      "options": [
-        {
-          "text": "That's a kitty cat (green)",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "That's a kitty cat (red)",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "That's a kitty cat (blue)",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 3,
-      "minigameType": "Slapjack",
-      "locations": 640
     }
   ]
 }
