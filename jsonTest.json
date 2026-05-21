@@ -9229,6 +9229,101 @@
       "difficulty": 1,
       "minigameType": "none",
       "locations": 1024
+    },
+    {
+      "question": "TEST (Bulk) What is the primary function of the heart?",
+      "imageLink": "",
+      "options": [
+        {
+          "text": "To pump blood",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To digest food",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To filter air",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "To make databases",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "None of the above",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 2,
+      "minigameType": "None",
+      "locations": 784
+    },
+    {
+      "question": "TEST (Bulk) An overactive Alpha1-receptor appears. What compound should you use to calm it?",
+      "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
+      "options": [
+        {
+          "text": "Tamsulosin",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Carvedilol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Bisoprolol",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Terbutaline",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "Tizanidine",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 1,
+      "minigameType": "None",
+      "locations": 1025
+    },
+    {
+      "question": "TEST (BULK) Images added through local upload",
+      "imageLink": "https://raw.githubusercontent.com/kyofyufufufufufufufu/test_database1/main/images/noobert10pct.png",
+      "options": [
+        {
+          "text": "That's a kitty cat (green)",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "That's a kitty cat (red)",
+          "imageLink": "",
+          "useImage": false
+        },
+        {
+          "text": "That's a kitty cat (blue)",
+          "imageLink": "",
+          "useImage": false
+        }
+      ],
+      "answerIndex": 0,
+      "difficulty": 3,
+      "minigameType": "Slapjack",
+      "locations": 640
     }
   ]
 }
