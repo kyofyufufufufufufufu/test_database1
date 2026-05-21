@@ -9231,36 +9231,6 @@
       "locations": 1024
     },
     {
-      "question": "TEST (Bulk) What is the primary function of the heart?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "To pump blood",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To digest food",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To filter air",
-          "imageLink": "",
-          "useImage": false
-        },
-        {
-          "text": "To make databases",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 2,
-      "minigameType": "None",
-      "locations": 528
-    },
-    {
       "question": "TEST (Bulk) An overactive Alpha1-receptor appears. What compound should you use to calm it?",
       "imageLink": "https://api.github.com/repos/AlecDuval/gitDatabaseTest/contents/images/AdrenergicReceptor.png",
       "options": [
