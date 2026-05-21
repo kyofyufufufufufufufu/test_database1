@@ -9253,17 +9253,12 @@
           "text": "To make databases",
           "imageLink": "",
           "useImage": false
-        },
-        {
-          "text": "None of the above",
-          "imageLink": "",
-          "useImage": false
         }
       ],
       "answerIndex": 0,
       "difficulty": 2,
       "minigameType": "None",
-      "locations": 784
+      "locations": 528
     },
     {
       "question": "TEST (Bulk) An overactive Alpha1-receptor appears. What compound should you use to calm it?",
