@@ -3526,21 +3526,6 @@
       "locations": 384
     },
     {
-      "question": "What is this part of the structure called?",
-      "imageLink": "",
-      "options": [
-        {
-          "text": "imine",
-          "imageLink": "",
-          "useImage": false
-        }
-      ],
-      "answerIndex": 0,
-      "difficulty": 1,
-      "minigameType": "None",
-      "locations": 384
-    },
-    {
       "question": "What can lower the levels of dopamine?",
       "imageLink": "",
       "options": [
